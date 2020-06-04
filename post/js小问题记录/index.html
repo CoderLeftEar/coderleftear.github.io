@@ -12,7 +12,7 @@ JS小问题记录
   
   
   <meta name="author" content="CoderLeftEar" />
-  <meta name="description" content="JS小问题记录 判断是PC还是Phone function isPC() { var userAgentInfo = navigator.userAgent; var Agents = [&amp;quot;Android&amp;quot;, &amp;quot;iPhone&amp;quot;, &amp;quot;SymbianOS&amp;quot;, &amp;quot;Windows Phone&amp;quot;, &amp;quot;iPad&amp;quot;, &amp;quot;iPod&amp;quot;]; var flag = true; for (var v = 0; v &amp;lt; Agents.length; v&#43;&#43;) { if (userAgentInfo.indexOf(Agents[v]) &amp;gt; 0) { flag = false; break; } } return flag; } var isPCOrPhone = isPC(); // 判断是手机端还是电脑端 if(isPCOrPhone) { $(&amp;quot;#app&amp;quot;).css(&amp;quot;width&amp;quot;, &amp;quot;1200px&amp;quot;); $(&amp;quot;.top_title .container&amp;quot;).css(&amp;quot;width&amp;quot;, &amp;quot;1200px&amp;quot;); } else { $(&amp;quot;#app&amp;quot;).css(&amp;quot;width&amp;quot;, &amp;quot;100%&amp;quot;); $(&amp;quot;.top_title .container&amp;quot;).css(&amp;quot;width&amp;quot;, &amp;quot;100%&amp;quot;); }  setInterval、setTimeout // 每隔5秒循环执行 setInterval(fun1, 5000); function fun1() { if(." />
+  <meta name="description" content="JS小问题记录 1.判断是PC还是Phone function isPC() { var userAgentInfo = navigator.userAgent; var Agents = [&amp;quot;Android&amp;quot;, &amp;quot;iPhone&amp;quot;, &amp;quot;SymbianOS&amp;quot;, &amp;quot;Windows Phone&amp;quot;, &amp;quot;iPad&amp;quot;, &amp;quot;iPod&amp;quot;]; var flag = true; for (var v = 0; v &amp;lt; Agents.length; v&#43;&#43;) { if (userAgentInfo.indexOf(Agents[v]) &amp;gt; 0) { flag = false; break; } } return flag; } var isPCOrPhone = isPC(); // 判断是手机端还是电脑端 if(isPCOrPhone) { $(&amp;quot;#app&amp;quot;).css(&amp;quot;width&amp;quot;, &amp;quot;1200px&amp;quot;); $(&amp;quot;.top_title .container&amp;quot;).css(&amp;quot;width&amp;quot;, &amp;quot;1200px&amp;quot;); } else { $(&amp;quot;#app&amp;quot;).css(&amp;quot;width&amp;quot;, &amp;quot;100%&amp;quot;); $(&amp;quot;.top_title .container&amp;quot;).css(&amp;quot;width&amp;quot;, &amp;quot;100%&amp;quot;); }  2." />
 
 
 
@@ -71,7 +71,7 @@ JS小问题记录
 
 <h1 id="js小问题记录">JS小问题记录</h1>
 
-<h2 id="判断是pc还是phone">判断是PC还是Phone</h2>
+<h2 id="1-判断是pc还是phone">1.判断是PC还是Phone</h2>
 
 <pre><code class="language-javascript">function isPC() {
     var userAgentInfo = navigator.userAgent;
@@ -98,7 +98,7 @@ if(isPCOrPhone) {
 }
 </code></pre>
 
-<h2 id="setinterval-settimeout">setInterval、setTimeout</h2>
+<h2 id="2-setinterval-settimeout">2.setInterval、setTimeout</h2>
 
 <pre><code class="language-js">// 每隔5秒循环执行
 setInterval(fun1, 5000);
