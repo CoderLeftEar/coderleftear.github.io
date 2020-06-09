@@ -122,6 +122,16 @@ function fun2() {
     setTimeout(arguments.callee, 5000);
 }
 </code></pre>
+
+<h2 id="3-禁用console-log">3.禁用console.log()</h2>
+
+<pre><code class="language-js">var console = {};
+console.log = function(){};
+</code></pre>
+
+<pre><code class="language-js">window['console']['log'] = console.log() //打开默认设置
+window['console']['log'] = function() {}; //关闭默认设置
+</code></pre>
 </article>
     </section>
 
