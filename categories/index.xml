@@ -6,10 +6,19 @@
     <description>Recent content in Categories on CoderLeftEar&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 02 Jun 2020 16:30:56 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 10 Jun 2020 11:12:41 +0800</lastBuildDate>
     
 	<atom:link href="https://coderleftear.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Gulp</title>
+      <link>https://coderleftear.github.io/categories/gulp/</link>
+      <pubDate>Wed, 10 Jun 2020 11:12:41 +0800</pubDate>
+      
+      <guid>https://coderleftear.github.io/categories/gulp/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>js</title>

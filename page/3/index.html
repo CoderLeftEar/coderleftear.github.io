@@ -114,6 +114,8 @@
   
   <a class="ui label" href="/tags/git" title="git">git</a>
   
+  <a class="ui label" href="/tags/gulp" title="gulp">gulp</a>
+  
   <a class="ui label" href="/tags/java" title="java">java</a>
   
   <a class="ui label" href="/tags/jdk8" title="jdk8">jdk8</a>
@@ -326,6 +328,23 @@
         <i class="gem outline grey icon"></i>
         <div class="content">
           <a href="https://coderleftear.github.io/post/git%E7%AC%94%E8%AE%B001-%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4%E6%93%8D%E4%BD%9C/" class="item">Git笔记01-基本命令操作</a>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+    
+    <div class="title">
+      <i class="dropdown icon"></i>
+      <a href="/categories/gulp" class="item">gulp</a>
+    </div>
+    <div class="content">
+      <div class="ui link list">
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="gem outline grey icon"></i>
+        <div class="content">
+          <a href="https://coderleftear.github.io/post/gulpfile/" class="item">Gulpfile</a>
         </div>
       </div>
       
@@ -882,6 +901,51 @@
           
           <div class="display-content">
           
+            <a href="https://coderleftear.github.io/post/java-juc/">
+              
+              <h2 class="ui header" style="color: white;">Java-JUC</h2>
+              
+            </a>
+            <p style="padding: 5px;">Java-JUC 什么是进程、线程？ 1、进程： 进程是一个具有一定独立功能的程序关于某个数据集合的一次运行活动。它是操作系统动态执行的基本单元，在传统的操作系统中，进程既是基本分配单元，也是基本执行单元。（一个QQ.exe的运行就是一个进程，word程序进程）。
+2、线程： 通常一个进程中可以包含若干个线程，当然一个进程中至少一个线程，不然没有存在意义。线程可以利用进程所拥有的资源，在引入线程的操作系统中，通常都是把进程作为分配资源的基本单位，而把线程作为独立运行和独立调度的基本单位，由于线程比进程更小，基本上不拥有系统资源，故对它的调度所付出的开销就会小得多，能更高效的提高系统多个程序间并发执行的程度。（QQ中和每个人聊天就是每一个线程，word中检查拼写错误的线程）。
+什么是并发、并行？ 1、并发： 多个线程同一个时间点争取同一个资源。
+2、并行 同一个时间点多个任务同时执行。
+多项工作一起执行，之后再汇总。
+Ticket 实现多线程的方式：  继承Thread类,重写run()方法 实现Runnable接口,实现run()方法 实现Callable接口，实现call()方法 通过线程池创建线程  高内聚高耦合： 高内聚： 空调的制冷和制热，是空调自带的，内聚在空调中的。
+低耦合： 例：前后端分离，互相依赖最小。
+多线程与操作系统有关，多线程不是.start();后立刻启动，而是进入就绪状态，等待操作系统和CPU调用run方法的时候，开始启动。
+Thread.State  NEW：新建 RUNNABLE：就绪，可运行 BLOCKED：阻塞 WAITING：等待，不见不散 TIMED_WAITING：等待，超时不见 TERMINATED：终结  wait：放开锁去睡
+sleep：握着锁去睡
+函数式接口： 只能有一个普通方法，可以有多个defalt方法，多个静态方法，多个Object中的方法。
+线程 -&gt; 操作(对外暴露的方法) -&gt; 资源类 通过Lock接口进行上锁和解锁： public class ThreadDemo02 { public static void main(String[] args) { final Ticket ticket = new Ticket(); // new Thread(new Runnable() { // @Override // public void run() { // for (int i = 0; i &lt; 4000; i &#43;&#43;) { // ticket.</p>
+            <p>@ CoderLeftEar</p>
+          </div>
+          
+          <div class="ui top right attached black label">6 min read</div>
+          <div class="ui bottom left attached black label">Oct 16, 2019</div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <img src="/img/default1.jpg" alt="Java-JUC">
+    
+  </div>
+</article>
+
+
+      
+
+        <article class="card" style="box-shadow: none;">
+  <div class="image">
+    
+    <div class="ui dimmer">
+    
+      <div class="content">
+        <div class="center">
+          
+          <div class="display-content">
+          
             <a href="https://coderleftear.github.io/post/springannotation%E7%AC%94%E8%AE%B004-springmvc/">
               
               <h2 class="ui header" style="color: white;">SpringAnnotation笔记04-SpringMVC</h2>
@@ -936,7 +1000,7 @@ c @HandlesTypes中指定的类型的所有子类 ctx 代表当前Web应用的Ser
       </div>
     </div>
     
-    <img src="/img/default3.jpg" alt="SpringAnnotation笔记03-Servlet30">
+    <img src="/img/default1.jpg" alt="SpringAnnotation笔记03-Servlet30">
     
   </div>
 </article>
@@ -982,7 +1046,7 @@ c @HandlesTypes中指定的类型的所有子类 ctx 代表当前Web应用的Ser
       </div>
     </div>
     
-    <img src="/img/default1.jpg" alt="SpringAnnotation笔记02-AOP">
+    <img src="/img/default6.jpg" alt="SpringAnnotation笔记02-AOP">
     
   </div>
 </article>
@@ -1016,7 +1080,7 @@ c @HandlesTypes中指定的类型的所有子类 ctx 代表当前Web应用的Ser
       </div>
     </div>
     
-    <img src="/img/default2.jpg" alt="JVM笔记07-Book01">
+    <img src="/img/default5.jpg" alt="JVM笔记07-Book01">
     
   </div>
 </article>
@@ -1052,47 +1116,7 @@ c @HandlesTypes中指定的类型的所有子类 ctx 代表当前Web应用的Ser
       </div>
     </div>
     
-    <img src="/img/default6.jpg" alt="SpringAnnotation笔记01-IOC">
-    
-  </div>
-</article>
-
-
-      
-
-        <article class="card" style="box-shadow: none;">
-  <div class="image">
-    
-    <div class="ui dimmer">
-    
-      <div class="content">
-        <div class="center">
-          
-          <div class="display-content">
-          
-            <a href="https://coderleftear.github.io/post/jvm%E7%AC%94%E8%AE%B006-java%E5%86%85%E5%AD%9801/">
-              
-              <h2 class="ui header" style="color: white;">JVM笔记06-Java内存01</h2>
-              
-            </a>
-            <p style="padding: 5px;">JVM笔记06-Java内存01 栈帧（Stack Frame）：每个方法在执行是都会生成一个与这个方法相关的、独有的栈帧（数据结构），本身存贮操作数栈里的数据、存贮局部变量表、方法的返回地址。
-程序计数器（Program Counter）： 描述线程在执行字节码时，执行完第一行后，下一行的位置。
-本地方法栈：关于native的，Java中有native的方法（不是有Java实现的，而是由C、C&#43;&#43;实现的），主要用于处理本地方法。
-堆（Heap）：所创建的绝大多数对象都是位于堆中，jvm中所管理的最大的内存，被所有内存共享（共享区域），jvm创建的时候，堆的内存会从操作系统被申请下来，存放我们所创建的对象实例。
-方法区（Method Area）：存储元信息。永久代（Permanent Generation），从jdk1.8开始，已经彻底废除永久代，使用元空间（meta space）。
-运行时常量池：方法区的一部分内容。编译期间生成class文件的时候，生成的各种字面量、符号引用，这些内容在进行加载完之后，都会进入到方法区的运行时常量池当中进行存放。
-直接内存（Direct Memory）：并不是有JVM世界管理的，而是有操作系统进行管理的</p>
-            <p>@ CoderLeftEar</p>
-          </div>
-          
-          <div class="ui top right attached black label">1 min read</div>
-          <div class="ui bottom left attached black label">Sep 29, 2019</div>
-          
-        </div>
-      </div>
-    </div>
-    
-    <img src="/img/default5.jpg" alt="JVM笔记06-Java内存01">
+    <img src="/img/default4.jpg" alt="SpringAnnotation笔记01-IOC">
     
   </div>
 </article>
