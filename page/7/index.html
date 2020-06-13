@@ -142,6 +142,8 @@
   
   <a class="ui label" href="/tags/%E5%86%85%E5%AD%98" title="内存">内存</a>
   
+  <a class="ui label" href="/tags/%E6%AD%A3%E5%88%99" title="正则">正则</a>
+  
   <a class="ui label" href="/tags/%E6%BA%90%E7%A0%81" title="源码">源码</a>
   
   <a class="ui label" href="/tags/%E7%AC%94%E8%AE%B0" title="笔记">笔记</a>
@@ -770,6 +772,23 @@
     
     <div class="title">
       <i class="dropdown icon"></i>
+      <a href="/categories/%E6%AD%A3%E5%88%99" class="item">正则</a>
+    </div>
+    <div class="content">
+      <div class="ui link list">
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="gem outline grey icon"></i>
+        <div class="content">
+          <a href="https://coderleftear.github.io/post/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" class="item">正则表达式</a>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+    
+    <div class="title">
+      <i class="dropdown icon"></i>
       <a href="/categories/%E6%BA%90%E7%A0%81" class="item">源码</a>
     </div>
     <div class="content">
@@ -901,6 +920,53 @@
           
           <div class="display-content">
           
+            <a href="https://coderleftear.github.io/post/git%E7%AC%94%E8%AE%B011-git-refspec%E8%BF%9C%E7%A8%8B%E6%A0%87%E7%AD%BE%E4%B8%8Egit-gc/">
+              
+              <h2 class="ui header" style="color: white;">Git笔记11-git refspec、远程标签与git gc</h2>
+              
+            </a>
+            <p style="padding: 5px;">Git笔记11-git refspec、远程标签与git gc git refspec: 将本地的分支推送到远程的那个分支上。
+git push 完整写法：src本地分支名称，dest远程分支名称
+git push origin src:dest
+git pull 完整写法：src远程分支名称，dest本地分支名称
+git push origin src:dest
+一、git refspec 1、HEAD HEAD: 指向当前分支所在的引用标志符 查看HEAD：git symbolic-ref HEAD
+修改HEAD：git symbolic-ref HEAD refs/heads/develop
+2、ORIG_HEAD ORIG_HEAD: 远程最新的commit_id
+3、FETCH_HEAD FETCH_HEAD: 拉取下来后，最新的commit_id
+二、远程标签 查看标签：git show v1.0
+推送标签：git push origin v1.0 (批量)：git push origin v1.0 v2.0 未推送全部推送：git push origin –tags 完整写法：git push origin refs/tags/v1.0:refs/tags/v1.0
+拉取所有：git pull 拉取一个：git fetch origin tag v7.0
+删除标签远程(git pull本地却不能体现)：
+git push origin :refs/tags/v1.</p>
+            <p>@ CoderLeftEar</p>
+          </div>
+          
+          <div class="ui top right attached black label">1 min read</div>
+          <div class="ui bottom left attached black label">Aug 14, 2019</div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <img src="/img/default6.jpg" alt="Git笔记11-git refspec、远程标签与git gc">
+    
+  </div>
+</article>
+
+
+      
+
+        <article class="card" style="box-shadow: none;">
+  <div class="image">
+    
+    <div class="ui dimmer">
+    
+      <div class="content">
+        <div class="center">
+          
+          <div class="display-content">
+          
             <a href="https://coderleftear.github.io/post/git%E7%AC%94%E8%AE%B010-git%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF%E5%88%AB%E5%90%8Dgitk%E4%B8%8Egit-gui/">
               
               <h2 class="ui header" style="color: white;">Git笔记10-Git远程分支、别名、gitk与git gui</h2>
@@ -923,7 +989,7 @@ $ git push --set-upstream origin develop Total 0 (delta 0), reused 0 (delta 0) r
       </div>
     </div>
     
-    <img src="/img/default3.jpg" alt="Git笔记10-Git远程分支、别名、gitk与git gui">
+    <img src="/img/default2.jpg" alt="Git笔记10-Git远程分支、别名、gitk与git gui">
     
   </div>
 </article>
@@ -1004,7 +1070,7 @@ $ git pull remote: Enumerating objects: 5, done. remote: Counting objects: 100% 
       </div>
     </div>
     
-    <img src="/img/default5.jpg" alt="Git笔记08-Git协作和Git远程协作模型">
+    <img src="/img/default3.jpg" alt="Git笔记08-Git协作和Git远程协作模型">
     
   </div>
 </article>
@@ -1046,7 +1112,7 @@ $ git remote show origin * remote origin Fetch URL: https://github.com/Mr-WangG/
       </div>
     </div>
     
-    <img src="/img/default6.jpg" alt="Git笔记07-git远程、GitHub和公私钥">
+    <img src="/img/default5.jpg" alt="Git笔记07-git远程、GitHub和公私钥">
     
   </div>
 </article>
@@ -1100,58 +1166,6 @@ $ git diff warning: LF will be replaced by CRLF in test.txt. The file will have 
     </div>
     
     <img src="/img/default2.jpg" alt="Git笔记06-标签与diff">
-    
-  </div>
-</article>
-
-
-      
-
-        <article class="card" style="box-shadow: none;">
-  <div class="image">
-    
-    <div class="ui dimmer">
-    
-      <div class="content">
-        <div class="center">
-          
-          <div class="display-content">
-          
-            <a href="https://coderleftear.github.io/post/git%E7%AC%94%E8%AE%B005-checkout%E8%BF%9B%E9%98%B6%E4%B8%8Estash/">
-              
-              <h2 class="ui header" style="color: white;">Git笔记05-checkout进阶与stash</h2>
-              
-            </a>
-            <p style="padding: 5px;">Git笔记05-checkout进阶与stash checkout 创建并切换到3fs345（临时名称、分支）提交的分支：
-&gt; git checkout 3fs345
-创建mycommit分支并指向3fs345：
-&gt; git branch mycommit 3fs345
-分支重命名：
-&gt; git branch -m master master2
-stash 临时存储： &gt; git stash
-添加说明：
-&gt; git stash save “commit”
-查看：stash@{0}表示最新
-&gt; git stash list
-恢复并删除当前stash：
-&gt; git stash pop
-恢复不删除当前stash：
-&gt; git stash apply
-手动删除：
-&gt; git stash drop stash@{0}
-指定恢复之前stash的内容：
-&gt; git stash apply stash@{0}</p>
-            <p>@ CoderLeftEar</p>
-          </div>
-          
-          <div class="ui top right attached black label">1 min read</div>
-          <div class="ui bottom left attached black label">Aug 10, 2019</div>
-          
-        </div>
-      </div>
-    </div>
-    
-    <img src="/img/default2.jpg" alt="Git笔记05-checkout进阶与stash">
     
   </div>
 </article>

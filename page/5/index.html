@@ -142,6 +142,8 @@
   
   <a class="ui label" href="/tags/%E5%86%85%E5%AD%98" title="内存">内存</a>
   
+  <a class="ui label" href="/tags/%E6%AD%A3%E5%88%99" title="正则">正则</a>
+  
   <a class="ui label" href="/tags/%E6%BA%90%E7%A0%81" title="源码">源码</a>
   
   <a class="ui label" href="/tags/%E7%AC%94%E8%AE%B0" title="笔记">笔记</a>
@@ -770,6 +772,23 @@
     
     <div class="title">
       <i class="dropdown icon"></i>
+      <a href="/categories/%E6%AD%A3%E5%88%99" class="item">正则</a>
+    </div>
+    <div class="content">
+      <div class="ui link list">
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="gem outline grey icon"></i>
+        <div class="content">
+          <a href="https://coderleftear.github.io/post/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" class="item">正则表达式</a>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+    
+    <div class="title">
+      <i class="dropdown icon"></i>
       <a href="/categories/%E6%BA%90%E7%A0%81" class="item">源码</a>
     </div>
     <div class="content">
@@ -901,6 +920,42 @@
           
           <div class="display-content">
           
+            <a href="https://coderleftear.github.io/post/jvm%E7%AC%94%E8%AE%B003-%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%99%A803/">
+              
+              <h2 class="ui header" style="color: white;">JVM笔记03-类加载器03</h2>
+              
+            </a>
+            <p style="padding: 5px;">JVM笔记03-类加载器03  JVM笔记03-类加载器03  自定义类加载器在复杂类加载情况下运动分析 类加载器命名空间实战与彻底理解  1. 2.  类加载器实例剖析与疑难点解析  BootstrapClassLoader ExtensionClassLoader  类加载器命名空间深度解析  例1： 例2： 类加载器的双亲委托模型的好处  扩展类加载器和总结  启动类加载器的相关  Launcher源码分析和forName源码分析 线程上下文类加载器的分析与事项（setContextClassLoader();）  例1： 例2：ServiceLoader案例 例3：  jar hell问题   自定义类加载器在复杂类加载情况下运动分析 案例在上一篇
+注释掉clazz.newInstance();就不会实例化MyDog对象，即MyDog的构造方法不会被调用，因此不会实例化MyCat对象，没有对MyCat进行主动使用。但并不代表MyDog没有被加载。
+注释掉clazz.newInstance(): [Loaded com.wang.jvm.custom.MyDog from file:/E:/JavaEE/ClassLoad/out/production/classes/] hashcode: 356573597 没有注释掉clazz.newInstance(): [Loaded com.wang.jvm.custom.MyDog from file:/E:/JavaEE/ClassLoad/out/production/classes/] hashcode: 356573597 invoke dog class constructor!sun.misc.Launcher$AppClassLoader@18b4aac2 [Loaded com.wang.jvm.custom.MyCat from file:/E:/JavaEE/ClassLoad/out/production/classes/] invoke cat class constructor!sun.misc.Launcher$AppClassLoader@18b4aac2  MyClassLoader loader = new MyClassLoader(&#34;loader&#34;); Class&lt;?</p>
+            <p>@ CoderLeftEar</p>
+          </div>
+          
+          <div class="ui top right attached black label">4 min read</div>
+          <div class="ui bottom left attached black label">Sep 10, 2019</div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <img src="/img/default5.jpg" alt="JVM笔记03-类加载器03">
+    
+  </div>
+</article>
+
+
+      
+
+        <article class="card" style="box-shadow: none;">
+  <div class="image">
+    
+    <div class="ui dimmer">
+    
+      <div class="content">
+        <div class="center">
+          
+          <div class="display-content">
+          
             <a href="https://coderleftear.github.io/post/datastructure02-arrayqueue/">
               
               <h2 class="ui header" style="color: white;">DataStructure02-ArrayQueue</h2>
@@ -917,7 +972,7 @@
       </div>
     </div>
     
-    <img src="/img/default4.jpg" alt="DataStructure02-ArrayQueue">
+    <img src="/img/default6.jpg" alt="DataStructure02-ArrayQueue">
     
   </div>
 </article>
@@ -952,7 +1007,7 @@
       </div>
     </div>
     
-    <img src="/img/default6.jpg" alt="DataStructure01-SparseArray">
+    <img src="/img/default4.jpg" alt="DataStructure01-SparseArray">
     
   </div>
 </article>
@@ -1024,7 +1079,7 @@ students.stream(). collect(Collectors.maxBy( Comparator.comparingInt(student -&g
       </div>
     </div>
     
-    <img src="/img/default6.jpg" alt="Jdk8-10-Stream笔记02">
+    <img src="/img/default4.jpg" alt="Jdk8-10-Stream笔记02">
     
   </div>
 </article>
@@ -1060,48 +1115,7 @@ class Student1 { public int compareStudentByName(Student s1, Student s2) { retur
       </div>
     </div>
     
-    <img src="/img/default6.jpg" alt="Jdk8-09-Method Reference">
-    
-  </div>
-</article>
-
-
-      
-
-        <article class="card" style="box-shadow: none;">
-  <div class="image">
-    
-    <div class="ui dimmer">
-    
-      <div class="content">
-        <div class="center">
-          
-          <div class="display-content">
-          
-            <a href="https://coderleftear.github.io/post/jvm%E7%AC%94%E8%AE%B001-%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%99%A801/">
-              
-              <h2 class="ui header" style="color: white;">JVM笔记01-类加载器01</h2>
-              
-            </a>
-            <p style="padding: 5px;">类加载器、类的加载连接与初始化  类加载器、类的加载连接与初始化  类加载 类加载器 类的加载、连接与初始化 类的使用和卸载 Java虚拟机对类的使用方式 案例： 类的加载 JVM参数 关于public static final String str = “hello”;  反编译  助记符： 数组实例 父子接口 案例：关于初始化过程的代码   所有的类一定是由类加载器加载的，但数组例外，数组是由jvm加载的
-类加载 定义：在Java代码中，类型的加载、连接与初始化过程都是在程序运行期间完成的。
-类型：可以理解为class；这里指的是定义的class、interface、枚举，不存在对象的概念。表示类本身，并不表示对象。
-类型的加载：将已经存在的字节码文件从硬盘上加载到内存中。 连接：将类与类之间的关系固定好，对于字节码的一些相关处理，验证、准备、解析都是在此阶段完成的。
-初始化：赋值
-类加载器 加载类的工具
-以下情况，Java虚拟机会结束生命周期： - 执行了System.exit(); - 程序正常结束。 - 程序在执行过程中遇到了异常或错误而异常终止。 - 由于操作系统出现错误而导致Java虚拟机进程终止。
-类的加载、连接与初始化  加载：查找并加载类的二进制数据（加载类的class文件加载进内存） 连接  验证：确保被加载的类的正确性。（使得class文件时按照jvm的规范进行的） 准备：为类的静态变量分配内存，并将其初始化为默认值。  class test {   private static int a = 1; } 先加载test类，然后将变量a设置为int类型的默认值0。  解析：将符号引用转换为直接引用。  符号引用：通过符号的表示，一个类中的方法通过符号引用另一个类所需的目标。 直接引用：直接将这个方法通过指针指向所需要用的目标的对象的内存中的位置。   初始化：为类的静态变量赋予正确的初始值（a = 1) 类的实例化：  为新的对象分配内存 为实例变量赋默认值 为实例变量赋正确的初始值 java编译器为它编译的每个类都至少生成一个实例初始化方法（构造器），在java的class文件中，这个实例初始化方法被称为”&lt;init&gt;“（静态变量是”&lt;clinit&gt;“）；针对源代码中每个类的构造方法，java编译器都产生一个&lt;init&gt;方法。 ===================== 另一种对象创建过程：类加载检查 - 分配内存 - 初始化零值 - 设置对象头 - 执行init方法  垃圾回收和对象终结  类的使用和卸载  使用：用类创建对象、调用方法。 卸载：class字节码文件加载到内存中，形成自己的数据结构，驻留在内存中，还可以被销毁。  Java虚拟机对类的使用方式 所有的Java虚拟机实现必须在每个类或接口 被Java程序首次主动使用时才初始化它们。</p>
-            <p>@ CoderLeftEar</p>
-          </div>
-          
-          <div class="ui top right attached black label">4 min read</div>
-          <div class="ui bottom left attached black label">Aug 25, 2019</div>
-          
-        </div>
-      </div>
-    </div>
-    
-    <img src="/img/default2.jpg" alt="JVM笔记01-类加载器01">
+    <img src="/img/default3.jpg" alt="Jdk8-09-Method Reference">
     
   </div>
 </article>

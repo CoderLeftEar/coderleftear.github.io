@@ -3,26 +3,44 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://coderleftear.github.io/categories/</loc>
+    <lastmod>2020-06-12T08:47:25+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://coderleftear.github.io/</loc>
     <lastmod>2020-06-12T08:47:25+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://coderleftear.github.io/content/</loc>
+    <loc>https://coderleftear.github.io/post/</loc>
     <lastmod>2020-06-12T08:47:25+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://coderleftear.github.io/content/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</loc>
+    <loc>https://coderleftear.github.io/tags/</loc>
     <lastmod>2020-06-12T08:47:25+08:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://coderleftear.github.io/categories/</loc>
-    <lastmod>2020-06-10T11:12:41+08:00</lastmod>
+    <loc>https://coderleftear.github.io/categories/%E6%AD%A3%E5%88%99/</loc>
+    <lastmod>2020-06-12T08:47:25+08:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coderleftear.github.io/tags/%E6%AD%A3%E5%88%99/</loc>
+    <lastmod>2020-06-12T08:47:25+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coderleftear.github.io/post/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</loc>
+    <lastmod>2020-06-12T08:47:25+08:00</lastmod>
   </url>
   
   <url>
@@ -40,18 +58,6 @@
   <url>
     <loc>https://coderleftear.github.io/post/gulpfile/</loc>
     <lastmod>2020-06-10T11:12:41+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://coderleftear.github.io/post/</loc>
-    <lastmod>2020-06-10T11:12:41+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://coderleftear.github.io/tags/</loc>
-    <lastmod>2020-06-10T11:12:41+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>

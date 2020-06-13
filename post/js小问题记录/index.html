@@ -132,6 +132,38 @@ console.log = function(){};
 <pre><code class="language-js">window['console']['log'] = console.log() //打开默认设置
 window['console']['log'] = function() {}; //关闭默认设置
 </code></pre>
+
+<h2 id="4-大小转换">4.大小转换</h2>
+
+<pre><code class="language-js">getSize(size) {
+    if (!size)
+        return &quot;&quot;;
+    var num = 1024.00; //byte
+    if (size &lt; num)
+        return size + &quot;B&quot;;
+    if (size &lt; Math.pow(num, 2))
+        return (size / num).toFixed(2) + &quot;K&quot;;
+    if (size &lt; Math.pow(num, 3))
+        return (size / Math.pow(num, 2)).toFixed(2) + &quot;M&quot;;
+    if (size &lt; Math.pow(num, 4))
+        return (size / Math.pow(num, 3)).toFixed(2);
+    return (size / Math.pow(num, 4)).toFixed(2) + &quot;T&quot;;
+}
+</code></pre>
+
+<h2 id="5-时间转换">5.时间转换</h2>
+
+<pre><code class="language-js">// 时间戳(单位秒)的只转为时分秒
+formatDuring(timestamp) {
+    var hours = parseInt(timestamp / (1000 * 60 * 60));
+    var minutes = parseInt((timestamp % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = parseInt((timestamp % (1000 * 60 * 60) % (1000 * 60)) / (1000));
+    // return hours + &quot;时&quot; + minutes + &quot;分&quot; + seconds + &quot;秒&quot;;
+    return (hours == 0 ? &quot;00:&quot; : String(hours) + &quot;:&quot;) 
+        + (minutes == 0 ? &quot;00:&quot; : (minutes / 10 &gt;= 1 ? String(minutes) : &quot;0&quot; + String(minutes)) + &quot;:&quot;) 
+        + (seconds == 0 ? &quot;00&quot; : seconds / 10 &gt;= 1 ? String(seconds) : &quot;0&quot; + String(seconds));
+},
+</code></pre>
 </article>
     </section>
 
@@ -229,6 +261,8 @@ window['console']['log'] = function() {}; //关闭默认设置
   <a class="ui label" href="/tags/vue" title="vue">vue</a>
   
   <a class="ui label" href="/tags/%E5%86%85%E5%AD%98" title="内存">内存</a>
+  
+  <a class="ui label" href="/tags/%E6%AD%A3%E5%88%99" title="正则">正则</a>
   
   <a class="ui label" href="/tags/%E6%BA%90%E7%A0%81" title="源码">源码</a>
   
@@ -850,6 +884,23 @@ window['console']['log'] = function() {}; //关闭默认设置
         <i class="gem outline grey icon"></i>
         <div class="content">
           <a href="https://coderleftear.github.io/post/java%E5%86%85%E5%AD%98%E5%88%86%E6%9E%90/" class="item">Java内存分析</a>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+    
+    <div class="title">
+      <i class="dropdown icon"></i>
+      <a href="/categories/%E6%AD%A3%E5%88%99" class="item">正则</a>
+    </div>
+    <div class="content">
+      <div class="ui link list">
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="gem outline grey icon"></i>
+        <div class="content">
+          <a href="https://coderleftear.github.io/post/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" class="item">正则表达式</a>
         </div>
       </div>
       
