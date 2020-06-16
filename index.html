@@ -108,6 +108,8 @@
   
   <a class="ui label" href="/tags/docker" title="docker">docker</a>
   
+  <a class="ui label" href="/tags/echarts" title="echarts">echarts</a>
+  
   <a class="ui label" href="/tags/example" title="example">example</a>
   
   <a class="ui label" href="/tags/git" title="git">git</a>
@@ -196,6 +198,23 @@
         <i class="gem outline grey icon"></i>
         <div class="content">
           <a href="https://coderleftear.github.io/post/docker%E7%AC%94%E8%AE%B0/" class="item">Docker笔记</a>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+    
+    <div class="title">
+      <i class="dropdown icon"></i>
+      <a href="/categories/echarts" class="item">echarts</a>
+    </div>
+    <div class="content">
+      <div class="ui link list">
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="gem outline grey icon"></i>
+        <div class="content">
+          <a href="https://coderleftear.github.io/post/echarts%E7%AC%94%E8%AE%B0/" class="item">Echarts笔记</a>
         </div>
       </div>
       
@@ -918,6 +937,42 @@
           
           <div class="display-content">
           
+            <a href="https://coderleftear.github.io/post/echarts%E7%AC%94%E8%AE%B0/">
+              
+              <h2 class="ui header" style="color: white;">Echarts笔记</h2>
+              
+            </a>
+            <p style="padding: 5px;">Echarts笔记 官方配置地址
+http://echarts.baidu.com/option.html#tooltip.trigger
+eg1: &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;meta charset=&#34;utf-8&#34;&gt; &lt;!-- 引入 ECharts 文件 --&gt; &lt;script src=&#34;echarts.js&#34;&gt;&lt;/script&gt; &lt;div id=&#34;pie1&#34; style=&#34;width: 600px;height:400px;&#34;&gt;&lt;/div&gt; &lt;script type=&#34;text/javascript&#34;&gt; var myChart1 = echarts.init(document.getElementById(&#39;pie1&#39;)); option1 = { title:{ text:&#39;按类型统计&#39;, top:&#39;bottom&#39;, left:&#39;center&#39;, textStyle:{ fontSize: 14, fontWeight: &#39;&#39;, color: &#39;#333&#39; }, },//标题 tooltip: { trigger: &#39;item&#39;, formatter: &#34;{a} &lt;br/&gt;{b}: {c} ({d}%)&#34;， /*formatter:function(val){ //让series 中的文字进行换行 console.log(val);//查看val属性，可根据里边属性自定义内容 var content = var[&#39;name&#39;]; return content;//返回可以含有html中标签 },*/ //自定义鼠标悬浮交互信息提示，鼠标放在饼状图上时触发事件 },//提示框，鼠标悬浮交互时的信息提示 legend: { show: false, orient: &#39;vertical&#39;, x: &#39;left&#39;, data: [&#39;50%-学生&#39;, &#39;25%-老师&#39;, &#39;25%-家长&#39;] },//图例属性，以饼状图为例，用来说明饼状图每个扇区，data与下边series中data相匹配 graphic:{ type:&#39;text&#39;, left:&#39;center&#39;, top:&#39;center&#39;, style:{ text:&#39;用户统计\n&#39;&#43;&#39;100&#39;, //使用“&#43;”可以使每行文字居中 textAlign:&#39;center&#39;, font:&#39;italic bolder 16px cursive&#39;, fill:&#39;#000&#39;, width:30, height:30 } },//此例饼状图为圆环中心文字显示属性，这是一个原生图形元素组件，功能很多 series: [ { name:&#39;用户统计&#39;,//tooltip提示框中显示内容 type: &#39;pie&#39;,//图形类型，如饼状图，柱状图等 radius: [&#39;35%&#39;, &#39;65%&#39;],//饼图的半径，数组的第一项是内半径，第二项是外半径。支持百分比，本例设置成环形图。具体可以看文档或改变其值试一试 //roseType:&#39;area&#39;,是否显示成南丁格尔图，默认false itemStyle: { normal:{ label:{ show:true, textStyle:{color:&#39;#3c4858&#39;,fontSize:&#34;18&#34;}, formatter:function(val){ //让series 中的文字进行换行 return val.</p>
+            <p>@ CoderLeftEar</p>
+          </div>
+          
+          <div class="ui top right attached black label">2 min read</div>
+          <div class="ui bottom left attached black label">Jun 16, 2020</div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <img src="/img/default5.jpg" alt="Echarts笔记">
+    
+  </div>
+</article>
+
+
+      
+
+        <article class="card" style="box-shadow: none;">
+  <div class="image">
+    
+    <div class="ui dimmer">
+    
+      <div class="content">
+        <div class="center">
+          
+          <div class="display-content">
+          
             <a href="https://coderleftear.github.io/post/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">
               
               <h2 class="ui header" style="color: white;">正则表达式</h2>
@@ -934,7 +989,7 @@
       </div>
     </div>
     
-    <img src="/img/default4.jpg" alt="正则表达式">
+    <img src="/img/default2.jpg" alt="正则表达式">
     
   </div>
 </article>
@@ -968,7 +1023,7 @@
       </div>
     </div>
     
-    <img src="/img/default6.jpg" alt="Gulpfile">
+    <img src="/img/default2.jpg" alt="Gulpfile">
     
   </div>
 </article>
@@ -1002,7 +1057,7 @@
       </div>
     </div>
     
-    <img src="/img/default1.jpg" alt="JS小问题记录">
+    <img src="/img/default5.jpg" alt="JS小问题记录">
     
   </div>
 </article>
@@ -1073,41 +1128,7 @@
       </div>
     </div>
     
-    <img src="/img/default2.jpg" alt="Mysql问题">
-    
-  </div>
-</article>
-
-
-      
-
-        <article class="card" style="box-shadow: none;">
-  <div class="image">
-    
-    <div class="ui dimmer">
-    
-      <div class="content">
-        <div class="center">
-          
-          <div class="display-content">
-          
-            <a href="https://coderleftear.github.io/post/vue%E7%AC%94%E8%AE%B0-%E6%89%B9%E9%87%8F%E5%88%A0%E9%99%A4list%E4%B8%AD%E6%95%B0%E6%8D%AE/">
-              
-              <h2 class="ui header" style="color: white;">Vue笔记-批量删除list中数据</h2>
-              
-            </a>
-            <p style="padding: 5px;">Vue笔记 使用some方法查找需要删除的数据 this.list.some((item, i) =&gt; { if (item.id == id) { this.list.splice(i, 1) return true; } })  使用findIndex方法 var index = this.list.findIndex(item =&gt; { if (item.id == id){ return true; } }) this.list.splice(index, 1)  vue中增加一个搜索同步按钮功能 在vue中使用过滤器处理对应的数据；主要采用管道符’|’</p>
-            <p>@ CoderLeftEar</p>
-          </div>
-          
-          <div class="ui top right attached black label">1 min read</div>
-          <div class="ui bottom left attached black label">May 19, 2020</div>
-          
-        </div>
-      </div>
-    </div>
-    
-    <img src="/img/default2.jpg" alt="Vue笔记-批量删除list中数据">
+    <img src="/img/default4.jpg" alt="Mysql问题">
     
   </div>
 </article>

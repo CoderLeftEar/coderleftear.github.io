@@ -110,6 +110,8 @@
   
   <a class="ui label" href="/tags/docker" title="docker">docker</a>
   
+  <a class="ui label" href="/tags/echarts" title="echarts">echarts</a>
+  
   <a class="ui label" href="/tags/example" title="example">example</a>
   
   <a class="ui label" href="/tags/git" title="git">git</a>
@@ -198,6 +200,23 @@
         <i class="gem outline grey icon"></i>
         <div class="content">
           <a href="https://coderleftear.github.io/post/docker%E7%AC%94%E8%AE%B0/" class="item">Docker笔记</a>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+    
+    <div class="title">
+      <i class="dropdown icon"></i>
+      <a href="/categories/echarts" class="item">echarts</a>
+    </div>
+    <div class="content">
+      <div class="ui link list">
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="gem outline grey icon"></i>
+        <div class="content">
+          <a href="https://coderleftear.github.io/post/echarts%E7%AC%94%E8%AE%B0/" class="item">Echarts笔记</a>
         </div>
       </div>
       
@@ -920,6 +939,49 @@
           
           <div class="display-content">
           
+            <a href="https://coderleftear.github.io/post/mysql%E4%BA%8B%E5%8A%A1%E9%9A%94%E7%A6%BB/">
+              
+              <h2 class="ui header" style="color: white;">Mysql事务隔离</h2>
+              
+            </a>
+            <p style="padding: 5px;">MySQL事务隔离： 事务的并发问题 　1、脏读：事务A读取了事务B更新的数据，然后B回滚操作，那么A读取到的数据是脏数据。
+　2、不可重复读：事务 A 多次读取同一数据，事务 B 在事务A多次读取的过程中，对数据作了更新并提交，导致事务A多次读取同一数据时，结果 不一致。
+　3、幻读：系统管理员A将数据库中所有学生的成绩从具体分数改为ABCDE等级，但是系统管理员B就在这个时候插入了一条具体分数的记录，当系统管理员A改结束后发现还有一条记录没有改过来，就好像发生了幻觉一样，这就叫幻读。
+隔离级别：    事务隔离级别 脏读 不可重复读 幻读     读未提交（read-uncommitted） √ √ √   读已提交（read-committed） × √ √   可重复读（repeatable-read） × × √   串行化（serializable） × × ×    MySQL默认第三个：repeatable read
+Oracle默认第二个：read commited
+查看当前事务隔离级别：SELECT @@tx_isolation;
+设置当前MySQL链接的隔离级别：
+set session transaction isolation level read committed;
+设置数据库系统的全局隔离级别：
+set global transaction isolation level read committed;</p>
+            <p>@ CoderLeftEar</p>
+          </div>
+          
+          <div class="ui top right attached black label">1 min read</div>
+          <div class="ui bottom left attached black label">Oct 22, 2019</div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <img src="/img/default1.jpg" alt="Mysql事务隔离">
+    
+  </div>
+</article>
+
+
+      
+
+        <article class="card" style="box-shadow: none;">
+  <div class="image">
+    
+    <div class="ui dimmer">
+    
+      <div class="content">
+        <div class="center">
+          
+          <div class="display-content">
+          
             <a href="https://coderleftear.github.io/post/redis/">
               
               <h2 class="ui header" style="color: white;">Redis</h2>
@@ -938,7 +1000,7 @@
       </div>
     </div>
     
-    <img src="/img/default2.jpg" alt="Redis">
+    <img src="/img/default6.jpg" alt="Redis">
     
   </div>
 </article>
@@ -983,7 +1045,7 @@ sleep：握着锁去睡
       </div>
     </div>
     
-    <img src="/img/default5.jpg" alt="Java-JUC">
+    <img src="/img/default4.jpg" alt="Java-JUC">
     
   </div>
 </article>
@@ -1017,7 +1079,7 @@ sleep：握着锁去睡
       </div>
     </div>
     
-    <img src="/img/default3.jpg" alt="SpringAnnotation笔记04-SpringMVC">
+    <img src="/img/default1.jpg" alt="SpringAnnotation笔记04-SpringMVC">
     
   </div>
 </article>
@@ -1055,7 +1117,7 @@ c @HandlesTypes中指定的类型的所有子类 ctx 代表当前Web应用的Ser
       </div>
     </div>
     
-    <img src="/img/default3.jpg" alt="SpringAnnotation笔记03-Servlet30">
+    <img src="/img/default4.jpg" alt="SpringAnnotation笔记03-Servlet30">
     
   </div>
 </article>
@@ -1102,40 +1164,6 @@ c @HandlesTypes中指定的类型的所有子类 ctx 代表当前Web应用的Ser
     </div>
     
     <img src="/img/default6.jpg" alt="SpringAnnotation笔记02-AOP">
-    
-  </div>
-</article>
-
-
-      
-
-        <article class="card" style="box-shadow: none;">
-  <div class="image">
-    
-    <div class="ui dimmer">
-    
-      <div class="content">
-        <div class="center">
-          
-          <div class="display-content">
-          
-            <a href="https://coderleftear.github.io/post/jvm%E7%AC%94%E8%AE%B007-book01/">
-              
-              <h2 class="ui header" style="color: white;">JVM笔记07-Book01</h2>
-              
-            </a>
-            <p style="padding: 5px;"> JVM笔记07-Book01 </p>
-            <p>@ CoderLeftEar</p>
-          </div>
-          
-          <div class="ui top right attached black label">1 min read</div>
-          <div class="ui bottom left attached black label">Sep 30, 2019</div>
-          
-        </div>
-      </div>
-    </div>
-    
-    <img src="/img/default1.jpg" alt="JVM笔记07-Book01">
     
   </div>
 </article>

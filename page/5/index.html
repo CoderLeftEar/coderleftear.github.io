@@ -110,6 +110,8 @@
   
   <a class="ui label" href="/tags/docker" title="docker">docker</a>
   
+  <a class="ui label" href="/tags/echarts" title="echarts">echarts</a>
+  
   <a class="ui label" href="/tags/example" title="example">example</a>
   
   <a class="ui label" href="/tags/git" title="git">git</a>
@@ -198,6 +200,23 @@
         <i class="gem outline grey icon"></i>
         <div class="content">
           <a href="https://coderleftear.github.io/post/docker%E7%AC%94%E8%AE%B0/" class="item">Docker笔记</a>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+    
+    <div class="title">
+      <i class="dropdown icon"></i>
+      <a href="/categories/echarts" class="item">echarts</a>
+    </div>
+    <div class="content">
+      <div class="ui link list">
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="gem outline grey icon"></i>
+        <div class="content">
+          <a href="https://coderleftear.github.io/post/echarts%E7%AC%94%E8%AE%B0/" class="item">Echarts笔记</a>
         </div>
       </div>
       
@@ -920,6 +939,44 @@
           
           <div class="display-content">
           
+            <a href="https://coderleftear.github.io/post/%E6%8A%A5%E9%94%99-%E7%AC%94%E8%AE%B0-%E6%9D%82/">
+              
+              <h2 class="ui header" style="color: white;">笔记-杂</h2>
+              
+            </a>
+            <p style="padding: 5px;">笔记 mysql导入数据库出错 mysql导入备份数据时出错 ERROR 1204(HY000) unkonw MySQL server host。。。
+问题描述： 用mysqldump命令将数据库备份到外部文件，但是用mysql命令行导入备份数据时，出现ERROR 2005(HY000) unkonw MySQL server host…错误
+解决方法： 因为在平时工作中经常使用mysqldump命令导出备份数据，然后用mysql客户端命令行工具中的source命令导入数据，从来没有出过错，唯一的区别是字符集不同，这次要导入的数据库的字符集是utf8，所以就联想到是不是需要为mysql客户端命令行工具指定字符集，在查看了帮助后，用如下命令打开mysql客户端工具mysql -uroot -p –default-character-set=utf8，然后再导入备份数据，一切ok。
+单体开发：在一个项目上推挤所有功能
+微服务：将项目进行拆分，微小的单体模块，之间通过类似rpc远程过程调用，http rest方式调用</p>
+            <p>@ CoderLeftEar</p>
+          </div>
+          
+          <div class="ui top right attached black label">1 min read</div>
+          <div class="ui bottom left attached black label">Sep 15, 2019</div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <img src="/img/default6.jpg" alt="笔记-杂">
+    
+  </div>
+</article>
+
+
+      
+
+        <article class="card" style="box-shadow: none;">
+  <div class="image">
+    
+    <div class="ui dimmer">
+    
+      <div class="content">
+        <div class="center">
+          
+          <div class="display-content">
+          
             <a href="https://coderleftear.github.io/post/jvm%E7%AC%94%E8%AE%B003-%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%99%A803/">
               
               <h2 class="ui header" style="color: white;">JVM笔记03-类加载器03</h2>
@@ -938,7 +995,7 @@
       </div>
     </div>
     
-    <img src="/img/default5.jpg" alt="JVM笔记03-类加载器03">
+    <img src="/img/default3.jpg" alt="JVM笔记03-类加载器03">
     
   </div>
 </article>
@@ -972,7 +1029,7 @@
       </div>
     </div>
     
-    <img src="/img/default6.jpg" alt="DataStructure02-ArrayQueue">
+    <img src="/img/default2.jpg" alt="DataStructure02-ArrayQueue">
     
   </div>
 </article>
@@ -1042,7 +1099,7 @@
       </div>
     </div>
     
-    <img src="/img/default3.jpg" alt="JVM笔记02 类加载器02">
+    <img src="/img/default5.jpg" alt="JVM笔记02 类加载器02">
     
   </div>
 </article>
@@ -1079,43 +1136,7 @@ students.stream(). collect(Collectors.maxBy( Comparator.comparingInt(student -&g
       </div>
     </div>
     
-    <img src="/img/default4.jpg" alt="Jdk8-10-Stream笔记02">
-    
-  </div>
-</article>
-
-
-      
-
-        <article class="card" style="box-shadow: none;">
-  <div class="image">
-    
-    <div class="ui dimmer">
-    
-      <div class="content">
-        <div class="center">
-          
-          <div class="display-content">
-          
-            <a href="https://coderleftear.github.io/post/jdk8-09-method-reference/">
-              
-              <h2 class="ui header" style="color: white;">Jdk8-09-Method Reference</h2>
-              
-            </a>
-            <p style="padding: 5px;">method reference Student类：
-class Student { private String name; private int score; public static int compareStudentByName1(Student s1, Student s2) { return s1.getName().compareTo(s2.getName()); } public static int compareStudentByScore1(Student s1, Student s2) { return s1.getScore() - s2.getScore(); } public static int compareStudentByName2(Student s1, Student s2) { return s1.getName().compareTo(s2.getName()); } public static int compareStudentByScore2(Student s1, Student s2) { return s1.getScore() - s2.getScore(); } }  Student1类：
-class Student1 { public int compareStudentByName(Student s1, Student s2) { return s1.</p>
-            <p>@ CoderLeftEar</p>
-          </div>
-          
-          <div class="ui top right attached black label">2 min read</div>
-          <div class="ui bottom left attached black label">Sep 2, 2019</div>
-          
-        </div>
-      </div>
-    </div>
-    
-    <img src="/img/default3.jpg" alt="Jdk8-09-Method Reference">
+    <img src="/img/default1.jpg" alt="Jdk8-10-Stream笔记02">
     
   </div>
 </article>
