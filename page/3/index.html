@@ -881,6 +881,13 @@
       <div class="item" style="padding-left: 24px;">
         <i class="gem outline grey icon"></i>
         <div class="content">
+          <a href="https://coderleftear.github.io/post/001-%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/" class="item">001 单例模式</a>
+        </div>
+      </div>
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="gem outline grey icon"></i>
+        <div class="content">
           <a href="https://coderleftear.github.io/post/002-%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/" class="item">001-大话设计模式-单例模式</a>
         </div>
       </div>
@@ -939,6 +946,48 @@
           
           <div class="display-content">
           
+            <a href="https://coderleftear.github.io/post/linux/">
+              
+              <h2 class="ui header" style="color: white;">Linux</h2>
+              
+            </a>
+            <p style="padding: 5px;">Linux 一、文件系统的管理 tips:输入命令的时候要常用tab键来补全
+ls 查看目录信息 （ ls / ）
+ls -l 等价于 ll  路径的表示方法有“相对”和“绝对” 比如如果当前所处目录为 /home/renwoxing，要查看/home目录下的信息，可以有两种方法： ls ../ ls /home
+pwd 查看当前所处目录的绝对路径
+cd 切换目录 (cd /) ,如果不带参数则切换到用户主目录 ~
+mkdir 创建文件夹 mkdir -p a/b/c 如果要创建的文件夹的父目录不存在，则自动创建
+rmdir 删除空文件夹 (只能删除空文件夹) rm -r /a/b (删除非空文件夹) 删除文件 rm filename (rm -r 删除文件夹 rm -rf 强制删除文件或文件夹)
+创建文件 touch a.avi 创建一个空文件 vi blabla.txt 用文本编辑器编辑一个文件并且保存 echo “angelababy,zhen de hen xihuan ni” &gt; qingshu.txt 把左边的输出放到右边的文件里去
+移动文件 修改文件名 mv a/wenjian1.</p>
+            <p>@ CoderLeftEar</p>
+          </div>
+          
+          <div class="ui top right attached black label">3 min read</div>
+          <div class="ui bottom left attached black label">Oct 22, 2019</div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <img src="/img/default5.jpg" alt="Linux">
+    
+  </div>
+</article>
+
+
+      
+
+        <article class="card" style="box-shadow: none;">
+  <div class="image">
+    
+    <div class="ui dimmer">
+    
+      <div class="content">
+        <div class="center">
+          
+          <div class="display-content">
+          
             <a href="https://coderleftear.github.io/post/mysql%E4%BA%8B%E5%8A%A1%E9%9A%94%E7%A6%BB/">
               
               <h2 class="ui header" style="color: white;">Mysql事务隔离</h2>
@@ -964,7 +1013,7 @@ set global transaction isolation level read committed;</p>
       </div>
     </div>
     
-    <img src="/img/default1.jpg" alt="Mysql事务隔离">
+    <img src="/img/default4.jpg" alt="Mysql事务隔离">
     
   </div>
 </article>
@@ -1000,7 +1049,7 @@ set global transaction isolation level read committed;</p>
       </div>
     </div>
     
-    <img src="/img/default6.jpg" alt="Redis">
+    <img src="/img/default5.jpg" alt="Redis">
     
   </div>
 </article>
@@ -1045,7 +1094,7 @@ sleep：握着锁去睡
       </div>
     </div>
     
-    <img src="/img/default4.jpg" alt="Java-JUC">
+    <img src="/img/default3.jpg" alt="Java-JUC">
     
   </div>
 </article>
@@ -1118,52 +1167,6 @@ c @HandlesTypes中指定的类型的所有子类 ctx 代表当前Web应用的Ser
     </div>
     
     <img src="/img/default4.jpg" alt="SpringAnnotation笔记03-Servlet30">
-    
-  </div>
-</article>
-
-
-      
-
-        <article class="card" style="box-shadow: none;">
-  <div class="image">
-    
-    <div class="ui dimmer">
-    
-      <div class="content">
-        <div class="center">
-          
-          <div class="display-content">
-          
-            <a href="https://coderleftear.github.io/post/springannotation%E7%AC%94%E8%AE%B002-aop/">
-              
-              <h2 class="ui header" style="color: white;">SpringAnnotation笔记02-AOP</h2>
-              
-            </a>
-            <p style="padding: 5px;">SpringAnnotation笔记02-AOP 环绕通知相关  导入aop所需jar包
- 定义一个业务逻辑类，定义除法运算方法
- 定义一个切面类：
- 前置通知(@Before)：logStart：在目标方法(div)运行之前运行
- 后置通知(@After)：在目标方法(div)运行结束之后运行（无论方法正常结束还是异常结束）
- 返回通知(@AfterReturning)：在目标方法(div)正常返回之后运行
- 异常通知(@AfterThrowing)：在目标方法(div)出现异常以后运行
- 环绕通知(@Around)：动态代理，手动推进目标方法运行
-  将业务逻辑类和切面类都添加到配置类中
- 给切面类标注@Aspect注解
- 在配置类上标注【开启基于注解的aop模式】@EnableAspectJAutoProxy（使用@Aspect注释标记的组件，类似于Spring中xml配置文件中的）
-  切面类：通过JoinPoint joinPoint，Exception exception，Object result等参数获取方法名称、异常、返回值等。
-//告诉容器这个类是一个切面类 @Aspect public class AspectSurrounding { //抽取公共切入点 @Pointcut(&#34;execution(public int com.wang.springannotation.aop.Calculator.*(..))&#34;) public void pointCut() {} //在目标方法之前切入 @Before(&#34;execution(public int com.wang.springannotation.aop.Calculator.*(..))&#34;) // @Before(&#34;pointCut()&#34;) public void brforeLog(JoinPoint joinPoint) { Object[] args = joinPoint.getArgs(); System.out.println(&#34;前置通知...&#34; &#43; joinPoint.getSignature().getName() &#43; &#34;...@Before参数表：&#34; &#43; &#34;{&#34;&#43;args&#43;&#34;}&#34;); } //在目标方法运行结束之后切入（无论正常结束还是异常结束） @After(&#34;com.</p>
-            <p>@ CoderLeftEar</p>
-          </div>
-          
-          <div class="ui top right attached black label">2 min read</div>
-          <div class="ui bottom left attached black label">Oct 10, 2019</div>
-          
-        </div>
-      </div>
-    </div>
-    
-    <img src="/img/default6.jpg" alt="SpringAnnotation笔记02-AOP">
     
   </div>
 </article>

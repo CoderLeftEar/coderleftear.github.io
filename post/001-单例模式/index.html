@@ -6,17 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>
-笔记-杂
+001 单例模式
 </title>
 
   
   
   <meta name="author" content="CoderLeftEar" />
-  <meta name="description" content="笔记 mysql导入数据库出错 mysql导入备份数据时出错 ERROR 1204(HY000) unkonw MySQL server host。。。
-问题描述： 用mysqldump命令将数据库备份到外部文件，但是用mysql命令行导入备份数据时，出现ERROR 2005(HY000) unkonw MySQL server host…错误
-解决方法： 因为在平时工作中经常使用mysqldump命令导出备份数据，然后用mysql客户端命令行工具中的source命令导入数据，从来没有出过错，唯一的区别是字符集不同，这次要导入的数据库的字符集是utf8，所以就联想到是不是需要为mysql客户端命令行工具指定字符集，在查看了帮助后，用如下命令打开mysql客户端工具mysql -uroot -p –default-character-set=utf8，然后再导入备份数据，一切ok。
-单体开发：在一个项目上推挤所有功能
-微服务：将项目进行拆分，微小的单体模块，之间通过类似rpc远程过程调用，http rest方式调用" />
+  <meta name="description" content="单例模式 枚举单例： package dp2.singleton; import java.util.concurrent.TimeUnit; /** * 懒汉式：双重检测锁模式 * * @Class Singleton01 * @Description TODO * @Author LeftEar * @Date 20/4/28 22:49 * @Version 1.0 */ public class Singleton02 { private Singleton02 () {} /** * 内部枚举 */ enum SingletonEnum { /** * 枚举对象，天生为单例 */ INSTANCE; private Singleton02 singleton02; SingletonEnum () { singleton02 = new Singleton02(); } public Singleton02 getInstance () { return singleton02; } } // 对外暴露的方法 public static Singleton02 getInstance() { return SingletonEnum." />
 
 
 
@@ -25,7 +21,7 @@
 <meta name="generator" content="Hugo 0.55.6" />
 
 
-<link rel="canonical" href="https://coderleftear.github.io/post/%E6%8A%A5%E9%94%99-%E7%AC%94%E8%AE%B0-%E6%9D%82/" />
+<link rel="canonical" href="https://coderleftear.github.io/post/001-%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/" />
 <link rel="alternative" href="/index.xml" title="CoderLeftEar&#39;s Blog" type="application/atom+xml" />
 
 <link href="/css/semantic.min.css" rel="stylesheet" />
@@ -64,39 +60,76 @@
       </a>
       <header>
         <h1 class="ui header">
-          笔记-杂
+          001 单例模式
           <div class="sub header">
-		  @ CoderLeftEar · 2019-09-15 10:54:19
+		  @ CoderLeftEar · 2020-06-27 21:26:41
 
 		  </div>
         </h1>
       </header>
       <article class="markdown-body" style="margin-top: 2rem; font-size: 1.4rem;">
 
-<h1 id="笔记">笔记</h1>
+<h1 id="单例模式">单例模式</h1>
 
-<hr />
+<p><img src="http://pic.netbian.com/uploads/allimg/180826/113958-153525479855be.jpg" alt="" /></p>
 
-<h3 id="mysql导入数据库出错">mysql导入数据库出错</h3>
+<h2 id="枚举单例">枚举单例：</h2>
 
-<p>mysql导入备份数据时出错 ERROR 1204(HY000) unkonw MySQL server host。。。</p>
+<pre><code class="language-java">package dp2.singleton;
 
-<p>问题描述：
-用mysqldump命令将数据库备份到外部文件，但是用mysql命令行导入备份数据时，出现ERROR 2005(HY000) unkonw MySQL server host…错误</p>
+import java.util.concurrent.TimeUnit;
 
-<p>解决方法：
-因为在平时工作中经常使用mysqldump命令导出备份数据，然后用mysql客户端命令行工具中的source命令导入数据，从来没有出过错，唯一的区别是字符集不同，这次要导入的数据库的字符集是utf8，所以就联想到是不是需要为mysql客户端命令行工具指定字符集，在查看了帮助后，用如下命令打开mysql客户端工具mysql -uroot -p –default-character-set=utf8，然后再导入备份数据，一切ok。</p>
+/**
+ * 懒汉式：双重检测锁模式
+ *
+ * @Class Singleton01
+ * @Description TODO
+ * @Author LeftEar
+ * @Date 20/4/28 22:49
+ * @Version 1.0
+ */
+public class Singleton02 {
+    private Singleton02 () {}
+    /**
+     * 内部枚举
+     */
+    enum SingletonEnum {
+        /**
+         * 枚举对象，天生为单例
+         */
+        INSTANCE;
+        
+        private Singleton02 singleton02;
+        
+        SingletonEnum () {
+            singleton02 = new Singleton02();
+        }
+        
+        public Singleton02 getInstance () {
+            return singleton02;
+        }
+    }
+	// 对外暴露的方法
+    public static Singleton02 getInstance() {
+        return SingletonEnum.INSTANCE.getInstance();
+    }
 
-<p>单体开发：在一个项目上推挤所有功能</p>
+    // 简单测试
+    public static void main(String[] args) {
+        for (int i = 0; i &lt; 50; i++) {
+            new Thread(() -&gt; System.out.println(Thread.currentThread().getName() + &quot;------&gt;&quot; + Singleton02.getInstance().hashCode())).start();
+        }
+    }
+}
 
-<p>微服务：将项目进行拆分，微小的单体模块，之间通过类似rpc远程过程调用，http rest方式调用</p>
+</code></pre>
 </article>
     </section>
 
     <footer class="ui attached segment dream-tags">
       
       
-      <a class="ui label" href="/tags/%E7%AC%94%E8%AE%B0" title="笔记">笔记</a>
+      <a class="ui label" href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F" title="设计模式">设计模式</a>
       
       
     </footer>

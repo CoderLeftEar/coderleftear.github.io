@@ -6,10 +6,19 @@
     <description>Recent content in 设计模式 on CoderLeftEar&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 02 Jul 2019 18:11:32 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 27 Jun 2020 21:26:41 +0800</lastBuildDate>
     
 	<atom:link href="https://coderleftear.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>001 单例模式</title>
+      <link>https://coderleftear.github.io/post/001-%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</link>
+      <pubDate>Sat, 27 Jun 2020 21:26:41 +0800</pubDate>
+      
+      <guid>https://coderleftear.github.io/post/001-%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</guid>
+      <description>单例模式 枚举单例： package dp2.singleton; import java.util.concurrent.TimeUnit; /** * 懒汉式：双重检测锁模式 * * @Class Singleton01 * @Description TODO * @Author LeftEar * @Date 20/4/28 22:49 * @Version 1.0 */ public class Singleton02 { private Singleton02 () {} /** * 内部枚举 */ enum SingletonEnum { /** * 枚举对象，天生为单例 */ INSTANCE; private Singleton02 singleton02; SingletonEnum () { singleton02 = new Singleton02(); } public Singleton02 getInstance () { return singleton02; } } // 对外暴露的方法 public static Singleton02 getInstance() { return SingletonEnum.</description>
+    </item>
     
     <item>
       <title>001-大话设计模式-单例模式</title>

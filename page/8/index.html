@@ -881,6 +881,13 @@
       <div class="item" style="padding-left: 24px;">
         <i class="gem outline grey icon"></i>
         <div class="content">
+          <a href="https://coderleftear.github.io/post/001-%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/" class="item">001 单例模式</a>
+        </div>
+      </div>
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="gem outline grey icon"></i>
+        <div class="content">
           <a href="https://coderleftear.github.io/post/002-%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/" class="item">001-大话设计模式-单例模式</a>
         </div>
       </div>
@@ -927,6 +934,48 @@
 
     <div class="ui two stackable cards">
       
+      
+
+        <article class="card" style="box-shadow: none;">
+  <div class="image">
+    
+    <div class="ui dimmer">
+    
+      <div class="content">
+        <div class="center">
+          
+          <div class="display-content">
+          
+            <a href="https://coderleftear.github.io/post/git%E7%AC%94%E8%AE%B007-git%E8%BF%9C%E7%A8%8Bgithub%E5%92%8C%E5%85%AC%E7%A7%81%E9%92%A5/">
+              
+              <h2 class="ui header" style="color: white;">Git笔记07-git远程、GitHub和公私钥</h2>
+              
+            </a>
+            <p style="padding: 5px;">Git笔记07-git远程、GitHub和公私钥 添加到远程，别名为origin的https://github.com/Mr-WangG/gitTest.git：
+git remote add origin https://github.com/Mr-WangG/gitTest.git
+将master推送到origin并建立联系：
+git push -u origin master
+所有远程仓库的别名：
+git remote show
+显示具体的远程仓库信息：
+git remote show origin
+$ git remote show origin * remote origin Fetch URL: https://github.com/Mr-WangG/gitTest.git Push URL: https://github.com/Mr-WangG/gitTest.git HEAD branch: master Remote branch: master tracked Local branch configured for &#39;git pull&#39;: master merges with remote master Local ref configured for &#39;git push&#39;: master pushes to master (up to date)  公钥、私钥：</p>
+            <p>@ CoderLeftEar</p>
+          </div>
+          
+          <div class="ui top right attached black label">2 min read</div>
+          <div class="ui bottom left attached black label">Aug 12, 2019</div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <img src="/img/default1.jpg" alt="Git笔记07-git远程、GitHub和公私钥">
+    
+  </div>
+</article>
+
+
       
 
         <article class="card" style="box-shadow: none;">
@@ -1062,7 +1111,7 @@ stash 临时存储： &gt; git stash
       </div>
     </div>
     
-    <img src="/img/default2.jpg" alt="Jdk8-08-Stream笔记01">
+    <img src="/img/default5.jpg" alt="Jdk8-08-Stream笔记01">
     
   </div>
 </article>
@@ -1101,7 +1150,7 @@ System.out.println(binaryOperatorTest.operatorFunMin(&#34;abbbbbb&#34;, &#34;bbb
       </div>
     </div>
     
-    <img src="/img/default3.jpg" alt="Jdk8-07-BinaryOperator">
+    <img src="/img/default4.jpg" alt="Jdk8-07-BinaryOperator">
     
   </div>
 </article>
@@ -1136,50 +1185,7 @@ List&lt;String&gt; list = Arrays.asList(&#34;a&#34;, &#34;b&#34;, &#34;c&#34;, &
       </div>
     </div>
     
-    <img src="/img/default4.jpg" alt="Jdk8-02-Consumer">
-    
-  </div>
-</article>
-
-
-      
-
-        <article class="card" style="box-shadow: none;">
-  <div class="image">
-    
-    <div class="ui dimmer">
-    
-      <div class="content">
-        <div class="center">
-          
-          <div class="display-content">
-          
-            <a href="https://coderleftear.github.io/post/jdk8-04-optional/">
-              
-              <h2 class="ui header" style="color: white;">Jdk8-04-Optional</h2>
-              
-            </a>
-            <p style="padding: 5px;">Optional Optional：主要解决空指针异常。使用of()、ofNullable()创建包含值的optional。
-of()：传入null，会报空指针异常。 ofNullable()：可以穿null，不会报异常。
- Optional optional = Optional.ofNullable(“hello”);
- 使用isPresent方法判断optional是否为空，和传统做法差不多，不推荐使用。
-if(optional.isPresent()) { System.out.println(optional.get()); }  推荐使用此种方法
-optional.ifPresent(item -&gt; System.out.println(item));  orElse：如果optional中有值，返回该值，否则返回orElse中的值。
-orElseGet：如果optional中有值，返回该值，它会执行作为参数传入Supplier函数式接口，并返回结果。
-System.out.println(optional.orElse(&#34;world&#34;)); System.out.println(optional.orElseGet(() -&gt; &#34;hahaha&#34;));  雇员和公司类：
-@Data @AllArgsConstructor class Employee{ private String name; } @Data @AllArgsConstructor class Company{ private String name; private List&lt;Employee&gt; employees; public Company(String name) { this.name = name; } }  传统方法 –&gt; 判断Company中的employee是否有值
-Employee emp1 = new Employee(&#34;zhangsan&#34;); Employee emp2 = new Employee(&#34;lisi&#34;); Company c = new Company(&#34;haha&#34;); //员工集合 List&lt;Employee&gt; employees = Arrays.</p>
-            <p>@ CoderLeftEar</p>
-          </div>
-          
-          <div class="ui top right attached black label">1 min read</div>
-          <div class="ui bottom left attached black label">Aug 9, 2019</div>
-          
-        </div>
-      </div>
-    </div>
-    
-    <img src="/img/default5.jpg" alt="Jdk8-04-Optional">
+    <img src="/img/default5.jpg" alt="Jdk8-02-Consumer">
     
   </div>
 </article>
