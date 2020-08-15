@@ -624,14 +624,14 @@ category | Linux
       <div class="item" style="padding-left: 24px;">
         <i class="gem outline grey icon"></i>
         <div class="content">
-          <a href="https://coderleftear.github.io/post/linux/" class="item">Linux</a>
+          <a href="https://coderleftear.github.io/post/linux%E5%AE%89%E8%A3%85tomcatmysql/" class="item">Linux安装tomcat、mysql</a>
         </div>
       </div>
       
       <div class="item" style="padding-left: 24px;">
         <i class="gem outline grey icon"></i>
         <div class="content">
-          <a href="https://coderleftear.github.io/post/linux%E5%AE%89%E8%A3%85tomcatmysql/" class="item">Linux安装tomcat、mysql</a>
+          <a href="https://coderleftear.github.io/post/linux/" class="item">Linux</a>
         </div>
       </div>
       
@@ -963,6 +963,48 @@ category | Linux
           
           <div class="display-content">
           
+            <a href="https://coderleftear.github.io/post/linux%E5%AE%89%E8%A3%85tomcatmysql/">
+              
+              <h2 class="ui header" style="color: white;">Linux安装tomcat、mysql</h2>
+              
+            </a>
+            <p style="padding: 5px;">Linux安装tomcat、mysql linux上安装mysql5.7 1、下载tar包，这里使用wget从官网下载 wget https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.22-linux-glibc2.12-x86_64.tar.gz
+2、将mysql安装到/usr/local/mysql下  解压   tar -xvf mysql-5.7.22-linux-glibc2.12-x86_64.tar.gz
+  移动   mv mysql-5.7.22-linux-glibc2.12-x86_64 /usr/local/
+  重命名  mv /usr/local/mysql-5.7.22-linux-glibc2.12-x86_64 /usr/local/mysql
+3、新建data目录  mkdir /usr/local/mysql/data
+ 4、新建mysql用户、mysql用户组 # mysql用户组 groupadd mysql # mysql用户 useradd mysql -g mysql  5、将/usr/local/mysql的所有者及所属组改为mysql  chown -R mysql.mysql /usr/local/mysql
+ 6、配置  /usr/local/mysql/bin/mysql_install_db –user=mysql –basedir=/usr/local/mysql/ –datadir=/usr/local/mysql/data
+  如果出现以下错误：
+2018-07-14 06:40:32 [WARNING] mysql_install_db is deprecated. Please consider switching to mysqld --initialize 2018-07-14 06:40:32 [ERROR] Child process: /usr/local/mysql/bin/mysqldterminated prematurely with errno= 32 2018-07-14 06:40:32 [ERROR] Failed to execute /usr/local/mysql/bin/mysqld --bootstrap --datadir=/usr/local/mysql/data --lc-messages-dir=/usr/local/mysql/share --lc-messages=en_US --basedir=/usr/local/mysql -- server log begin -- -- server log end --  则使用以下命令：</p>
+            <p>@ CoderLeftEar</p>
+          </div>
+          
+          <div class="ui top right attached black label">3 min read</div>
+          <div class="ui bottom left attached black label">Aug 15, 2020</div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <img src="/img/default1.jpg" alt="Linux安装tomcat、mysql">
+    
+  </div>
+</article>
+
+
+      
+
+        <article class="card" style="box-shadow: none;">
+  <div class="image">
+    
+    <div class="ui dimmer">
+    
+      <div class="content">
+        <div class="center">
+          
+          <div class="display-content">
+          
             <a href="https://coderleftear.github.io/post/linux/">
               
               <h2 class="ui header" style="color: white;">Linux</h2>
@@ -987,49 +1029,7 @@ rmdir 删除空文件夹 (只能删除空文件夹) rm -r /a/b (删除非空文�
       </div>
     </div>
     
-    <img src="/img/default1.jpg" alt="Linux">
-    
-  </div>
-</article>
-
-
-      
-
-        <article class="card" style="box-shadow: none;">
-  <div class="image">
-    
-    <div class="ui dimmer">
-    
-      <div class="content">
-        <div class="center">
-          
-          <div class="display-content">
-          
-            <a href="https://coderleftear.github.io/post/linux%E5%AE%89%E8%A3%85tomcatmysql/">
-              
-              <h2 class="ui header" style="color: white;">Linux安装tomcat、mysql</h2>
-              
-            </a>
-            <p style="padding: 5px;">Linux安装tomcat、mysql linux上安装mysql5.7 1、下载tar包，这里使用wget从官网下载 wget https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.22-linux-glibc2.12-x86_64.tar.gz
-2、将mysql安装到/usr/local/mysql下  解压   tar -xvf mysql-5.7.22-linux-glibc2.12-x86_64.tar.gz
-  移动   mv mysql-5.7.22-linux-glibc2.12-x86_64 /usr/local/
-  重命名  mv /usr/local/mysql-5.7.22-linux-glibc2.12-x86_64 /usr/local/mysql
-3、新建data目录  mkdir /usr/local/mysql/data
- 4、新建mysql用户、mysql用户组 # mysql用户组 groupadd mysql # mysql用户 useradd mysql -g mysql  5、将/usr/local/mysql的所有者及所属组改为mysql  chown -R mysql.mysql /usr/local/mysql
- 6、配置  /usr/local/mysql/bin/mysql_install_db –user=mysql –basedir=/usr/local/mysql/ –datadir=/usr/local/mysql/data
-  如果出现以下错误：
-2018-07-14 06:40:32 [WARNING] mysql_install_db is deprecated. Please consider switching to mysqld --initialize 2018-07-14 06:40:32 [ERROR] Child process: /usr/local/mysql/bin/mysqldterminated prematurely with errno= 32 2018-07-14 06:40:32 [ERROR] Failed to execute /usr/local/mysql/bin/mysqld --bootstrap --datadir=/usr/local/mysql/data --lc-messages-dir=/usr/local/mysql/share --lc-messages=en_US --basedir=/usr/local/mysql -- server log begin -- -- server log end --  则使用以下命令：</p>
-            <p>@ CoderLeftEar</p>
-          </div>
-          
-          <div class="ui top right attached black label">3 min read</div>
-          <div class="ui bottom left attached black label">Oct 22, 2019</div>
-          
-        </div>
-      </div>
-    </div>
-    
-    <img src="/img/default6.jpg" alt="Linux安装tomcat、mysql">
+    <img src="/img/default2.jpg" alt="Linux">
     
   </div>
 </article>
