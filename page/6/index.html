@@ -514,6 +514,13 @@
       <div class="item" style="padding-left: 24px;">
         <i class="gem outline grey icon"></i>
         <div class="content">
+          <a href="https://coderleftear.github.io/post/js%E8%B7%A8%E5%9F%9F/" class="item">JS跨域</a>
+        </div>
+      </div>
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="gem outline grey icon"></i>
+        <div class="content">
           <a href="https://coderleftear.github.io/post/js%E5%B0%8F%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/" class="item">JS小问题记录</a>
         </div>
       </div>
@@ -615,6 +622,13 @@
         <i class="gem outline grey icon"></i>
         <div class="content">
           <a href="https://coderleftear.github.io/post/linux/" class="item">Linux</a>
+        </div>
+      </div>
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="gem outline grey icon"></i>
+        <div class="content">
+          <a href="https://coderleftear.github.io/post/linux%E5%AE%89%E8%A3%85tomcatmysql/" class="item">Linux安装tomcat、mysql</a>
         </div>
       </div>
       
@@ -946,6 +960,76 @@
           
           <div class="display-content">
           
+            <a href="https://coderleftear.github.io/post/datastructure01-sparsearray/">
+              
+              <h2 class="ui header" style="color: white;">DataStructure01-SparseArray</h2>
+              
+            </a>
+            <p style="padding: 5px;">DataStructure01-SparseArray 原始数组: 创建的放置棋子的数组棋盘
+//定义棋盘数组 int[][] arr = new int[11][11]; //定义总棋子个数 int sum = 0; //赋值 //0表示无子，1表示黑子，2表示白子 arr[1][0] = 1; arr[2][1] = 2; arr[3][2] = 2; //循环遍历 for (int i = 0; i &lt; arr.length; i &#43;&#43;) { for (int j = 0; j &lt; arr[0].length; j &#43;&#43;) { System.out.print(arr[i][j] &#43; &#34;\t&#34;); //System.out.printf(&#34;%d\t&#34;, arr[i][j]); //判断是否是棋子，是就将sum&#43;&#43; if (arr[i][j] != 0) { sum &#43;&#43;; } } System.out.println(); } System.out.println(&#34;总数：&#34; &#43; sum);  稀疏数组: 将普通二维数组转化为稀疏数组</p>
+            <p>@ CoderLeftEar</p>
+          </div>
+          
+          <div class="ui top right attached black label">3 min read</div>
+          <div class="ui bottom left attached black label">Sep 3, 2019</div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <img src="/img/default3.jpg" alt="DataStructure01-SparseArray">
+    
+  </div>
+</article>
+
+
+      
+
+        <article class="card" style="box-shadow: none;">
+  <div class="image">
+    
+    <div class="ui dimmer">
+    
+      <div class="content">
+        <div class="center">
+          
+          <div class="display-content">
+          
+            <a href="https://coderleftear.github.io/post/jvm%E7%AC%94%E8%AE%B002-%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%99%A802/">
+              
+              <h2 class="ui header" style="color: white;">JVM笔记02 类加载器02</h2>
+              
+            </a>
+            <p style="padding: 5px;">类加载  类加载过程 类的加载  有两种类型的类加载器 类加载器并不需要等到某个类被“首次主动使用”是再加载它。  连接  类的连接 类的准备  类的初始化  类的初始化步骤 类初始化的时机  类加载器的加载、加载器种类及类加载器的关系 类加载器的双亲委托机制  案例：  双亲委托机制案例： ClassLoader源码 自定义类加载器 引入命名空间 命名空间 类的卸载  案例：    类加载 类加载过程 类的加载  类的加载的最终产品是位于内存中的Class对象 Class对象封装了类在方法区内的数据结构，并且向Java程序员提供了访问方法区内的数据结构的接口。  有两种类型的类加载器  Java虚拟机自带的加载器  根类加载器（启动类加载器）（BootStrap） 扩展类加载器（Extension） 系统（应用）类加载器（System / App）  用户自定义的类加载器  一定是java.lang.ClassLoader（抽象类）的子类 用户可以定制类的加载方式   类加载器并不需要等到某个类被“首次主动使用”是再加载它。  JVM规范允许类加载器在预料某个类将要被使用时就加载它，如果在预知加载过程中遇到了.class文件缺失或存在错误，类加载器必须在程序首次主动使用该类是才报告错误（LinkageError错误） 如果这个类一直没有被程序主动使用，那么来加载器就不会报告错误。  连接 类的连接  类被加载后，就进入连接阶段。连接就是将已经读入到内存中的二进制数据合并到虚拟机的运行时环境中去。
+ 类的验证的内容（主要部分）：</p>
+            <p>@ CoderLeftEar</p>
+          </div>
+          
+          <div class="ui top right attached black label">5 min read</div>
+          <div class="ui bottom left attached black label">Sep 3, 2019</div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <img src="/img/default6.jpg" alt="JVM笔记02 类加载器02">
+    
+  </div>
+</article>
+
+
+      
+
+        <article class="card" style="box-shadow: none;">
+  <div class="image">
+    
+    <div class="ui dimmer">
+    
+      <div class="content">
+        <div class="center">
+          
+          <div class="display-content">
+          
             <a href="https://coderleftear.github.io/post/jdk8-10-stream%E7%AC%94%E8%AE%B002/">
               
               <h2 class="ui header" style="color: white;">Jdk8-10-Stream笔记02</h2>
@@ -965,7 +1049,7 @@ students.stream(). collect(Collectors.maxBy( Comparator.comparingInt(student -&g
       </div>
     </div>
     
-    <img src="/img/default2.jpg" alt="Jdk8-10-Stream笔记02">
+    <img src="/img/default3.jpg" alt="Jdk8-10-Stream笔记02">
     
   </div>
 </article>
@@ -1001,7 +1085,7 @@ class Student1 { public int compareStudentByName(Student s1, Student s2) { retur
       </div>
     </div>
     
-    <img src="/img/default6.jpg" alt="Jdk8-09-Method Reference">
+    <img src="/img/default4.jpg" alt="Jdk8-09-Method Reference">
     
   </div>
 </article>
@@ -1042,7 +1126,7 @@ class Student1 { public int compareStudentByName(Student s1, Student s2) { retur
       </div>
     </div>
     
-    <img src="/img/default3.jpg" alt="JVM笔记01-类加载器01">
+    <img src="/img/default1.jpg" alt="JVM笔记01-类加载器01">
     
   </div>
 </article>
@@ -1076,87 +1160,7 @@ class Student1 { public int compareStudentByName(Student s1, Student s2) { retur
       </div>
     </div>
     
-    <img src="/img/default5.jpg" alt="Git笔记15-git rebase原理深度剖析">
-    
-  </div>
-</article>
-
-
-      
-
-        <article class="card" style="box-shadow: none;">
-  <div class="image">
-    
-    <div class="ui dimmer">
-    
-      <div class="content">
-        <div class="center">
-          
-          <div class="display-content">
-          
-            <a href="https://coderleftear.github.io/post/git%E7%AC%94%E8%AE%B014-git-cherry-pick/">
-              
-              <h2 class="ui header" style="color: white;">Git笔记14-git cherry-pick</h2>
-              
-            </a>
-            <p style="padding: 5px;">Git笔记14-git cherry-pick git cherry-pick git cherry-pick：错误的在dev分支比master分支比多两个提交
-master: commit 04f05f3a7076f38ccacb5cd544727d108599ff39 (HEAD -&gt; master) Author: zhangsan &lt;zhangsan@git.com&gt; Date: Sun Aug 18 22:41:08 2019 &#43;0800 initial commit ============================================== dev: commit a84738c41b782e33e00fd6491e0e7e523bd18c97 (HEAD -&gt; dev) Author: zhangsan &lt;zhangsan@git.com&gt; Date: Sun Aug 18 22:42:35 2019 &#43;0800 add hello3 commit c5ea82c4dde3277efa9b4640131681f0ce7f1f04 Author: zhangsan &lt;zhangsan@git.com&gt; Date: Sun Aug 18 22:42:03 2019 &#43;0800 add hello2 commit 04f05f3a7076f38ccacb5cd544727d108599ff39 (master) Author: zhangsan &lt;zhangsan@git.com&gt; Date: Sun Aug 18 22:41:08 2019 &#43;0800 initial commit  在master上使用git cherry-pick c5ea82可将在dev分支上提交到的所有信息在当前master上再次执行，但不能跳过执行，不能直接执行git cherry-pick a84738，会报冲突错误，需手动排除冲突</p>
-            <p>@ CoderLeftEar</p>
-          </div>
-          
-          <div class="ui top right attached black label">1 min read</div>
-          <div class="ui bottom left attached black label">Aug 17, 2019</div>
-          
-        </div>
-      </div>
-    </div>
-    
-    <img src="/img/default3.jpg" alt="Git笔记14-git cherry-pick">
-    
-  </div>
-</article>
-
-
-      
-
-        <article class="card" style="box-shadow: none;">
-  <div class="image">
-    
-    <div class="ui dimmer">
-    
-      <div class="content">
-        <div class="center">
-          
-          <div class="display-content">
-          
-            <a href="https://coderleftear.github.io/post/git%E7%AC%94%E8%AE%B013-git-subtree/">
-              
-              <h2 class="ui header" style="color: white;">Git笔记13-Git Subtree</h2>
-              
-            </a>
-            <p style="padding: 5px;">Git笔记13-Git Subtree git subtree:
-添加远程项目设置别名subtree-origin：
-&gt; git reomte add subtree-origin git@github.com:Mr-WangG/git_subtree_child.git
-从subtree-origin的master中克隆项目，
--squash：将所需要依赖的所有分支的所有提交合并为一个提交，这个提交再与当前subtree-origin分支合并又发生一次提交(–prefix=subtree / –prefix subtree / -P subtree)
-&gt; git subtree add –prefix=subtree subtree-origin master (-squash)
-从subtree-origin拉取到subtree中：
-&gt; git subtree pull –prefix=subtree subtree-origin master
-在git_subtree_parent中，使用***可将依赖的项目进行修改并push到git_subtree_parent和git_subtree_child中，直接进行修改：
-&gt; git subtree push –prefix=subtree subtree-origin master
-出现一下错误：可以采用以下方法，能解决部分
-error: failed to push some refs to &#39;git@github.com:Mr-WangG/git_subtree_child.git&#39; hint: hint: ***  git pull origin master git pull --rebase origin master git push --set-upstream origin master  原因是远程与本地不一致导致的 使用git pull –rebase origin master: 意思是将远程更新到合并到本地中，–rebase作用是取消本地中刚刚的commit，并临时保存到.</p>
-            <p>@ CoderLeftEar</p>
-          </div>
-          
-          <div class="ui top right attached black label">1 min read</div>
-          <div class="ui bottom left attached black label">Aug 17, 2019</div>
-          
-        </div>
-      </div>
-    </div>
-    
-    <img src="/img/default5.jpg" alt="Git笔记13-Git Subtree">
+    <img src="/img/default6.jpg" alt="Git笔记15-git rebase原理深度剖析">
     
   </div>
 </article>

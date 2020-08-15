@@ -514,6 +514,13 @@
       <div class="item" style="padding-left: 24px;">
         <i class="gem outline grey icon"></i>
         <div class="content">
+          <a href="https://coderleftear.github.io/post/js%E8%B7%A8%E5%9F%9F/" class="item">JS跨域</a>
+        </div>
+      </div>
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="gem outline grey icon"></i>
+        <div class="content">
           <a href="https://coderleftear.github.io/post/js%E5%B0%8F%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/" class="item">JS小问题记录</a>
         </div>
       </div>
@@ -615,6 +622,13 @@
         <i class="gem outline grey icon"></i>
         <div class="content">
           <a href="https://coderleftear.github.io/post/linux/" class="item">Linux</a>
+        </div>
+      </div>
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="gem outline grey icon"></i>
+        <div class="content">
+          <a href="https://coderleftear.github.io/post/linux%E5%AE%89%E8%A3%85tomcatmysql/" class="item">Linux安装tomcat、mysql</a>
         </div>
       </div>
       
@@ -946,6 +960,40 @@
           
           <div class="display-content">
           
+            <a href="https://coderleftear.github.io/post/springboot%E7%AC%94%E8%AE%B002/">
+              
+              <h2 class="ui header" style="color: white;">SpringBoot笔记02</h2>
+              
+            </a>
+            <p style="padding: 5px;">SpringBoot笔记02 Hello World</p>
+            <p>@ CoderLeftEar</p>
+          </div>
+          
+          <div class="ui top right attached black label">1 min read</div>
+          <div class="ui bottom left attached black label">Dec 10, 2019</div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <img src="/img/default5.jpg" alt="SpringBoot笔记02">
+    
+  </div>
+</article>
+
+
+      
+
+        <article class="card" style="box-shadow: none;">
+  <div class="image">
+    
+    <div class="ui dimmer">
+    
+      <div class="content">
+        <div class="center">
+          
+          <div class="display-content">
+          
             <a href="https://coderleftear.github.io/post/linux/">
               
               <h2 class="ui header" style="color: white;">Linux</h2>
@@ -970,7 +1018,49 @@ rmdir 删除空文件夹 (只能删除空文件夹) rm -r /a/b (删除非空文�
       </div>
     </div>
     
-    <img src="/img/default5.jpg" alt="Linux">
+    <img src="/img/default3.jpg" alt="Linux">
+    
+  </div>
+</article>
+
+
+      
+
+        <article class="card" style="box-shadow: none;">
+  <div class="image">
+    
+    <div class="ui dimmer">
+    
+      <div class="content">
+        <div class="center">
+          
+          <div class="display-content">
+          
+            <a href="https://coderleftear.github.io/post/linux%E5%AE%89%E8%A3%85tomcatmysql/">
+              
+              <h2 class="ui header" style="color: white;">Linux安装tomcat、mysql</h2>
+              
+            </a>
+            <p style="padding: 5px;">Linux安装tomcat、mysql linux上安装mysql5.7 1、下载tar包，这里使用wget从官网下载 wget https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.22-linux-glibc2.12-x86_64.tar.gz
+2、将mysql安装到/usr/local/mysql下  解压   tar -xvf mysql-5.7.22-linux-glibc2.12-x86_64.tar.gz
+  移动   mv mysql-5.7.22-linux-glibc2.12-x86_64 /usr/local/
+  重命名  mv /usr/local/mysql-5.7.22-linux-glibc2.12-x86_64 /usr/local/mysql
+3、新建data目录  mkdir /usr/local/mysql/data
+ 4、新建mysql用户、mysql用户组 # mysql用户组 groupadd mysql # mysql用户 useradd mysql -g mysql  5、将/usr/local/mysql的所有者及所属组改为mysql  chown -R mysql.mysql /usr/local/mysql
+ 6、配置  /usr/local/mysql/bin/mysql_install_db –user=mysql –basedir=/usr/local/mysql/ –datadir=/usr/local/mysql/data
+  如果出现以下错误：
+2018-07-14 06:40:32 [WARNING] mysql_install_db is deprecated. Please consider switching to mysqld --initialize 2018-07-14 06:40:32 [ERROR] Child process: /usr/local/mysql/bin/mysqldterminated prematurely with errno= 32 2018-07-14 06:40:32 [ERROR] Failed to execute /usr/local/mysql/bin/mysqld --bootstrap --datadir=/usr/local/mysql/data --lc-messages-dir=/usr/local/mysql/share --lc-messages=en_US --basedir=/usr/local/mysql -- server log begin -- -- server log end --  则使用以下命令：</p>
+            <p>@ CoderLeftEar</p>
+          </div>
+          
+          <div class="ui top right attached black label">3 min read</div>
+          <div class="ui bottom left attached black label">Oct 22, 2019</div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <img src="/img/default1.jpg" alt="Linux安装tomcat、mysql">
     
   </div>
 </article>
@@ -1013,7 +1103,7 @@ set global transaction isolation level read committed;</p>
       </div>
     </div>
     
-    <img src="/img/default2.jpg" alt="Mysql事务隔离">
+    <img src="/img/default6.jpg" alt="Mysql事务隔离">
     
   </div>
 </article>
@@ -1049,7 +1139,7 @@ set global transaction isolation level read committed;</p>
       </div>
     </div>
     
-    <img src="/img/default1.jpg" alt="Redis">
+    <img src="/img/default4.jpg" alt="Redis">
     
   </div>
 </article>
@@ -1095,78 +1185,6 @@ sleep：握着锁去睡
     </div>
     
     <img src="/img/default1.jpg" alt="Java-JUC">
-    
-  </div>
-</article>
-
-
-      
-
-        <article class="card" style="box-shadow: none;">
-  <div class="image">
-    
-    <div class="ui dimmer">
-    
-      <div class="content">
-        <div class="center">
-          
-          <div class="display-content">
-          
-            <a href="https://coderleftear.github.io/post/springannotation%E7%AC%94%E8%AE%B004-springmvc/">
-              
-              <h2 class="ui header" style="color: white;">SpringAnnotation笔记04-SpringMVC</h2>
-              
-            </a>
-            <p style="padding: 5px;"> SpringAnnotation笔记04-SpringMVC </p>
-            <p>@ CoderLeftEar</p>
-          </div>
-          
-          <div class="ui top right attached black label">1 min read</div>
-          <div class="ui bottom left attached black label">Oct 13, 2019</div>
-          
-        </div>
-      </div>
-    </div>
-    
-    <img src="/img/default4.jpg" alt="SpringAnnotation笔记04-SpringMVC">
-    
-  </div>
-</article>
-
-
-      
-
-        <article class="card" style="box-shadow: none;">
-  <div class="image">
-    
-    <div class="ui dimmer">
-    
-      <div class="content">
-        <div class="center">
-          
-          <div class="display-content">
-          
-            <a href="https://coderleftear.github.io/post/springannotation%E7%AC%94%E8%AE%B003-servlet30/">
-              
-              <h2 class="ui header" style="color: white;">SpringAnnotation笔记03-Servlet30</h2>
-              
-            </a>
-            <p style="padding: 5px;">SpringAnnotation笔记03-Servlet30 @WebService(“/hello”) 拦截指定路径名称
-Shared libraries（共享库）/ runtimes pluggability（运行时插件） 1、 前提条件：需要闯将META-INF.services文件夹，并在其中创建名为javax.servlet.ServletContainerInitializer的文件，其内容为需要加载类的全类名com.wang.servelt.MyServletContainerInitializer。然后便会在项目启动时，会加载META-INF.services下的文件，找到对应的类，并加载它。
-@HandlesTypes(value = {HelloService.class})：容器在启动的时候会将@HandlesTypes指定的这个类型下面指定的子类（实现类、子类）传递过来。
-c @HandlesTypes中指定的类型的所有子类 ctx 代表当前Web应用的ServletContxt，一个Web应用一个
-/** * 容器在启动的时候会将@HandlesTypes指定的这个类型 * 下面指定的子类（实现类、子类）传递过来。 */ @HandlesTypes(value = {HelloService.class}) public class MyServletContainerInitializer implements ServletContainerInitializer { /** * 启动时会运行此方法 * * @Date 2019/10/14 9:01 * @param c @HandlesTypes中指定的类型的所有子类 * @param ctx 代表当前Web应用的ServletContxt，一个Web应用一个ServletContext * @return void */ @Override public void onStartup(Set&lt;Class&lt;?&gt;&gt; c, ServletContext ctx) throws ServletException { for (Class&lt;?&gt; cla : c) { System.out.println(cla); } } }  2、注册组件  使用ServletContext注册Web组件（Servlet、Filter、Listener）</p>
-            <p>@ CoderLeftEar</p>
-          </div>
-          
-          <div class="ui top right attached black label">2 min read</div>
-          <div class="ui bottom left attached black label">Oct 13, 2019</div>
-          
-        </div>
-      </div>
-    </div>
-    
-    <img src="/img/default5.jpg" alt="SpringAnnotation笔记03-Servlet30">
     
   </div>
 </article>

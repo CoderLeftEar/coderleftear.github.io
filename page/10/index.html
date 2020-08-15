@@ -514,6 +514,13 @@
       <div class="item" style="padding-left: 24px;">
         <i class="gem outline grey icon"></i>
         <div class="content">
+          <a href="https://coderleftear.github.io/post/js%E8%B7%A8%E5%9F%9F/" class="item">JS跨域</a>
+        </div>
+      </div>
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="gem outline grey icon"></i>
+        <div class="content">
           <a href="https://coderleftear.github.io/post/js%E5%B0%8F%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/" class="item">JS小问题记录</a>
         </div>
       </div>
@@ -615,6 +622,13 @@
         <i class="gem outline grey icon"></i>
         <div class="content">
           <a href="https://coderleftear.github.io/post/linux/" class="item">Linux</a>
+        </div>
+      </div>
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="gem outline grey icon"></i>
+        <div class="content">
+          <a href="https://coderleftear.github.io/post/linux%E5%AE%89%E8%A3%85tomcatmysql/" class="item">Linux安装tomcat、mysql</a>
         </div>
       </div>
       
@@ -946,6 +960,87 @@
           
           <div class="display-content">
           
+            <a href="https://coderleftear.github.io/post/jdk8-01-lambda/">
+              
+              <h2 class="ui header" style="color: white;">Jdk8-01-Lambda</h2>
+              
+            </a>
+            <p style="padding: 5px;">Lambda 关于函数式接口： - 如果一个接口只有一个抽象方法，那么该接口就是一个函数式接口
+- 如果我们在某个接口上声明了FunctionalInterface注解，那么编译器就会按照函数式接口的定义来要求该接口
+- 如果某个接口只有一个抽象方法，但我们并没有给改接口声明FunctionalInterface注解，那么编译器依旧会将该接口看作是函数式接口
+
+ 如果函数式接口中存在Object类中的的方法时，不会算入总方法数，会看作基础Object类
+ 案例：
+List&lt;Integer&gt; list = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9);  System.out.println(&#34;--------foreach遍历--------&#34;); //foreach遍历 for (Integer num : list) { System.out.println(num); }  System.out.println(&#34;--------for循环--------&#34;); //for循环 for(int i = 0; i &lt; list.size(); i &#43;&#43;){ System.out.println(list.get(i)); }  System.out.println(&#34;--------内部类--------&#34;); list.forEach(new Consumer&lt;Integer&gt;() { @Override public void accept(Integer integer) { System.out.println(integer); } });  System.out.println(&#34;--------Lambda--------&#34;); //Lambda list.forEach(i -&gt; System.</p>
+            <p>@ CoderLeftEar</p>
+          </div>
+          
+          <div class="ui top right attached black label">1 min read</div>
+          <div class="ui bottom left attached black label">Aug 9, 2019</div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <img src="/img/default6.jpg" alt="Jdk8-01-Lambda">
+    
+  </div>
+</article>
+
+
+      
+
+        <article class="card" style="box-shadow: none;">
+  <div class="image">
+    
+    <div class="ui dimmer">
+    
+      <div class="content">
+        <div class="center">
+          
+          <div class="display-content">
+          
+            <a href="https://coderleftear.github.io/post/git%E7%AC%94%E8%AE%B004-%E5%88%86%E6%94%AF%E8%BF%9B%E9%98%B6%E4%B8%8E%E7%89%88%E6%9C%AC%E5%9B%9E%E9%80%80/">
+              
+              <h2 class="ui header" style="color: white;">Git笔记04-分支进阶与版本回退</h2>
+              
+            </a>
+            <p style="padding: 5px;">Git笔记04-分支进阶与版本回退 图形化显示：
+git log –graph
+简写：
+git log –graph –abbrev-commit
+add、commit一步完成：
+git commit -am “commit”
+merge快进和不使用快进 dev:
+* commit d1c84073b5aea7baa64f95f05f9cf291850d3888 (HEAD -&gt; dev) | Author: Mr-WangG &lt;mr.wang214880676@gmail.com&gt; | Date: Sat Aug 10 20:40:06 2019 &#43;0800 | | third | * commit 0d51d62d68daf5e5c2bc80e74097cc84f450aef6 (master) | Author: Mr-WangG &lt;mr.wang214880676@gmail.com&gt; | Date: Sat Aug 10 20:39:00 2019 &#43;0800 | | seconed | * commit 2cb4d2524b959234f1cd79e4015b9b8339937bdf Author: Mr-WangG &lt;mr.wang214880676@gmail.com&gt; Date: Sat Aug 10 20:38:24 2019 &#43;0800 first  master:</p>
+            <p>@ CoderLeftEar</p>
+          </div>
+          
+          <div class="ui top right attached black label">3 min read</div>
+          <div class="ui bottom left attached black label">Aug 9, 2019</div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <img src="/img/default1.jpg" alt="Git笔记04-分支进阶与版本回退">
+    
+  </div>
+</article>
+
+
+      
+
+        <article class="card" style="box-shadow: none;">
+  <div class="image">
+    
+    <div class="ui dimmer">
+    
+      <div class="content">
+        <div class="center">
+          
+          <div class="display-content">
+          
             <a href="https://coderleftear.github.io/post/git%E7%AC%94%E8%AE%B003-.gitignore%E4%B8%8E%E5%88%86%E6%94%AF/">
               
               <h2 class="ui header" style="color: white;">Git笔记03-.gitignore与分支</h2>
@@ -990,7 +1085,7 @@
       </div>
     </div>
     
-    <img src="/img/default5.jpg" alt="Git笔记03-.gitignore与分支">
+    <img src="/img/default4.jpg" alt="Git笔记03-.gitignore与分支">
     
   </div>
 </article>
@@ -1032,7 +1127,7 @@ $ git status On branch master Changes not staged for commit: (use &#34;git add/r
       </div>
     </div>
     
-    <img src="/img/default2.jpg" alt="Git笔记02-添加、删除、修改、日志">
+    <img src="/img/default6.jpg" alt="Git笔记02-添加、删除、修改、日志">
     
   </div>
 </article>
@@ -1069,7 +1164,7 @@ $ git status On branch master No commits yet Changes to be committed: (use &#34;
       </div>
     </div>
     
-    <img src="/img/default6.jpg" alt="Git笔记01-基本命令操作">
+    <img src="/img/default1.jpg" alt="Git笔记01-基本命令操作">
     
   </div>
 </article>
@@ -1103,78 +1198,7 @@ $ git status On branch master No commits yet Changes to be committed: (use &#34;
       </div>
     </div>
     
-    <img src="/img/default6.jpg" alt="Example">
-    
-  </div>
-</article>
-
-
-      
-
-        <article class="card" style="box-shadow: none;">
-  <div class="image">
-    
-    <div class="ui dimmer">
-    
-      <div class="content">
-        <div class="center">
-          
-          <div class="display-content">
-          
-            <a href="https://coderleftear.github.io/post/hashmap%E5%AE%9E%E7%8E%B0/">
-              
-              <h2 class="ui header" style="color: white;">HashMap实现</h2>
-              
-            </a>
-            <p style="padding: 5px;">HashMap实现  未添加泛型的Node类
- public class Node { int hash; Object key; Object value; Node next; }   1、put、myHash、tostring
- /** * put、myHash、tostring * * @author Mr.Wang * */ public class HashMap01 { Node[] table;	//桶位数组 bucket array int size; public HashMap01() { table = new Node[16]; } public void put(Object key, Object value) { Node newNode = new Node(); newNode.hash = myHash(key.hashCode(), table.length); newNode.key = key; newNode.value = value; newNode.</p>
-            <p>@ CoderLeftEar</p>
-          </div>
-          
-          <div class="ui top right attached black label">4 min read</div>
-          <div class="ui bottom left attached black label">Aug 4, 2019</div>
-          
-        </div>
-      </div>
-    </div>
-    
-    <img src="/img/default6.jpg" alt="HashMap实现">
-    
-  </div>
-</article>
-
-
-      
-
-        <article class="card" style="box-shadow: none;">
-  <div class="image">
-    
-    <div class="ui dimmer">
-    
-      <div class="content">
-        <div class="center">
-          
-          <div class="display-content">
-          
-            <a href="https://coderleftear.github.io/post/iterator%E9%81%8D%E5%8E%86listsetmap/">
-              
-              <h2 class="ui header" style="color: white;">Iterator遍历List、Set、Map</h2>
-              
-            </a>
-            <p style="padding: 5px;">Iterator遍历List、Set、Map  Iterator遍历List、Set、Map
- public class Iterator01 { public static void main(String[] args) { /** * Iterator遍历list或set，相同 */ listIterator(); /** * Iterator遍历map */ //map.entrySet(); //	mapIterator01(); //map.keySet(); //	mapIterator02(); } public static void listIterator() { List&lt;String&gt; list = new ArrayList&lt;String&gt;(); list.add(&#34;aaa&#34;); list.add(&#34;bbb&#34;); list.add(&#34;ccc&#34;); Iterator&lt;String&gt; it = list.iterator(); while(it.hasNext()) { System.out.println(it.next()); } } public static void mapIterator01() { Map&lt;Integer, String&gt; map = new HashMap&lt;&gt;(); map.put(20, &#34;bb&#34;); map.put(30, &#34;cc&#34;); map.put(10, &#34;aa&#34;); Set&lt;Entry&lt;Integer, String&gt;&gt; set = map.</p>
-            <p>@ CoderLeftEar</p>
-          </div>
-          
-          <div class="ui top right attached black label">1 min read</div>
-          <div class="ui bottom left attached black label">Aug 4, 2019</div>
-          
-        </div>
-      </div>
-    </div>
-    
-    <img src="/img/default4.jpg" alt="Iterator遍历List、Set、Map">
+    <img src="/img/default5.jpg" alt="Example">
     
   </div>
 </article>

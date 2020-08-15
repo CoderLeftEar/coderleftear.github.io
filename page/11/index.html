@@ -514,6 +514,13 @@
       <div class="item" style="padding-left: 24px;">
         <i class="gem outline grey icon"></i>
         <div class="content">
+          <a href="https://coderleftear.github.io/post/js%E8%B7%A8%E5%9F%9F/" class="item">JS跨域</a>
+        </div>
+      </div>
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="gem outline grey icon"></i>
+        <div class="content">
           <a href="https://coderleftear.github.io/post/js%E5%B0%8F%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/" class="item">JS小问题记录</a>
         </div>
       </div>
@@ -615,6 +622,13 @@
         <i class="gem outline grey icon"></i>
         <div class="content">
           <a href="https://coderleftear.github.io/post/linux/" class="item">Linux</a>
+        </div>
+      </div>
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="gem outline grey icon"></i>
+        <div class="content">
+          <a href="https://coderleftear.github.io/post/linux%E5%AE%89%E8%A3%85tomcatmysql/" class="item">Linux安装tomcat、mysql</a>
         </div>
       </div>
       
@@ -946,6 +960,77 @@
           
           <div class="display-content">
           
+            <a href="https://coderleftear.github.io/post/hashmap%E5%AE%9E%E7%8E%B0/">
+              
+              <h2 class="ui header" style="color: white;">HashMap实现</h2>
+              
+            </a>
+            <p style="padding: 5px;">HashMap实现  未添加泛型的Node类
+ public class Node { int hash; Object key; Object value; Node next; }   1、put、myHash、tostring
+ /** * put、myHash、tostring * * @author Mr.Wang * */ public class HashMap01 { Node[] table;	//桶位数组 bucket array int size; public HashMap01() { table = new Node[16]; } public void put(Object key, Object value) { Node newNode = new Node(); newNode.hash = myHash(key.hashCode(), table.length); newNode.key = key; newNode.value = value; newNode.</p>
+            <p>@ CoderLeftEar</p>
+          </div>
+          
+          <div class="ui top right attached black label">4 min read</div>
+          <div class="ui bottom left attached black label">Aug 4, 2019</div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <img src="/img/default5.jpg" alt="HashMap实现">
+    
+  </div>
+</article>
+
+
+      
+
+        <article class="card" style="box-shadow: none;">
+  <div class="image">
+    
+    <div class="ui dimmer">
+    
+      <div class="content">
+        <div class="center">
+          
+          <div class="display-content">
+          
+            <a href="https://coderleftear.github.io/post/iterator%E9%81%8D%E5%8E%86listsetmap/">
+              
+              <h2 class="ui header" style="color: white;">Iterator遍历List、Set、Map</h2>
+              
+            </a>
+            <p style="padding: 5px;">Iterator遍历List、Set、Map  Iterator遍历List、Set、Map
+ public class Iterator01 { public static void main(String[] args) { /** * Iterator遍历list或set，相同 */ listIterator(); /** * Iterator遍历map */ //map.entrySet(); //	mapIterator01(); //map.keySet(); //	mapIterator02(); } public static void listIterator() { List&lt;String&gt; list = new ArrayList&lt;String&gt;(); list.add(&#34;aaa&#34;); list.add(&#34;bbb&#34;); list.add(&#34;ccc&#34;); Iterator&lt;String&gt; it = list.iterator(); while(it.hasNext()) { System.out.println(it.next()); } } public static void mapIterator01() { Map&lt;Integer, String&gt; map = new HashMap&lt;&gt;(); map.put(20, &#34;bb&#34;); map.put(30, &#34;cc&#34;); map.put(10, &#34;aa&#34;); Set&lt;Entry&lt;Integer, String&gt;&gt; set = map.</p>
+            <p>@ CoderLeftEar</p>
+          </div>
+          
+          <div class="ui top right attached black label">1 min read</div>
+          <div class="ui bottom left attached black label">Aug 4, 2019</div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <img src="/img/default1.jpg" alt="Iterator遍历List、Set、Map">
+    
+  </div>
+</article>
+
+
+      
+
+        <article class="card" style="box-shadow: none;">
+  <div class="image">
+    
+    <div class="ui dimmer">
+    
+      <div class="content">
+        <div class="center">
+          
+          <div class="display-content">
+          
             <a href="https://coderleftear.github.io/post/java%E5%90%84%E4%B8%AA%E7%BC%96%E7%A0%81%E6%89%80%E5%8D%A0%E5%AD%97%E8%8A%82%E6%95%B0/">
               
               <h2 class="ui header" style="color: white;">Java各个编码所占字节数</h2>
@@ -962,7 +1047,7 @@
       </div>
     </div>
     
-    <img src="/img/default2.jpg" alt="Java各个编码所占字节数">
+    <img src="/img/default6.jpg" alt="Java各个编码所占字节数">
     
   </div>
 </article>
@@ -998,7 +1083,7 @@ public class Node { Node previous; Node next; Object element; public Node(Node p
       </div>
     </div>
     
-    <img src="/img/default1.jpg" alt="LinkedList源码">
+    <img src="/img/default4.jpg" alt="LinkedList源码">
     
   </div>
 </article>
@@ -1033,7 +1118,7 @@ public class Node { Node previous; Node next; Object element; public Node(Node p
       </div>
     </div>
     
-    <img src="/img/default6.jpg" alt="ArrayList源码">
+    <img src="/img/default4.jpg" alt="ArrayList源码">
     
   </div>
 </article>
@@ -1067,76 +1152,7 @@ public class Node { Node previous; Node next; Object element; public Node(Node p
       </div>
     </div>
     
-    <img src="/img/default5.jpg" alt="Java内存分析">
-    
-  </div>
-</article>
-
-
-      
-
-        <article class="card" style="box-shadow: none;">
-  <div class="image">
-    
-    <div class="ui dimmer">
-    
-      <div class="content">
-        <div class="center">
-          
-          <div class="display-content">
-          
-            <a href="https://coderleftear.github.io/post/002-%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/">
-              
-              <h2 class="ui header" style="color: white;">001-大话设计模式-单例模式</h2>
-              
-            </a>
-            <p style="padding: 5px;">单例模式 1.饿汉式—静态常量方式（线程安全） public class Singleton { private static Singleton instance = new Singleton(); private Singleton (){} public static Singleton getInstance() { return instance; } }  2.饿汉式—静态代码块方式（线程安全） public class Singleton { private static Singleton instance; static { instance = new Singleton(); } private Singleton() {} public static Singleton getInstance() { return instance; } }  3.懒汉式（线程不安全） public class Singleton { private static Singleton singleton; private Singleton() {} public static Singleton getInstance() { if (singleton == null) { singleton = new Singleton(); } return singleton; } }  4.</p>
-            <p>@ CoderLeftEar</p>
-          </div>
-          
-          <div class="ui top right attached black label">1 min read</div>
-          <div class="ui bottom left attached black label">Jul 2, 2019</div>
-          
-        </div>
-      </div>
-    </div>
-    
-    <img src="/img/default2.jpg" alt="001-大话设计模式-单例模式">
-    
-  </div>
-</article>
-
-
-      
-
-        <article class="card" style="box-shadow: none;">
-  <div class="image">
-    
-    <div class="ui dimmer">
-    
-      <div class="content">
-        <div class="center">
-          
-          <div class="display-content">
-          
-            <a href="https://coderleftear.github.io/post/001-%E7%AE%80%E5%8D%95%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/">
-              
-              <h2 class="ui header" style="color: white;">001-大话设计模式-简单工厂模式</h2>
-              
-            </a>
-            <p style="padding: 5px;">简单工厂模式 一、需求 使用java实现一个计算器计算功能
-二、初步实现 public class Operation_first { public static void main(String[] args) { Scanner sc = new Scanner(System.in); System.out.print(&#34;第一个数：&#34;); int numberA = sc.nextInt(); System.out.print(&#34;运算符：&#34;); String operation = sc.next(); System.out.print(&#34;第二个数：&#34;); int numberB = sc.nextInt(); int result = 0; try { //运算 switch (operation) { case &#34;&#43;&#34;: result = numberA &#43; numberB; break; case &#34;-&#34;: result = numberA - numberB; break; case &#34;*&#34;: result = numberA * numberB; break; case &#34;/&#34;: result = numberA / numberB; break; default: break; } //打印结果 System.</p>
-            <p>@ CoderLeftEar</p>
-          </div>
-          
-          <div class="ui top right attached black label">3 min read</div>
-          <div class="ui bottom left attached black label">Jul 2, 2019</div>
-          
-        </div>
-      </div>
-    </div>
-    
-    <img src="/img/default3.jpg" alt="001-大话设计模式-简单工厂模式">
+    <img src="/img/default2.jpg" alt="Java内存分析">
     
   </div>
 </article>

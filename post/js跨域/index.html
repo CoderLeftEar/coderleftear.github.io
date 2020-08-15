@@ -6,32 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>
-Git笔记06-标签与diff
+JS跨域
 </title>
 
   
   
   <meta name="author" content="CoderLeftEar" />
-  <meta name="description" content="Git笔记06-标签与diff 标签：不区别分支
-git tag v1.0
-git tag -a v2.0 -m &amp;ldquo;2.0 released&amp;rdquo;
-查看：
-git tag
-git show v1.0 精确查找：
-git tag -l &amp;ldquo;v2.0&amp;rdquo;
-模糊查找：
-git tag -l &amp;ldquo;*2&amp;rdquo;
-删除：
-git tag -d v1.0
-文件上一次修改人的信息：
-git blame
-Linux中的diff：
-diff a b
-diff -u a b
-git中的diff：
- 暂存区与工作区的区别(原始文件：暂存区 目标文件：工作区)：
-git diff
-$ git diff warning: LF will be replaced by CRLF in test.txt. The file will have its original line endings in your working directory diff --git a/test." />
+  <meta name="description" content=" JS跨域 " />
 
 
 
@@ -40,7 +21,7 @@ $ git diff warning: LF will be replaced by CRLF in test.txt. The file will have 
 <meta name="generator" content="Hugo 0.55.6" />
 
 
-<link rel="canonical" href="https://coderleftear.github.io/post/git%E7%AC%94%E8%AE%B006-%E6%A0%87%E7%AD%BE%E4%B8%8Ediff/" />
+<link rel="canonical" href="https://coderleftear.github.io/post/js%E8%B7%A8%E5%9F%9F/" />
 <link rel="alternative" href="/index.xml" title="CoderLeftEar&#39;s Blog" type="application/atom+xml" />
 
 <link href="/css/semantic.min.css" rel="stylesheet" />
@@ -79,103 +60,23 @@ $ git diff warning: LF will be replaced by CRLF in test.txt. The file will have 
       </a>
       <header>
         <h1 class="ui header">
-          Git笔记06-标签与diff
+          JS跨域
           <div class="sub header">
-		  @ CoderLeftEar · 2019-08-11 18:09:07
+		  @ CoderLeftEar · 2020-07-09 12:38:34
 
 		  </div>
         </h1>
       </header>
       <article class="markdown-body" style="margin-top: 2rem; font-size: 1.4rem;">
 
-<h1 id="git笔记06-标签与diff">Git笔记06-标签与diff</h1>
-
-<hr />
-
-<p>标签：不区别分支<br />
-git tag v1.0<br />
-git tag -a v2.0 -m &ldquo;2.0 released&rdquo;</p>
-
-<p>查看：<br />
-git tag<br />
-git show v1.0
-精确查找：<br />
-git tag -l &ldquo;v2.0&rdquo;<br />
-模糊查找：<br />
-git tag -l &ldquo;*2&rdquo;</p>
-
-<p>删除：<br />
-git tag -d v1.0</p>
-
-<hr />
-
-<p>文件上一次修改人的信息：<br />
-git blame</p>
-
-<hr />
-
-<p>Linux中的diff：<br />
-diff a b<br />
-diff -u a b</p>
-
-<p>git中的diff：</p>
-
-<ol>
-<li><p>暂存区与工作区的区别(原始文件：暂存区  目标文件：工作区)：<br />
-git diff</p>
-
-<pre><code>$ git diff
-warning: LF will be replaced by CRLF in test.txt.
-The file will have its original line endings in your working directory
-diff --git a/test.txt b/test.txt
-index 94954ab..d56682a 100644
---- a/test.txt  ---&gt; `暂存区`
-+++ b/test.txt  ---&gt; `工作区`
-@@ -1,2 +1,3 @@
-hello
-world
-+welcome
-
-</code></pre></li>
-
-<li><p>最新的提交与工作区的差别：<br />
-git diff HEAD
-git diff commit_id</p>
-
-<pre><code>$ git diff HEAD
-diff --git a/test.txt b/test.txt
-index 94954ab..d56682a 100644
---- a/test.txt  ---&gt; `版本库`
-+++ b/test.txt  ---&gt; `工作区`
-@@ -1,2 +1,3 @@
-hello
-world
-+welcome
-
-</code></pre></li>
-
-<li><p>最新的提交与暂存区的区别：<br />
-git diff &ndash;cached (commit_id)</p>
-
-<pre><code>$ git diff --cached
-diff --git a/test.txt b/test.txt
-index 94954ab..d56682a 100644
---- a/test.txt  ---&gt; `版本库`
-+++ b/test.txt  ---&gt; `暂存区`
-@@ -1,2 +1,3 @@
-hello
-world
-+welcome
-
-</code></pre></li>
-</ol>
+<h1 id="js跨域">JS跨域</h1>
 </article>
     </section>
 
     <footer class="ui attached segment dream-tags">
       
       
-      <a class="ui label" href="/tags/git" title="git">git</a>
+      <a class="ui label" href="/tags/js" title="js">js</a>
       
       
     </footer>

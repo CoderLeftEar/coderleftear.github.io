@@ -514,6 +514,13 @@
       <div class="item" style="padding-left: 24px;">
         <i class="gem outline grey icon"></i>
         <div class="content">
+          <a href="https://coderleftear.github.io/post/js%E8%B7%A8%E5%9F%9F/" class="item">JS跨域</a>
+        </div>
+      </div>
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="gem outline grey icon"></i>
+        <div class="content">
           <a href="https://coderleftear.github.io/post/js%E5%B0%8F%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/" class="item">JS小问题记录</a>
         </div>
       </div>
@@ -615,6 +622,13 @@
         <i class="gem outline grey icon"></i>
         <div class="content">
           <a href="https://coderleftear.github.io/post/linux/" class="item">Linux</a>
+        </div>
+      </div>
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="gem outline grey icon"></i>
+        <div class="content">
+          <a href="https://coderleftear.github.io/post/linux%E5%AE%89%E8%A3%85tomcatmysql/" class="item">Linux安装tomcat、mysql</a>
         </div>
       </div>
       
@@ -946,6 +960,87 @@
           
           <div class="display-content">
           
+            <a href="https://coderleftear.github.io/post/git%E7%AC%94%E8%AE%B009-git%E5%88%86%E6%94%AF%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/">
+              
+              <h2 class="ui header" style="color: white;">Git笔记09-Git分支最佳实践</h2>
+              
+            </a>
+            <p style="padding: 5px;">Git笔记09-Git分支最佳实践 git add的三个作用：
+- 刚创建的未追踪的文件加入到追踪列表当中
+- 将已经追踪并修改的文件纳入到暂存区（缓存区）
+- 文件出现冲突，解决冲突后，add告知冲突已被解决
+vim编辑下：
+- dd删除一行 - 2,4d: 删除2到3行
+一、修改冲突问题： 第一个用户修改commit，push后，第二个用户再次修改commit，push：
+$ git push To github.com:Mr-WangG/gitTest.git ! [rejected] master -&gt; master (fetch first) error: failed to push some refs to &#39;git@github.com:Mr-WangG/gitTest.git&#39; hint: Updates were rejected because the remote contains work that you do hint: not have locally. This is usually caused by another repository pushing hint: to the same ref. You may want to first integrate the remote changes hint: (e.</p>
+            <p>@ CoderLeftEar</p>
+          </div>
+          
+          <div class="ui top right attached black label">2 min read</div>
+          <div class="ui bottom left attached black label">Aug 13, 2019</div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <img src="/img/default1.jpg" alt="Git笔记09-Git分支最佳实践">
+    
+  </div>
+</article>
+
+
+      
+
+        <article class="card" style="box-shadow: none;">
+  <div class="image">
+    
+    <div class="ui dimmer">
+    
+      <div class="content">
+        <div class="center">
+          
+          <div class="display-content">
+          
+            <a href="https://coderleftear.github.io/post/git%E7%AC%94%E8%AE%B008-git%E5%8D%8F%E4%BD%9C%E5%92%8Cgit%E8%BF%9C%E7%A8%8B%E5%8D%8F%E4%BD%9C%E6%A8%A1%E5%9E%8B/">
+              
+              <h2 class="ui header" style="color: white;">Git笔记08-Git协作和Git远程协作模型</h2>
+              
+            </a>
+            <p style="padding: 5px;">Git笔记08-Git协作和Git远程协作模型 第一部分 查看所有分支：
+$ git branch -a * master remotes/origin/master  查看所有远程分支：
+$ git branch -r origin/master  查看所有分支最后一次提交：
+$ git branch -av * master 01c84c4 commit remotes/origin/master 01c84c4 commit  再进行一次提交后，执行git branch -av，master比origin/master多一次提交：
+$ git branch -av * master 9794ba4 [ahead 1] commit remotes/origin/master 01c84c4 commit  执行git push，执行了两件事，将master推送到远程，origin/master的当前提交指向master的提交。
+第二部分 执行git pull将本地从远程Updating 9794ba4..906f1df（快进）：
+$ git pull remote: Enumerating objects: 5, done. remote: Counting objects: 100% (5/5), done. remote: Compressing objects: 100% (2/2), done.</p>
+            <p>@ CoderLeftEar</p>
+          </div>
+          
+          <div class="ui top right attached black label">1 min read</div>
+          <div class="ui bottom left attached black label">Aug 13, 2019</div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <img src="/img/default6.jpg" alt="Git笔记08-Git协作和Git远程协作模型">
+    
+  </div>
+</article>
+
+
+      
+
+        <article class="card" style="box-shadow: none;">
+  <div class="image">
+    
+    <div class="ui dimmer">
+    
+      <div class="content">
+        <div class="center">
+          
+          <div class="display-content">
+          
             <a href="https://coderleftear.github.io/post/git%E7%AC%94%E8%AE%B007-git%E8%BF%9C%E7%A8%8Bgithub%E5%92%8C%E5%85%AC%E7%A7%81%E9%92%A5/">
               
               <h2 class="ui header" style="color: white;">Git笔记07-git远程、GitHub和公私钥</h2>
@@ -970,7 +1065,7 @@ $ git remote show origin * remote origin Fetch URL: https://github.com/Mr-WangG/
       </div>
     </div>
     
-    <img src="/img/default5.jpg" alt="Git笔记07-git远程、GitHub和公私钥">
+    <img src="/img/default1.jpg" alt="Git笔记07-git远程、GitHub和公私钥">
     
   </div>
 </article>
@@ -1023,7 +1118,7 @@ $ git diff warning: LF will be replaced by CRLF in test.txt. The file will have 
       </div>
     </div>
     
-    <img src="/img/default5.jpg" alt="Git笔记06-标签与diff">
+    <img src="/img/default3.jpg" alt="Git笔记06-标签与diff">
     
   </div>
 </article>
@@ -1111,81 +1206,7 @@ stash 临时存储： &gt; git stash
       </div>
     </div>
     
-    <img src="/img/default6.jpg" alt="Jdk8-08-Stream笔记01">
-    
-  </div>
-</article>
-
-
-      
-
-        <article class="card" style="box-shadow: none;">
-  <div class="image">
-    
-    <div class="ui dimmer">
-    
-      <div class="content">
-        <div class="center">
-          
-          <div class="display-content">
-          
-            <a href="https://coderleftear.github.io/post/jdk8-07-binaryoperator/">
-              
-              <h2 class="ui header" style="color: white;">Jdk8-07-BinaryOperator</h2>
-              
-            </a>
-            <p style="padding: 5px;">BinaryOperator BinaryOperator：是一个继承了BiFunction的接口，本身有两个比较大小的方法。minBy(); 和 maxBy();
- BinaryOperatorTest binaryOperatorTest = new BinaryOperatorTest();
-&lt;T&gt; BinaryOperator minBy(Comparator&lt;? super T&gt; comparator)
- 四则运算
-BinaryOperator&lt;Integer&gt; binaryOperator = (value1, value2) -&gt; value1 * value2; //封装在方法中，传参 System.out.println(binaryOperatorTest.operatorFun(3, 4, binaryOperator)); //直接调用apply方法调用 System.out.println(binaryOperator.apply(3, 4)); //四则运算 public Integer operatorFun(int a, int b, BinaryOperator&lt;Integer&gt; binaryOperator){ return binaryOperator.apply(a, b); } 答案：12，12  大小比较：第三个参数传一个lambda，比较长度还是大小，写对应的lambda
-System.out.println(binaryOperatorTest.operatorFunMin(&#34;abbbbbb&#34;, &#34;bbb&#34;, (value1, value2) -&gt; value1.compareTo(value2))); System.out.println(binaryOperatorTest.operatorFunMin(&#34;abbbbbb&#34;, &#34;bbb&#34;, (value1, value2) -&gt; value1.length() - value2.length())); public String operatorFunMin(String a, String b, Comparator&lt;String&gt; comparator){ return BinaryOperator.</p>
-            <p>@ CoderLeftEar</p>
-          </div>
-          
-          <div class="ui top right attached black label">1 min read</div>
-          <div class="ui bottom left attached black label">Aug 10, 2019</div>
-          
-        </div>
-      </div>
-    </div>
-    
-    <img src="/img/default4.jpg" alt="Jdk8-07-BinaryOperator">
-    
-  </div>
-</article>
-
-
-      
-
-        <article class="card" style="box-shadow: none;">
-  <div class="image">
-    
-    <div class="ui dimmer">
-    
-      <div class="content">
-        <div class="center">
-          
-          <div class="display-content">
-          
-            <a href="https://coderleftear.github.io/post/jdk8-02-consumer/">
-              
-              <h2 class="ui header" style="color: white;">Jdk8-02-Consumer</h2>
-              
-            </a>
-            <p style="padding: 5px;"> Consumer Consumer：接收一个参数，无返回值。
-List&lt;String&gt; list = Arrays.asList(&#34;a&#34;, &#34;b&#34;, &#34;c&#34;, &#34;d&#34;, &#34;e&#34;); Consumer&lt;String&gt; consumer = item -&gt; System.out.println(item); list.forEach(consumer);  </p>
-            <p>@ CoderLeftEar</p>
-          </div>
-          
-          <div class="ui top right attached black label">1 min read</div>
-          <div class="ui bottom left attached black label">Aug 9, 2019</div>
-          
-        </div>
-      </div>
-    </div>
-    
-    <img src="/img/default2.jpg" alt="Jdk8-02-Consumer">
+    <img src="/img/default1.jpg" alt="Jdk8-08-Stream笔记01">
     
   </div>
 </article>

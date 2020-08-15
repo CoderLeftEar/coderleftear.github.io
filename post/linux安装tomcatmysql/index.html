@@ -6,32 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>
-Git笔记06-标签与diff
+Linux安装tomcat、mysql
 </title>
 
   
   
   <meta name="author" content="CoderLeftEar" />
-  <meta name="description" content="Git笔记06-标签与diff 标签：不区别分支
-git tag v1.0
-git tag -a v2.0 -m &amp;ldquo;2.0 released&amp;rdquo;
-查看：
-git tag
-git show v1.0 精确查找：
-git tag -l &amp;ldquo;v2.0&amp;rdquo;
-模糊查找：
-git tag -l &amp;ldquo;*2&amp;rdquo;
-删除：
-git tag -d v1.0
-文件上一次修改人的信息：
-git blame
-Linux中的diff：
-diff a b
-diff -u a b
-git中的diff：
- 暂存区与工作区的区别(原始文件：暂存区 目标文件：工作区)：
-git diff
-$ git diff warning: LF will be replaced by CRLF in test.txt. The file will have its original line endings in your working directory diff --git a/test." />
+  <meta name="description" content="Linux安装tomcat、mysql linux上安装mysql5.7 1、下载tar包，这里使用wget从官网下载 wget https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.22-linux-glibc2.12-x86_64.tar.gz
+2、将mysql安装到/usr/local/mysql下  解压   tar -xvf mysql-5.7.22-linux-glibc2.12-x86_64.tar.gz
+  移动   mv mysql-5.7.22-linux-glibc2.12-x86_64 /usr/local/
+  重命名  mv /usr/local/mysql-5.7.22-linux-glibc2.12-x86_64 /usr/local/mysql
+3、新建data目录  mkdir /usr/local/mysql/data
+ 4、新建mysql用户、mysql用户组 # mysql用户组 groupadd mysql # mysql用户 useradd mysql -g mysql  5、将/usr/local/mysql的所有者及所属组改为mysql  chown -R mysql.mysql /usr/local/mysql
+ 6、配置  /usr/local/mysql/bin/mysql_install_db &amp;ndash;user=mysql &amp;ndash;basedir=/usr/local/mysql/ &amp;ndash;datadir=/usr/local/mysql/data
+  如果出现以下错误：
+2018-07-14 06:40:32 [WARNING] mysql_install_db is deprecated. Please consider switching to mysqld --initialize 2018-07-14 06:40:32 [ERROR] Child process: /usr/local/mysql/bin/mysqldterminated prematurely with errno= 32 2018-07-14 06:40:32 [ERROR] Failed to execute /usr/local/mysql/bin/mysqld --bootstrap --datadir=/usr/local/mysql/data --lc-messages-dir=/usr/local/mysql/share --lc-messages=en_US --basedir=/usr/local/mysql -- server log begin -- -- server log end --  则使用以下命令：" />
 
 
 
@@ -40,7 +29,7 @@ $ git diff warning: LF will be replaced by CRLF in test.txt. The file will have 
 <meta name="generator" content="Hugo 0.55.6" />
 
 
-<link rel="canonical" href="https://coderleftear.github.io/post/git%E7%AC%94%E8%AE%B006-%E6%A0%87%E7%AD%BE%E4%B8%8Ediff/" />
+<link rel="canonical" href="https://coderleftear.github.io/post/linux%E5%AE%89%E8%A3%85tomcatmysql/" />
 <link rel="alternative" href="/index.xml" title="CoderLeftEar&#39;s Blog" type="application/atom+xml" />
 
 <link href="/css/semantic.min.css" rel="stylesheet" />
@@ -79,103 +68,411 @@ $ git diff warning: LF will be replaced by CRLF in test.txt. The file will have 
       </a>
       <header>
         <h1 class="ui header">
-          Git笔记06-标签与diff
+          Linux安装tomcat、mysql
           <div class="sub header">
-		  @ CoderLeftEar · 2019-08-11 18:09:07
+		  @ CoderLeftEar · 2019-10-22 17:14:48
 
 		  </div>
         </h1>
       </header>
       <article class="markdown-body" style="margin-top: 2rem; font-size: 1.4rem;">
 
-<h1 id="git笔记06-标签与diff">Git笔记06-标签与diff</h1>
+<h1 id="linux安装tomcat-mysql">Linux安装tomcat、mysql</h1>
 
-<hr />
+<h2 id="linux上安装mysql5-7-https-www-cnblogs-com-daemon-p-9009360-html"><a href="https://www.cnblogs.com/daemon-/p/9009360.html">linux上安装mysql5.7</a></h2>
 
-<p>标签：不区别分支<br />
-git tag v1.0<br />
-git tag -a v2.0 -m &ldquo;2.0 released&rdquo;</p>
+<h3 id="1-下载tar包-这里使用wget从官网下载">1、下载tar包，这里使用wget从官网下载</h3>
 
-<p>查看：<br />
-git tag<br />
-git show v1.0
-精确查找：<br />
-git tag -l &ldquo;v2.0&rdquo;<br />
-模糊查找：<br />
-git tag -l &ldquo;*2&rdquo;</p>
+<p>wget <a href="https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.22-linux-glibc2.12-x86_64.tar.gz">https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.22-linux-glibc2.12-x86_64.tar.gz</a></p>
 
-<p>删除：<br />
-git tag -d v1.0</p>
+<h3 id="2-将mysql安装到-usr-local-mysql下">2、将mysql安装到/usr/local/mysql下</h3>
 
-<hr />
+<ul>
+<li>解压</li>
+</ul>
 
-<p>文件上一次修改人的信息：<br />
-git blame</p>
+<blockquote>
+<p>tar -xvf mysql-5.7.22-linux-glibc2.12-x86_64.tar.gz</p>
+</blockquote>
 
-<hr />
+<ul>
+<li>移动</li>
+</ul>
 
-<p>Linux中的diff：<br />
-diff a b<br />
-diff -u a b</p>
+<blockquote>
+<p>mv mysql-5.7.22-linux-glibc2.12-x86_64 /usr/local/</p>
+</blockquote>
 
-<p>git中的diff：</p>
+<ul>
+<li>重命名</li>
+</ul>
+
+<p>mv /usr/local/mysql-5.7.22-linux-glibc2.12-x86_64 /usr/local/mysql</p>
+
+<h3 id="3-新建data目录">3、新建data目录</h3>
+
+<blockquote>
+<p>mkdir /usr/local/mysql/data</p>
+</blockquote>
+
+<h3 id="4-新建mysql用户-mysql用户组">4、新建mysql用户、mysql用户组</h3>
+
+<pre><code class="language-shell"># mysql用户组
+groupadd mysql
+# mysql用户
+useradd mysql -g mysql
+</code></pre>
+
+<h3 id="5-将-usr-local-mysql的所有者及所属组改为mysql">5、将/usr/local/mysql的所有者及所属组改为mysql</h3>
+
+<blockquote>
+<p>chown -R mysql.mysql /usr/local/mysql</p>
+</blockquote>
+
+<h3 id="6-配置">6、配置</h3>
+
+<blockquote>
+<p>/usr/local/mysql/bin/mysql_install_db &ndash;user=mysql &ndash;basedir=/usr/local/mysql/ &ndash;datadir=/usr/local/mysql/data</p>
+</blockquote>
+
+<ul>
+<li><p>如果出现以下错误：</p>
+
+<pre><code>2018-07-14 06:40:32 [WARNING] mysql_install_db is deprecated. Please consider switching to mysqld --initialize
+2018-07-14 06:40:32 [ERROR]   Child process: /usr/local/mysql/bin/mysqldterminated prematurely with errno= 32
+2018-07-14 06:40:32 [ERROR]   Failed to execute /usr/local/mysql/bin/mysqld --bootstrap --datadir=/usr/local/mysql/data --lc-messages-dir=/usr/local/mysql/share --lc-messages=en_US --basedir=/usr/local/mysql
+-- server log begin --
+
+-- server log end --
+</code></pre></li>
+
+<li><p>则使用以下命令：</p>
+
+<pre><code>/usr/local/mysql/bin/mysqld --user=mysql --basedir=/usr/local/mysql/ --datadir=/usr/local/mysql/data --initialize
+</code></pre></li>
+
+<li><p>如果出现以下错误：</p>
+
+<pre><code>/usr/local/mysql/bin/mysqld: error while loading shared libraries: libnuma.so.1: cannot open shared object file: No such file or directory
+</code></pre></li>
+
+<li><p>则执行以下命令：</p></li>
+</ul>
+
+<blockquote>
+<p>yum -y install numactl</p>
+</blockquote>
+
+<ul>
+<li><p>完成后继续安装：</p>
+
+<pre><code>/usr/local/mysql/bin/mysqld --user=mysql --basedir=/usr/local/mysql/ --datadir=/usr/local/mysql/data --initialize
+</code></pre></li>
+
+<li><p>编辑/etc/my.cnf</p>
+
+<pre><code>[mysqld]
+datadir=/usr/local/mysql/data
+basedir=/usr/local/mysql
+socket=/tmp/mysql.sock
+user=mysql
+port=3306
+character-set-server=utf8# 取消密码验证skip-grant-tables
+# Disabling symbolic-links is recommended to prevent assorted security risks
+symbolic-links=0
+# skip-grant-tables
+[mysqld_safe]
+log-error=/var/log/mysqld.log
+pid-file=/var/run/mysqld/mysqld.pid
+</code></pre></li>
+</ul>
+
+<h3 id="7-开启服务">7、开启服务</h3>
+
+<ul>
+<li>将mysql加入服务</li>
+</ul>
+
+<blockquote>
+<p>cp /usr/local/mysql/support-files/mysql.server /etc/init.d/mysql</p>
+</blockquote>
+
+<ul>
+<li>开机自启</li>
+</ul>
+
+<blockquote>
+<p>chkconfig mysql on</p>
+</blockquote>
+
+<ul>
+<li>开启</li>
+</ul>
+
+<blockquote>
+<p>service mysql start</p>
+</blockquote>
+
+<h3 id="8-设置密码">8、设置密码</h3>
+
+<ul>
+<li>登录（由于/etc/my.cnf中设置了取消密码验证，所以此处密码任意）</li>
+</ul>
+
+<blockquote>
+<p>/usr/local/mysql/bin/mysql -u root -p</p>
+</blockquote>
+
+<ul>
+<li>操作mysql数据库</li>
+</ul>
+
+<blockquote>
+<p>&gt;&gt;use mysql;</p>
+</blockquote>
+
+<ul>
+<li>修改密码</li>
+</ul>
+
+<blockquote>
+<p>&gt;&gt;update user set authentication_string=password(&lsquo;你的密码&rsquo;) where user=&lsquo;root&rsquo;;</p>
+
+<p>&gt;&gt;flush privileges;</p>
+
+<p>&gt;&gt;exit;</p>
+</blockquote>
+
+<h3 id="9-将-etc-my-cnf中的skip-grant-tables删除">9、将/etc/my.cnf中的skip-grant-tables删除</h3>
+
+<h3 id="10-登录再次设置密码-不知道为啥如果不再次设置密码就操作不了数据库了">10、登录再次设置密码（不知道为啥如果不再次设置密码就操作不了数据库了）</h3>
+
+<blockquote>
+<p>/usr/local/mysql/bin/mysql -u root -p</p>
+
+<p>&gt;&gt;ALTER USER &lsquo;root&rsquo;@&lsquo;localhost&rsquo; IDENTIFIED BY &lsquo;修改后的密码&rsquo;;</p>
+
+<p>&gt;&gt;exit;</p>
+</blockquote>
+
+<h3 id="11-允许远程连接">11、允许远程连接</h3>
+
+<blockquote>
+<p>/usr/local/mysql/bin/mysql -u root -p</p>
+
+<p>&gt;&gt;use mysql;</p>
+
+<p>&gt;&gt;update user set host=&lsquo;%&rsquo; where user = &lsquo;root&rsquo;;</p>
+
+<p>&gt;&gt;flush privileges;</p>
+
+<p>&gt;&gt;eixt;</p>
+</blockquote>
+
+<h3 id="12-添加快捷方式">12、添加快捷方式</h3>
+
+<blockquote>
+<p>ln -s /usr/local/mysql/bin/mysql /usr/bin</p>
+</blockquote>
+
+<h2 id="解决linux下mysql登录error-1045-28000-access-denied-for-user-root-localhost-using-passwor-问题">解决Linux下MySQL登录ERROR 1045 (28000): Access denied for user &lsquo;root&rsquo;@&lsquo;localhost&rsquo; (using passwor)问题&hellip;</h2>
+
+<h3 id="两种方案">两种方案：</h3>
+
+<h4 id="一">一：</h4>
 
 <ol>
-<li><p>暂存区与工作区的区别(原始文件：暂存区  目标文件：工作区)：<br />
-git diff</p>
+<li><p>修改mysql配置文件：vim /etc/my.cnf</p></li>
 
-<pre><code>$ git diff
-warning: LF will be replaced by CRLF in test.txt.
-The file will have its original line endings in your working directory
-diff --git a/test.txt b/test.txt
-index 94954ab..d56682a 100644
---- a/test.txt  ---&gt; `暂存区`
-+++ b/test.txt  ---&gt; `工作区`
-@@ -1,2 +1,3 @@
-hello
-world
-+welcome
+<li><p>找到[mysqld]下添加 skip-grant-tables 配置</p></li>
 
-</code></pre></li>
-
-<li><p>最新的提交与工作区的差别：<br />
-git diff HEAD
-git diff commit_id</p>
-
-<pre><code>$ git diff HEAD
-diff --git a/test.txt b/test.txt
-index 94954ab..d56682a 100644
---- a/test.txt  ---&gt; `版本库`
-+++ b/test.txt  ---&gt; `工作区`
-@@ -1,2 +1,3 @@
-hello
-world
-+welcome
-
-</code></pre></li>
-
-<li><p>最新的提交与暂存区的区别：<br />
-git diff &ndash;cached (commit_id)</p>
-
-<pre><code>$ git diff --cached
-diff --git a/test.txt b/test.txt
-index 94954ab..d56682a 100644
---- a/test.txt  ---&gt; `版本库`
-+++ b/test.txt  ---&gt; `暂存区`
-@@ -1,2 +1,3 @@
-hello
-world
-+welcome
-
-</code></pre></li>
+<li><p>重启服务service mysqld restart</p></li>
 </ol>
+
+<h4 id="二">二：</h4>
+
+<p>通过安装mysql默认密码来进行登陆，输入 <strong>cat /var/log/mysqld.log  | grep &ldquo;temporary password&rdquo;</strong>  获取到默认密码，再进行登陆修改密码（不修改的话会提示&rdquo;<strong>ERROR 1820 (HY000): You must reset your password using ALTER USER statement before executing this statement</strong>&ldquo;）。</p>
+
+<p>1: SET PASSWORD = PASSWORD(&rsquo;<strong>newpassword</strong>&rsquo;);</p>
+
+<p>2: ALTER USER &lsquo;root&rsquo;@&lsquo;localhost&rsquo; PASSWORD EXPIRE NEVER;</p>
+
+<p>3: flush privileges;</p>
+
+<p>除了红色newpassword自己设置以外其他的正常输出就行</p>
+
+<h2 id="安装jdk1-8">安装JDK1.8</h2>
+
+<blockquote>
+<p>unzip -o jdk8.zip -d /data/jdk8 #解压</p>
+
+<p>vi /etc/profile</p>
+</blockquote>
+
+<pre><code>##按 i 插入内容
+##在该文件最下面添加
+##按 Esc + wq 保存
+
+export JAVA_HOME=/data/jdk8
+export JRE_HOME=${JAVA_HOME}/jre
+export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib
+export PATH=${JAVA_HOME}/bin:$PATH
+</code></pre>
+
+<blockquote>
+<p>重新加载配置：source /etc/profile</p>
+
+<p>java -version ##测试安装是否成功</p>
+
+<p>提示权限不够，需要增加授权：chmod -R 777 /data/runten/jdk/</p>
+</blockquote>
+
+<h2 id="安装tomcat9">安装tomcat9</h2>
+
+<blockquote>
+<p>unzip -o tomcat9.zip -d /data/tomcat9 ##解压tomcat</p>
+</blockquote>
+
+<h5 id="测试启动tomcat9-可以跳过">测试启动tomcat9 （可以跳过）</h5>
+
+<blockquote>
+<p>cd /data/tomcat9/bin/</p>
+</blockquote>
+
+<h5 id="配置开机自动启动">配置开机自动启动</h5>
+
+<blockquote>
+<p>vi /etc/init.d/tomcat9</p>
+</blockquote>
+
+<pre><code>#!/bin/bash
+# chkconfig: 345 90 10
+# description: Tomcat9 Start Stop Restart
+# processname: tomcat9
+
+JAVA_HOME=/data/jdk8
+export JAVA_HOME
+PATH=$JAVA_HOME/bin:$PATH
+export PATH
+CATALINA_HOME=/data/tomcat9
+
+
+RETVAL=0
+
+start(){
+  checkrun 
+  if [ $RETVAL -eq 0 ]; then 
+    echo &quot;-- Starting tomcat...&quot; 
+    $CATALINA_HOME/bin/startup.sh
+  else 
+    echo &quot;-- tomcat already running&quot; 
+  fi  
+}
+kill(){
+  checkrun 
+  if [ $RETVAL -eq 1 ]; then 
+    read -p &quot;-- Do you really want to kill tomcat progress?[no])&quot; answer 
+    case $answer in 
+        Y|y|YES|yes|Yes) 
+           ps ax --width=1000 |grep tomcat|grep &quot;org.apache.catalina.startup.Bootstrap start&quot; | awk '{printf $1 &quot; &quot;}'|xargs kill -9 
+        ;;
+        *);;
+     esac
+  else
+      echo &quot;-- No tomcat is running...&quot;
+  fi
+}
+status(){
+  checkrun 
+  if [ $RETVAL -eq 1 ]; then
+    echo &quot;-- tomcat already running&quot;
+  else
+    echo &quot;-- No tomcat is running...&quot;
+  fi
+}
+checkrun(){
+  pstatus=`ps ax --width=1000 |grep tomcat| grep &quot;[o]rg.apache.catalina.startup.Bootstrap start&quot; | awk '{printf $1 &quot; &quot;}' | wc | awk '{print $2}'`
+  if [ $pstatus -gt 0 ]; then 
+    RETVAL=1 
+    return $RETVAL 
+  else 
+    RETVAL=0 
+    return $RETVAL 
+  fi  
+}
+
+case $1 in
+
+start)
+
+start
+exit 0
+
+;;
+
+stop)
+
+kill
+exit 0
+
+;;
+
+status)
+
+status
+exit 0
+
+;;
+
+logs)
+cd $CATALINA_HOME/logs
+tail -50f catalina.out
+;;
+
+esac
+
+exit 0
+</code></pre>
+
+<h5 id="将tomcat9服务加入到系统服务">将tomcat9服务加入到系统服务</h5>
+
+<blockquote>
+<p>chmod +x /etc/rc.d/init.d/tomcat9 ##增加tomcat9服务控制脚本执行权限</p>
+
+<p>chkconfig &ndash;add tomcat9</p>
+</blockquote>
+
+<h5 id="tomcat9-控制命令">tomcat9 控制命令</h5>
+
+<blockquote>
+<p>service tomcat9 start ##启动tomcat9</p>
+
+<p>service tomcat9 stop ##停止tomcat9</p>
+
+<p>service tomcat9 status ##状态</p>
+</blockquote>
+
+<h3 id="设置端口开放">设置端口开放</h3>
+
+<h5 id="端口号-80-81-83-9595-9090-tcp-udp">端口号：80 81 83 9595 9090(tcp&amp;udp)</h5>
+
+<pre><code>firewall-cmd --add-port=80-86/tcp --permanent  #添加 80-86端口
+firewall-cmd --reload  #刷新
+</code></pre>
+
+<h4 id="对准时间">对准时间</h4>
+
+<pre><code>yum install ntp  #需要先安装ntp服务器
+ntpdate asia.pool.ntp.org 
+/sbin/hwclock --systohc
+</code></pre>
 </article>
     </section>
 
     <footer class="ui attached segment dream-tags">
       
       
-      <a class="ui label" href="/tags/git" title="git">git</a>
+      <a class="ui label" href="/tags/linux" title="Linux">Linux</a>
       
       
     </footer>
