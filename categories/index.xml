@@ -6,10 +6,19 @@
     <description>Recent content in Categories on CoderLeftEar&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 15 Aug 2020 17:14:48 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 05 Sep 2020 09:38:13 +0800</lastBuildDate>
     
 	<atom:link href="https://coderleftear.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>JVM</title>
+      <link>https://coderleftear.github.io/categories/jvm/</link>
+      <pubDate>Sat, 05 Sep 2020 09:38:13 +0800</pubDate>
+      
+      <guid>https://coderleftear.github.io/categories/jvm/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Linux</title>
@@ -134,15 +143,6 @@
       <pubDate>Sun, 13 Oct 2019 21:45:20 +0800</pubDate>
       
       <guid>https://coderleftear.github.io/categories/springannotation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>JVM</title>
-      <link>https://coderleftear.github.io/categories/jvm/</link>
-      <pubDate>Mon, 30 Sep 2019 08:31:53 +0800</pubDate>
-      
-      <guid>https://coderleftear.github.io/categories/jvm/</guid>
       <description></description>
     </item>
     

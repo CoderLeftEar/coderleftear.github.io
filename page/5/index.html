@@ -562,6 +562,13 @@
       <div class="item" style="padding-left: 24px;">
         <i class="gem outline grey icon"></i>
         <div class="content">
+          <a href="https://coderleftear.github.io/post/jvm%E6%8E%92%E9%94%99/" class="item">Jvm排错</a>
+        </div>
+      </div>
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="gem outline grey icon"></i>
+        <div class="content">
           <a href="https://coderleftear.github.io/post/jvm%E7%AC%94%E8%AE%B007-book01/" class="item">JVM笔记07-Book01</a>
         </div>
       </div>
@@ -960,6 +967,46 @@
           
           <div class="display-content">
           
+            <a href="https://coderleftear.github.io/post/jvm%E7%AC%94%E8%AE%B006-java%E5%86%85%E5%AD%9801/">
+              
+              <h2 class="ui header" style="color: white;">JVM笔记06-Java内存01</h2>
+              
+            </a>
+            <p style="padding: 5px;">JVM笔记06-Java内存01 栈帧（Stack Frame）：每个方法在执行是都会生成一个与这个方法相关的、独有的栈帧（数据结构），本身存贮操作数栈里的数据、存贮局部变量表、方法的返回地址。
+程序计数器（Program Counter）： 描述线程在执行字节码时，执行完第一行后，下一行的位置。
+本地方法栈：关于native的，Java中有native的方法（不是有Java实现的，而是由C、C&#43;&#43;实现的），主要用于处理本地方法。
+堆（Heap）：所创建的绝大多数对象都是位于堆中，jvm中所管理的最大的内存，被所有内存共享（共享区域），jvm创建的时候，堆的内存会从操作系统被申请下来，存放我们所创建的对象实例。
+方法区（Method Area）：存储元信息。永久代（Permanent Generation），从jdk1.8开始，已经彻底废除永久代，使用元空间（meta space）。
+运行时常量池：方法区的一部分内容。编译期间生成class文件的时候，生成的各种字面量、符号引用，这些内容在进行加载完之后，都会进入到方法区的运行时常量池当中进行存放。
+直接内存（Direct Memory）：并不是有JVM世界管理的，而是有操作系统进行管理的</p>
+            <p>@ CoderLeftEar</p>
+          </div>
+          
+          <div class="ui top right attached black label">1 min read</div>
+          <div class="ui bottom left attached black label">Sep 29, 2019</div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <img src="/img/default5.jpg" alt="JVM笔记06-Java内存01">
+    
+  </div>
+</article>
+
+
+      
+
+        <article class="card" style="box-shadow: none;">
+  <div class="image">
+    
+    <div class="ui dimmer">
+    
+      <div class="content">
+        <div class="center">
+          
+          <div class="display-content">
+          
             <a href="https://coderleftear.github.io/post/jvm%E7%AC%94%E8%AE%B005-java%E5%AD%97%E8%8A%82%E7%A0%8102/">
               
               <h2 class="ui header" style="color: white;">JVM笔记05-Java字节码02</h2>
@@ -983,7 +1030,7 @@ Animal a = new Dog(); a.</p>
       </div>
     </div>
     
-    <img src="/img/default5.jpg" alt="JVM笔记05-Java字节码02">
+    <img src="/img/default2.jpg" alt="JVM笔记05-Java字节码02">
     
   </div>
 </article>
@@ -1023,7 +1070,7 @@ Animal a = new Dog(); a.</p>
       </div>
     </div>
     
-    <img src="/img/default5.jpg" alt="JVM笔记04-Java字节码01">
+    <img src="/img/default3.jpg" alt="JVM笔记04-Java字节码01">
     
   </div>
 </article>
@@ -1095,7 +1142,7 @@ Animal a = new Dog(); a.</p>
       </div>
     </div>
     
-    <img src="/img/default1.jpg" alt="笔记-杂">
+    <img src="/img/default6.jpg" alt="笔记-杂">
     
   </div>
 </article>
@@ -1131,41 +1178,7 @@ Animal a = new Dog(); a.</p>
       </div>
     </div>
     
-    <img src="/img/default4.jpg" alt="JVM笔记03-类加载器03">
-    
-  </div>
-</article>
-
-
-      
-
-        <article class="card" style="box-shadow: none;">
-  <div class="image">
-    
-    <div class="ui dimmer">
-    
-      <div class="content">
-        <div class="center">
-          
-          <div class="display-content">
-          
-            <a href="https://coderleftear.github.io/post/datastructure02-arrayqueue/">
-              
-              <h2 class="ui header" style="color: white;">DataStructure02-ArrayQueue</h2>
-              
-            </a>
-            <p style="padding: 5px;">DataStructure02-ArrayQueue（使用数组模拟队列） 在ArrayQueue类中，定义数组队列中的方法 class ArrayQueue { private int maxSize; //数组最大容量 private int front; //队列头 private int rear; //队列尾 private int[] arr; //该数据用于存放数据，模拟队列 public ArrayQueue(int maxSize) { this.maxSize = maxSize; //指定队列最大值 arr = new int[this.maxSize]; //指定存放数据的数组的大小 front = -1; //指向队列头部，指向队列头的前一个位置 rear = -1; //指向队列尾，指向队列尾的数据，即最后一个数据 } //判断队列是否满 public boolean isFull() { return rear == maxSize; } //判断队列是否为空 public boolean isEmpty() { return front == rear; } //添加数据到队列 public void add (int value) { //队列是否满 if(isFull()){ System.</p>
-            <p>@ CoderLeftEar</p>
-          </div>
-          
-          <div class="ui top right attached black label">2 min read</div>
-          <div class="ui bottom left attached black label">Sep 4, 2019</div>
-          
-        </div>
-      </div>
-    </div>
-    
-    <img src="/img/default4.jpg" alt="DataStructure02-ArrayQueue">
+    <img src="/img/default6.jpg" alt="JVM笔记03-类加载器03">
     
   </div>
 </article>
