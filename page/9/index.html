@@ -628,6 +628,13 @@
       <div class="item" style="padding-left: 24px;">
         <i class="gem outline grey icon"></i>
         <div class="content">
+          <a href="https://coderleftear.github.io/post/linux%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AF%E8%AE%BE%E7%BD%AE/" class="item">Linux开机自启设置</a>
+        </div>
+      </div>
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="gem outline grey icon"></i>
+        <div class="content">
           <a href="https://coderleftear.github.io/post/linux%E5%AE%89%E8%A3%85tomcatmysql/" class="item">Linux安装tomcat、mysql</a>
         </div>
       </div>
@@ -967,6 +974,58 @@
           
           <div class="display-content">
           
+            <a href="https://coderleftear.github.io/post/git%E7%AC%94%E8%AE%B005-checkout%E8%BF%9B%E9%98%B6%E4%B8%8Estash/">
+              
+              <h2 class="ui header" style="color: white;">Git笔记05-checkout进阶与stash</h2>
+              
+            </a>
+            <p style="padding: 5px;">Git笔记05-checkout进阶与stash checkout 创建并切换到3fs345（临时名称、分支）提交的分支：
+&gt; git checkout 3fs345
+创建mycommit分支并指向3fs345：
+&gt; git branch mycommit 3fs345
+分支重命名：
+&gt; git branch -m master master2
+stash 临时存储： &gt; git stash
+添加说明：
+&gt; git stash save “commit”
+查看：stash@{0}表示最新
+&gt; git stash list
+恢复并删除当前stash：
+&gt; git stash pop
+恢复不删除当前stash：
+&gt; git stash apply
+手动删除：
+&gt; git stash drop stash@{0}
+指定恢复之前stash的内容：
+&gt; git stash apply stash@{0}</p>
+            <p>@ CoderLeftEar</p>
+          </div>
+          
+          <div class="ui top right attached black label">1 min read</div>
+          <div class="ui bottom left attached black label">Aug 10, 2019</div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <img src="/img/default2.jpg" alt="Git笔记05-checkout进阶与stash">
+    
+  </div>
+</article>
+
+
+      
+
+        <article class="card" style="box-shadow: none;">
+  <div class="image">
+    
+    <div class="ui dimmer">
+    
+      <div class="content">
+        <div class="center">
+          
+          <div class="display-content">
+          
             <a href="https://coderleftear.github.io/post/jdk8-08-stream%E7%AC%94%E8%AE%B001/">
               
               <h2 class="ui header" style="color: white;">Jdk8-08-Stream笔记01</h2>
@@ -985,7 +1044,7 @@
       </div>
     </div>
     
-    <img src="/img/default5.jpg" alt="Jdk8-08-Stream笔记01">
+    <img src="/img/default3.jpg" alt="Jdk8-08-Stream笔记01">
     
   </div>
 </article>
@@ -1024,7 +1083,7 @@ System.out.println(binaryOperatorTest.operatorFunMin(&#34;abbbbbb&#34;, &#34;bbb
       </div>
     </div>
     
-    <img src="/img/default6.jpg" alt="Jdk8-07-BinaryOperator">
+    <img src="/img/default5.jpg" alt="Jdk8-07-BinaryOperator">
     
   </div>
 </article>
@@ -1059,7 +1118,7 @@ List&lt;String&gt; list = Arrays.asList(&#34;a&#34;, &#34;b&#34;, &#34;c&#34;, &
       </div>
     </div>
     
-    <img src="/img/default2.jpg" alt="Jdk8-02-Consumer">
+    <img src="/img/default4.jpg" alt="Jdk8-02-Consumer">
     
   </div>
 </article>
@@ -1102,7 +1161,7 @@ Employee emp1 = new Employee(&#34;zhangsan&#34;); Employee emp2 = new Employee(&
       </div>
     </div>
     
-    <img src="/img/default6.jpg" alt="Jdk8-04-Optional">
+    <img src="/img/default1.jpg" alt="Jdk8-04-Optional">
     
   </div>
 </article>
@@ -1141,47 +1200,7 @@ List&lt;Integer&gt; list = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10); Predica
       </div>
     </div>
     
-    <img src="/img/default5.jpg" alt="Jdk8-05-Predicate">
-    
-  </div>
-</article>
-
-
-      
-
-        <article class="card" style="box-shadow: none;">
-  <div class="image">
-    
-    <div class="ui dimmer">
-    
-      <div class="content">
-        <div class="center">
-          
-          <div class="display-content">
-          
-            <a href="https://coderleftear.github.io/post/jdk8-06-supplier/">
-              
-              <h2 class="ui header" style="color: white;">Jdk8-06-Supplier</h2>
-              
-            </a>
-            <p style="padding: 5px;"> Supplier Supplier：不接受参数，返回结果，用来创建对象。
-Supplier是个接口，有一个get()方法，创建完对象后，如要调用需要先调用自身的get()。
-Student类：
-@Data @NoArgsConstructor class Student{ private String name = &#34;张三&#34;; }  使用内部类：
-Supplier&lt;Student&gt; supplier = new Supplier&lt;Student&gt;() { @Override public Student get() { return new Student(); } }; System.out.println(supplier.get().getName());  使用Lambda表达式：
-supplier = () -&gt; new Student(); System.out.println(supplier.get().getName());  使用方法引用：
-supplier = Student::new; System.out.println(supplier.get().getName());  </p>
-            <p>@ CoderLeftEar</p>
-          </div>
-          
-          <div class="ui top right attached black label">1 min read</div>
-          <div class="ui bottom left attached black label">Aug 9, 2019</div>
-          
-        </div>
-      </div>
-    </div>
-    
-    <img src="/img/default5.jpg" alt="Jdk8-06-Supplier">
+    <img src="/img/default3.jpg" alt="Jdk8-05-Predicate">
     
   </div>
 </article>

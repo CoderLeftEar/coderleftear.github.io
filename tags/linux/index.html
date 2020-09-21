@@ -631,6 +631,13 @@ tag | Linux
       <div class="item" style="padding-left: 24px;">
         <i class="gem outline grey icon"></i>
         <div class="content">
+          <a href="https://coderleftear.github.io/post/linux%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AF%E8%AE%BE%E7%BD%AE/" class="item">Linux开机自启设置</a>
+        </div>
+      </div>
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="gem outline grey icon"></i>
+        <div class="content">
           <a href="https://coderleftear.github.io/post/linux%E5%AE%89%E8%A3%85tomcatmysql/" class="item">Linux安装tomcat、mysql</a>
         </div>
       </div>
@@ -970,6 +977,48 @@ tag | Linux
           
           <div class="display-content">
           
+            <a href="https://coderleftear.github.io/post/linux%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AF%E8%AE%BE%E7%BD%AE/">
+              
+              <h2 class="ui header" style="color: white;">Linux开机自启设置</h2>
+              
+            </a>
+            <p style="padding: 5px;"> Linux开机自启设置 一、添加开机自启服务 在CentOS 7中添加开机自启服务非常方便，只需要两条命令(以Jenkins为例)：
+systemctl enable jenkins.service #设置jenkins服务为自启动服务 sysstemctl start jenkins.service #启动jenkins服务  二、添加开机自启脚本 在centos7中增加脚本有两种常用的方法，以脚本autostart.sh为例：
+#!/bin/bash #description:开机自启脚本 /usr/local/tomcat/bin/startup.sh #启动tomcat  方法一 1、赋予脚本可执行权限（/opt/script/autostart.sh是你的脚本路径）
+chmod &#43;x /opt/script/autostart.sh  2、打开/etc/rc.d/rc.local或/etc/rc.local文件，在末尾增加如下内容
+su - user -c &#39;/opt/script/autostart.sh&#39;  3、在centos7中，/etc/rc.d/rc.local的权限被降低了，所以需要执行如下命令赋予其可执行权限
+chmod &#43;x /etc/rc.d/rc.local  方法二 1、将脚本移动到/etc/rc.d/init.d目录下
+mv /opt/script/autostart.sh /etc/rc.d/init.d  2、增加脚本的可执行权限
+chmod &#43;x /etc/rc.d/init.d/autostart.sh  3、添加脚本到开机自动启动项目中
+cd /etc/rc.d/init.d chkconfig --add autostart.sh chkconfig autostart.sh on  </p>
+            <p>@ CoderLeftEar</p>
+          </div>
+          
+          <div class="ui top right attached black label">1 min read</div>
+          <div class="ui bottom left attached black label">Sep 21, 2020</div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <img src="/img/default2.jpg" alt="Linux开机自启设置">
+    
+  </div>
+</article>
+
+
+      
+
+        <article class="card" style="box-shadow: none;">
+  <div class="image">
+    
+    <div class="ui dimmer">
+    
+      <div class="content">
+        <div class="center">
+          
+          <div class="display-content">
+          
             <a href="https://coderleftear.github.io/post/linux%E5%AE%89%E8%A3%85tomcatmysql/">
               
               <h2 class="ui header" style="color: white;">Linux安装tomcat、mysql</h2>
@@ -994,7 +1043,7 @@ tag | Linux
       </div>
     </div>
     
-    <img src="/img/default2.jpg" alt="Linux安装tomcat、mysql">
+    <img src="/img/default6.jpg" alt="Linux安装tomcat、mysql">
     
   </div>
 </article>
@@ -1036,7 +1085,7 @@ rmdir 删除空文件夹 (只能删除空文件夹) rm -r /a/b (删除非空文�
       </div>
     </div>
     
-    <img src="/img/default6.jpg" alt="Linux">
+    <img src="/img/default1.jpg" alt="Linux">
     
   </div>
 </article>

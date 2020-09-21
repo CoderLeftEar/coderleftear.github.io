@@ -6,10 +6,27 @@
     <description>Recent content on CoderLeftEar&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 05 Sep 2020 09:38:13 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 21 Sep 2020 19:45:48 +0800</lastBuildDate>
     
 	<atom:link href="https://coderleftear.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Linux开机自启设置</title>
+      <link>https://coderleftear.github.io/post/linux%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AF%E8%AE%BE%E7%BD%AE/</link>
+      <pubDate>Mon, 21 Sep 2020 19:45:48 +0800</pubDate>
+      
+      <guid>https://coderleftear.github.io/post/linux%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AF%E8%AE%BE%E7%BD%AE/</guid>
+      <description> Linux开机自启设置 一、添加开机自启服务 在CentOS 7中添加开机自启服务非常方便，只需要两条命令(以Jenkins为例)：
+systemctl enable jenkins.service #设置jenkins服务为自启动服务 sysstemctl start jenkins.service #启动jenkins服务  二、添加开机自启脚本 在centos7中增加脚本有两种常用的方法，以脚本autostart.sh为例：
+#!/bin/bash #description:开机自启脚本 /usr/local/tomcat/bin/startup.sh #启动tomcat  方法一 1、赋予脚本可执行权限（/opt/script/autostart.sh是你的脚本路径）
+chmod +x /opt/script/autostart.sh  2、打开/etc/rc.d/rc.local或/etc/rc.local文件，在末尾增加如下内容
+su - user -c &#39;/opt/script/autostart.sh&#39;  3、在centos7中，/etc/rc.d/rc.local的权限被降低了，所以需要执行如下命令赋予其可执行权限
+chmod +x /etc/rc.d/rc.local  方法二 1、将脚本移动到/etc/rc.d/init.d目录下
+mv /opt/script/autostart.sh /etc/rc.d/init.d  2、增加脚本的可执行权限
+chmod +x /etc/rc.d/init.d/autostart.sh  3、添加脚本到开机自动启动项目中
+cd /etc/rc.d/init.d chkconfig --add autostart.sh chkconfig autostart.sh on  </description>
+    </item>
     
     <item>
       <title>Jvm排错</title>

@@ -628,6 +628,13 @@
       <div class="item" style="padding-left: 24px;">
         <i class="gem outline grey icon"></i>
         <div class="content">
+          <a href="https://coderleftear.github.io/post/linux%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AF%E8%AE%BE%E7%BD%AE/" class="item">Linux开机自启设置</a>
+        </div>
+      </div>
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="gem outline grey icon"></i>
+        <div class="content">
           <a href="https://coderleftear.github.io/post/linux%E5%AE%89%E8%A3%85tomcatmysql/" class="item">Linux安装tomcat、mysql</a>
         </div>
       </div>
@@ -967,6 +974,47 @@
           
           <div class="display-content">
           
+            <a href="https://coderleftear.github.io/post/jvm%E7%AC%94%E8%AE%B001-%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%99%A801/">
+              
+              <h2 class="ui header" style="color: white;">JVM笔记01-类加载器01</h2>
+              
+            </a>
+            <p style="padding: 5px;">类加载器、类的加载连接与初始化  类加载器、类的加载连接与初始化  类加载 类加载器 类的加载、连接与初始化 类的使用和卸载 Java虚拟机对类的使用方式 案例： 类的加载 JVM参数 关于public static final String str = “hello”;  反编译  助记符： 数组实例 父子接口 案例：关于初始化过程的代码   所有的类一定是由类加载器加载的，但数组例外，数组是由jvm加载的
+类加载 定义：在Java代码中，类型的加载、连接与初始化过程都是在程序运行期间完成的。
+类型：可以理解为class；这里指的是定义的class、interface、枚举，不存在对象的概念。表示类本身，并不表示对象。
+类型的加载：将已经存在的字节码文件从硬盘上加载到内存中。 连接：将类与类之间的关系固定好，对于字节码的一些相关处理，验证、准备、解析都是在此阶段完成的。
+初始化：赋值
+类加载器 加载类的工具
+以下情况，Java虚拟机会结束生命周期： - 执行了System.exit(); - 程序正常结束。 - 程序在执行过程中遇到了异常或错误而异常终止。 - 由于操作系统出现错误而导致Java虚拟机进程终止。
+类的加载、连接与初始化  加载：查找并加载类的二进制数据（加载类的class文件加载进内存） 连接  验证：确保被加载的类的正确性。（使得class文件时按照jvm的规范进行的） 准备：为类的静态变量分配内存，并将其初始化为默认值。  class test {   private static int a = 1; } 先加载test类，然后将变量a设置为int类型的默认值0。  解析：将符号引用转换为直接引用。  符号引用：通过符号的表示，一个类中的方法通过符号引用另一个类所需的目标。 直接引用：直接将这个方法通过指针指向所需要用的目标的对象的内存中的位置。   初始化：为类的静态变量赋予正确的初始值（a = 1) 类的实例化：  为新的对象分配内存 为实例变量赋默认值 为实例变量赋正确的初始值 java编译器为它编译的每个类都至少生成一个实例初始化方法（构造器），在java的class文件中，这个实例初始化方法被称为”&lt;init&gt;“（静态变量是”&lt;clinit&gt;“）；针对源代码中每个类的构造方法，java编译器都产生一个&lt;init&gt;方法。 ===================== 另一种对象创建过程：类加载检查 - 分配内存 - 初始化零值 - 设置对象头 - 执行init方法  垃圾回收和对象终结  类的使用和卸载  使用：用类创建对象、调用方法。 卸载：class字节码文件加载到内存中，形成自己的数据结构，驻留在内存中，还可以被销毁。  Java虚拟机对类的使用方式 所有的Java虚拟机实现必须在每个类或接口 被Java程序首次主动使用时才初始化它们。</p>
+            <p>@ CoderLeftEar</p>
+          </div>
+          
+          <div class="ui top right attached black label">4 min read</div>
+          <div class="ui bottom left attached black label">Aug 25, 2019</div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <img src="/img/default2.jpg" alt="JVM笔记01-类加载器01">
+    
+  </div>
+</article>
+
+
+      
+
+        <article class="card" style="box-shadow: none;">
+  <div class="image">
+    
+    <div class="ui dimmer">
+    
+      <div class="content">
+        <div class="center">
+          
+          <div class="display-content">
+          
             <a href="https://coderleftear.github.io/post/git%E7%AC%94%E8%AE%B015-git-rebase%E5%8E%9F%E7%90%86%E6%B7%B1%E5%BA%A6%E5%89%96%E6%9E%90/">
               
               <h2 class="ui header" style="color: white;">Git笔记15-git rebase原理深度剖析</h2>
@@ -983,7 +1031,7 @@
       </div>
     </div>
     
-    <img src="/img/default2.jpg" alt="Git笔记15-git rebase原理深度剖析">
+    <img src="/img/default4.jpg" alt="Git笔记15-git rebase原理深度剖析">
     
   </div>
 </article>
@@ -1063,7 +1111,7 @@ error: failed to push some refs to &#39;git@github.com:Mr-WangG/git_subtree_chil
       </div>
     </div>
     
-    <img src="/img/default3.jpg" alt="Git笔记13-Git Subtree">
+    <img src="/img/default1.jpg" alt="Git笔记13-Git Subtree">
     
   </div>
 </article>
@@ -1112,7 +1160,7 @@ A a1 = supplier.get(); accumulator.accept(a1, t1); accumulator.</p>
       </div>
     </div>
     
-    <img src="/img/default5.jpg" alt="Jdk8-Collector">
+    <img src="/img/default2.jpg" alt="Jdk8-Collector">
     
   </div>
 </article>
@@ -1160,54 +1208,7 @@ git push</p>
       </div>
     </div>
     
-    <img src="/img/default3.jpg" alt="Git笔记12-Git裸库与submodule">
-    
-  </div>
-</article>
-
-
-      
-
-        <article class="card" style="box-shadow: none;">
-  <div class="image">
-    
-    <div class="ui dimmer">
-    
-      <div class="content">
-        <div class="center">
-          
-          <div class="display-content">
-          
-            <a href="https://coderleftear.github.io/post/git%E7%AC%94%E8%AE%B011-git-refspec%E8%BF%9C%E7%A8%8B%E6%A0%87%E7%AD%BE%E4%B8%8Egit-gc/">
-              
-              <h2 class="ui header" style="color: white;">Git笔记11-git refspec、远程标签与git gc</h2>
-              
-            </a>
-            <p style="padding: 5px;">Git笔记11-git refspec、远程标签与git gc git refspec: 将本地的分支推送到远程的那个分支上。
-git push 完整写法：src本地分支名称，dest远程分支名称
-git push origin src:dest
-git pull 完整写法：src远程分支名称，dest本地分支名称
-git push origin src:dest
-一、git refspec 1、HEAD HEAD: 指向当前分支所在的引用标志符 查看HEAD：git symbolic-ref HEAD
-修改HEAD：git symbolic-ref HEAD refs/heads/develop
-2、ORIG_HEAD ORIG_HEAD: 远程最新的commit_id
-3、FETCH_HEAD FETCH_HEAD: 拉取下来后，最新的commit_id
-二、远程标签 查看标签：git show v1.0
-推送标签：git push origin v1.0 (批量)：git push origin v1.0 v2.0 未推送全部推送：git push origin –tags 完整写法：git push origin refs/tags/v1.0:refs/tags/v1.0
-拉取所有：git pull 拉取一个：git fetch origin tag v7.0
-删除标签远程(git pull本地却不能体现)：
-git push origin :refs/tags/v1.</p>
-            <p>@ CoderLeftEar</p>
-          </div>
-          
-          <div class="ui top right attached black label">1 min read</div>
-          <div class="ui bottom left attached black label">Aug 14, 2019</div>
-          
-        </div>
-      </div>
-    </div>
-    
-    <img src="/img/default2.jpg" alt="Git笔记11-git refspec、远程标签与git gc">
+    <img src="/img/default1.jpg" alt="Git笔记12-Git裸库与submodule">
     
   </div>
 </article>

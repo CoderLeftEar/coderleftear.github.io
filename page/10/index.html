@@ -628,6 +628,13 @@
       <div class="item" style="padding-left: 24px;">
         <i class="gem outline grey icon"></i>
         <div class="content">
+          <a href="https://coderleftear.github.io/post/linux%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AF%E8%AE%BE%E7%BD%AE/" class="item">Linux开机自启设置</a>
+        </div>
+      </div>
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="gem outline grey icon"></i>
+        <div class="content">
           <a href="https://coderleftear.github.io/post/linux%E5%AE%89%E8%A3%85tomcatmysql/" class="item">Linux安装tomcat、mysql</a>
         </div>
       </div>
@@ -967,6 +974,46 @@
           
           <div class="display-content">
           
+            <a href="https://coderleftear.github.io/post/jdk8-06-supplier/">
+              
+              <h2 class="ui header" style="color: white;">Jdk8-06-Supplier</h2>
+              
+            </a>
+            <p style="padding: 5px;"> Supplier Supplier：不接受参数，返回结果，用来创建对象。
+Supplier是个接口，有一个get()方法，创建完对象后，如要调用需要先调用自身的get()。
+Student类：
+@Data @NoArgsConstructor class Student{ private String name = &#34;张三&#34;; }  使用内部类：
+Supplier&lt;Student&gt; supplier = new Supplier&lt;Student&gt;() { @Override public Student get() { return new Student(); } }; System.out.println(supplier.get().getName());  使用Lambda表达式：
+supplier = () -&gt; new Student(); System.out.println(supplier.get().getName());  使用方法引用：
+supplier = Student::new; System.out.println(supplier.get().getName());  </p>
+            <p>@ CoderLeftEar</p>
+          </div>
+          
+          <div class="ui top right attached black label">1 min read</div>
+          <div class="ui bottom left attached black label">Aug 9, 2019</div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <img src="/img/default1.jpg" alt="Jdk8-06-Supplier">
+    
+  </div>
+</article>
+
+
+      
+
+        <article class="card" style="box-shadow: none;">
+  <div class="image">
+    
+    <div class="ui dimmer">
+    
+      <div class="content">
+        <div class="center">
+          
+          <div class="display-content">
+          
             <a href="https://coderleftear.github.io/post/jdk8-03-function/">
               
               <h2 class="ui header" style="color: white;">Jdk8-03-Function</h2>
@@ -991,7 +1038,7 @@ System.out.println(functionDemo.convert2(5, value -&gt; (int)value &#43; 1, valu
       </div>
     </div>
     
-    <img src="/img/default2.jpg" alt="Jdk8-03-Function">
+    <img src="/img/default3.jpg" alt="Jdk8-03-Function">
     
   </div>
 </article>
@@ -1031,7 +1078,7 @@ List&lt;Integer&gt; list = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9);  System.out
       </div>
     </div>
     
-    <img src="/img/default5.jpg" alt="Jdk8-01-Lambda">
+    <img src="/img/default1.jpg" alt="Jdk8-01-Lambda">
     
   </div>
 </article>
@@ -1072,7 +1119,7 @@ merge快进和不使用快进 dev:
       </div>
     </div>
     
-    <img src="/img/default5.jpg" alt="Git笔记04-分支进阶与版本回退">
+    <img src="/img/default6.jpg" alt="Git笔记04-分支进阶与版本回退">
     
   </div>
 </article>
@@ -1176,44 +1223,7 @@ $ git status On branch master Changes not staged for commit: (use &#34;git add/r
       </div>
     </div>
     
-    <img src="/img/default5.jpg" alt="Git笔记02-添加、删除、修改、日志">
-    
-  </div>
-</article>
-
-
-      
-
-        <article class="card" style="box-shadow: none;">
-  <div class="image">
-    
-    <div class="ui dimmer">
-    
-      <div class="content">
-        <div class="center">
-          
-          <div class="display-content">
-          
-            <a href="https://coderleftear.github.io/post/git%E7%AC%94%E8%AE%B001-%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4%E6%93%8D%E4%BD%9C/">
-              
-              <h2 class="ui header" style="color: white;">Git笔记01-基本命令操作</h2>
-              
-            </a>
-            <p style="padding: 5px;">Git笔记01-基本命令操作 一、基本命令 1、git init:初始化本地仓库 2、git status:当前处于什么状态 $ git status On branch master No commits yet Untracked files: (use &#34;git add &lt;file&gt;...&#34; to include in what will be committed) test.txt nothing added to commit but untracked files present (use &#34;git add&#34; to track)  3、git add .:将文件纳入暂存区当中 git add .：添加新增文件和修改的文件
-git add -u（git add -update）：只添加修改的文件
-git add -A：添加所有文件，包括删除的文件
-$ git status On branch master No commits yet Changes to be committed: (use &#34;git rm --cached &lt;file&gt;.</p>
-            <p>@ CoderLeftEar</p>
-          </div>
-          
-          <div class="ui top right attached black label">2 min read</div>
-          <div class="ui bottom left attached black label">Aug 6, 2019</div>
-          
-        </div>
-      </div>
-    </div>
-    
-    <img src="/img/default2.jpg" alt="Git笔记01-基本命令操作">
+    <img src="/img/default2.jpg" alt="Git笔记02-添加、删除、修改、日志">
     
   </div>
 </article>

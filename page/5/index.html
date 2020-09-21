@@ -628,6 +628,13 @@
       <div class="item" style="padding-left: 24px;">
         <i class="gem outline grey icon"></i>
         <div class="content">
+          <a href="https://coderleftear.github.io/post/linux%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AF%E8%AE%BE%E7%BD%AE/" class="item">Linux开机自启设置</a>
+        </div>
+      </div>
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="gem outline grey icon"></i>
+        <div class="content">
           <a href="https://coderleftear.github.io/post/linux%E5%AE%89%E8%A3%85tomcatmysql/" class="item">Linux安装tomcat、mysql</a>
         </div>
       </div>
@@ -967,6 +974,42 @@
           
           <div class="display-content">
           
+            <a href="https://coderleftear.github.io/post/springannotation%E7%AC%94%E8%AE%B001-ioc/">
+              
+              <h2 class="ui header" style="color: white;">SpringAnnotation笔记01-IOC</h2>
+              
+            </a>
+            <p style="padding: 5px;">SpringAnnotation笔记01-IOC 注解类 配置文件方式： //配置文件 &lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt; &lt;beans xmlns=&#34;http://www.springframework.org/schema/beans&#34; xmlns:xsi=&#34;http://www.w3.org/2001/XMLSchema-instance&#34; xsi:schemaLocation=&#34;http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd&#34;&gt; &lt;bean id=&#34;person&#34; class=&#34;com.wang.bean.Person&#34;&gt; &lt;property name=&#34;name&#34; value=&#34;zhangsan&#34;/&gt; &lt;property name=&#34;age&#34; value=&#34;20&#34;/&gt; &lt;/bean&gt; &lt;/beans&gt; ----------------------------------------------------- ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext(&#34;bean.xml&#34;); //配置文件的位置 Person person = (Person) applicationContext.getBean(&#34;person&#34;); System.out.println(person);  配置类方式： @Configuration：告诉spring这是一个配置类。
+@Bean(value = &#34;person&#34;)：给容器中注册一个Bean；类型为返回值类型，id默认使用方法名，还可通过value设置id。
+//告诉spring这是一个配置类 @Configuration public class PersonConfig { //给容器中注册一个Bean；class类型为返回值类型，默认id为方法名 @Bean public Person person () { return new Person(&#34;lisi&#34;, 25); } } AnnotationConfigApplicationContext applicationContext2 = new AnnotationConfigApplicationContext(PersonConfig.class); Person person2 = (Person) applicationContext2.</p>
+            <p>@ CoderLeftEar</p>
+          </div>
+          
+          <div class="ui top right attached black label">6 min read</div>
+          <div class="ui bottom left attached black label">Sep 29, 2019</div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <img src="/img/default3.jpg" alt="SpringAnnotation笔记01-IOC">
+    
+  </div>
+</article>
+
+
+      
+
+        <article class="card" style="box-shadow: none;">
+  <div class="image">
+    
+    <div class="ui dimmer">
+    
+      <div class="content">
+        <div class="center">
+          
+          <div class="display-content">
+          
             <a href="https://coderleftear.github.io/post/jvm%E7%AC%94%E8%AE%B006-java%E5%86%85%E5%AD%9801/">
               
               <h2 class="ui header" style="color: white;">JVM笔记06-Java内存01</h2>
@@ -1030,7 +1073,7 @@ Animal a = new Dog(); a.</p>
       </div>
     </div>
     
-    <img src="/img/default2.jpg" alt="JVM笔记05-Java字节码02">
+    <img src="/img/default6.jpg" alt="JVM笔记05-Java字节码02">
     
   </div>
 </article>
@@ -1070,7 +1113,7 @@ Animal a = new Dog(); a.</p>
       </div>
     </div>
     
-    <img src="/img/default3.jpg" alt="JVM笔记04-Java字节码01">
+    <img src="/img/default4.jpg" alt="JVM笔记04-Java字节码01">
     
   </div>
 </article>
@@ -1104,7 +1147,7 @@ Animal a = new Dog(); a.</p>
       </div>
     </div>
     
-    <img src="/img/default4.jpg" alt="js笔记01">
+    <img src="/img/default5.jpg" alt="js笔记01">
     
   </div>
 </article>
@@ -1142,43 +1185,7 @@ Animal a = new Dog(); a.</p>
       </div>
     </div>
     
-    <img src="/img/default6.jpg" alt="笔记-杂">
-    
-  </div>
-</article>
-
-
-      
-
-        <article class="card" style="box-shadow: none;">
-  <div class="image">
-    
-    <div class="ui dimmer">
-    
-      <div class="content">
-        <div class="center">
-          
-          <div class="display-content">
-          
-            <a href="https://coderleftear.github.io/post/jvm%E7%AC%94%E8%AE%B003-%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%99%A803/">
-              
-              <h2 class="ui header" style="color: white;">JVM笔记03-类加载器03</h2>
-              
-            </a>
-            <p style="padding: 5px;">JVM笔记03-类加载器03  JVM笔记03-类加载器03  自定义类加载器在复杂类加载情况下运动分析 类加载器命名空间实战与彻底理解  1. 2.  类加载器实例剖析与疑难点解析  BootstrapClassLoader ExtensionClassLoader  类加载器命名空间深度解析  例1： 例2： 类加载器的双亲委托模型的好处  扩展类加载器和总结  启动类加载器的相关  Launcher源码分析和forName源码分析 线程上下文类加载器的分析与事项（setContextClassLoader();）  例1： 例2：ServiceLoader案例 例3：  jar hell问题   自定义类加载器在复杂类加载情况下运动分析 案例在上一篇
-注释掉clazz.newInstance();就不会实例化MyDog对象，即MyDog的构造方法不会被调用，因此不会实例化MyCat对象，没有对MyCat进行主动使用。但并不代表MyDog没有被加载。
-注释掉clazz.newInstance(): [Loaded com.wang.jvm.custom.MyDog from file:/E:/JavaEE/ClassLoad/out/production/classes/] hashcode: 356573597 没有注释掉clazz.newInstance(): [Loaded com.wang.jvm.custom.MyDog from file:/E:/JavaEE/ClassLoad/out/production/classes/] hashcode: 356573597 invoke dog class constructor!sun.misc.Launcher$AppClassLoader@18b4aac2 [Loaded com.wang.jvm.custom.MyCat from file:/E:/JavaEE/ClassLoad/out/production/classes/] invoke cat class constructor!sun.misc.Launcher$AppClassLoader@18b4aac2  MyClassLoader loader = new MyClassLoader(&#34;loader&#34;); Class&lt;?</p>
-            <p>@ CoderLeftEar</p>
-          </div>
-          
-          <div class="ui top right attached black label">4 min read</div>
-          <div class="ui bottom left attached black label">Sep 10, 2019</div>
-          
-        </div>
-      </div>
-    </div>
-    
-    <img src="/img/default6.jpg" alt="JVM笔记03-类加载器03">
+    <img src="/img/default5.jpg" alt="笔记-杂">
     
   </div>
 </article>
