@@ -6,10 +6,19 @@
     <description>Recent content on CoderLeftEar&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 21 Sep 2020 19:45:48 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2020 16:52:25 +0800</lastBuildDate>
     
 	<atom:link href="https://coderleftear.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Git Stash删除后找回</title>
+      <link>https://coderleftear.github.io/post/git-stash%E5%88%A0%E9%99%A4%E5%90%8E%E6%89%BE%E5%9B%9E/</link>
+      <pubDate>Thu, 15 Oct 2020 16:52:25 +0800</pubDate>
+      
+      <guid>https://coderleftear.github.io/post/git-stash%E5%88%A0%E9%99%A4%E5%90%8E%E6%89%BE%E5%9B%9E/</guid>
+      <description> Git Stash删除后找回 查询所有记录 git log --graph --oneline --decorate $(git fsck --no-reflog | awk &#39;/dangling commit/ {print $3}&#39;)  添加到工作区 git stash apply 9fa8ujaf  </description>
+    </item>
     
     <item>
       <title>Linux开机自启设置</title>

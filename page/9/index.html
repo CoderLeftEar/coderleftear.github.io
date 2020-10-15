@@ -250,6 +250,13 @@
       <div class="item" style="padding-left: 24px;">
         <i class="gem outline grey icon"></i>
         <div class="content">
+          <a href="https://coderleftear.github.io/post/git-stash%E5%88%A0%E9%99%A4%E5%90%8E%E6%89%BE%E5%9B%9E/" class="item">Git Stash删除后找回</a>
+        </div>
+      </div>
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="gem outline grey icon"></i>
+        <div class="content">
           <a href="https://coderleftear.github.io/post/git%E7%AC%94%E8%AE%B015-git-rebase%E5%8E%9F%E7%90%86%E6%B7%B1%E5%BA%A6%E5%89%96%E6%9E%90/" class="item">Git笔记15-git rebase原理深度剖析</a>
         </div>
       </div>
@@ -974,6 +981,59 @@
           
           <div class="display-content">
           
+            <a href="https://coderleftear.github.io/post/git%E7%AC%94%E8%AE%B006-%E6%A0%87%E7%AD%BE%E4%B8%8Ediff/">
+              
+              <h2 class="ui header" style="color: white;">Git笔记06-标签与diff</h2>
+              
+            </a>
+            <p style="padding: 5px;">Git笔记06-标签与diff 标签：不区别分支
+git tag v1.0
+git tag -a v2.0 -m “2.0 released”
+查看：
+git tag
+git show v1.0 精确查找：
+git tag -l “v2.0”
+模糊查找：
+git tag -l “*2”
+删除：
+git tag -d v1.0
+文件上一次修改人的信息：
+git blame
+Linux中的diff：
+diff a b
+diff -u a b
+git中的diff：
+ 暂存区与工作区的区别(原始文件：暂存区 目标文件：工作区)：
+git diff
+$ git diff warning: LF will be replaced by CRLF in test.txt. The file will have its original line endings in your working directory diff --git a/test.</p>
+            <p>@ CoderLeftEar</p>
+          </div>
+          
+          <div class="ui top right attached black label">1 min read</div>
+          <div class="ui bottom left attached black label">Aug 11, 2019</div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <img src="/img/default3.jpg" alt="Git笔记06-标签与diff">
+    
+  </div>
+</article>
+
+
+      
+
+        <article class="card" style="box-shadow: none;">
+  <div class="image">
+    
+    <div class="ui dimmer">
+    
+      <div class="content">
+        <div class="center">
+          
+          <div class="display-content">
+          
             <a href="https://coderleftear.github.io/post/git%E7%AC%94%E8%AE%B005-checkout%E8%BF%9B%E9%98%B6%E4%B8%8Estash/">
               
               <h2 class="ui header" style="color: white;">Git笔记05-checkout进阶与stash</h2>
@@ -1044,7 +1104,7 @@ stash 临时存储： &gt; git stash
       </div>
     </div>
     
-    <img src="/img/default3.jpg" alt="Jdk8-08-Stream笔记01">
+    <img src="/img/default1.jpg" alt="Jdk8-08-Stream笔记01">
     
   </div>
 </article>
@@ -1083,7 +1143,7 @@ System.out.println(binaryOperatorTest.operatorFunMin(&#34;abbbbbb&#34;, &#34;bbb
       </div>
     </div>
     
-    <img src="/img/default5.jpg" alt="Jdk8-07-BinaryOperator">
+    <img src="/img/default4.jpg" alt="Jdk8-07-BinaryOperator">
     
   </div>
 </article>
@@ -1118,7 +1178,7 @@ List&lt;String&gt; list = Arrays.asList(&#34;a&#34;, &#34;b&#34;, &#34;c&#34;, &
       </div>
     </div>
     
-    <img src="/img/default4.jpg" alt="Jdk8-02-Consumer">
+    <img src="/img/default6.jpg" alt="Jdk8-02-Consumer">
     
   </div>
 </article>
@@ -1161,46 +1221,7 @@ Employee emp1 = new Employee(&#34;zhangsan&#34;); Employee emp2 = new Employee(&
       </div>
     </div>
     
-    <img src="/img/default1.jpg" alt="Jdk8-04-Optional">
-    
-  </div>
-</article>
-
-
-      
-
-        <article class="card" style="box-shadow: none;">
-  <div class="image">
-    
-    <div class="ui dimmer">
-    
-      <div class="content">
-        <div class="center">
-          
-          <div class="display-content">
-          
-            <a href="https://coderleftear.github.io/post/jdk8-05-predicate/">
-              
-              <h2 class="ui header" style="color: white;">Jdk8-05-Predicate</h2>
-              
-            </a>
-            <p style="padding: 5px;">Predicate Predicate：接收一个输入参数，返回一个Boolean值。
-包括一个返回值是Boolean的test方法、三个默认方法和一个静态isEqual()。
-test里是输入参数：
-Predicate&lt;String&gt; predicate = P -&gt; P.length() &gt; 5; System.out.println(predicate.test(&#34;Hello World!&#34;));  Predicate中的静态方法isEqual：
-System.out.println(Predicate.isEqual(&#34;test&#34;).test(&#34;tes7t&#34;));  and, or和negate使用在filter中：
-List&lt;Integer&gt; list = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10); Predicate&lt;Integer&gt; p1 = i -&gt; i &gt; 2; Predicate&lt;Integer&gt; p2 = i -&gt; i &lt; 8; Predicate&lt;Integer&gt; p3 = i -&gt; i % 2 != 0; list.stream().filter(p1.and(p2).and(p3.negate())).collect(Collectors.toList()).forEach(System.out::println);  答案是：偶数 – 4, 6</p>
-            <p>@ CoderLeftEar</p>
-          </div>
-          
-          <div class="ui top right attached black label">1 min read</div>
-          <div class="ui bottom left attached black label">Aug 9, 2019</div>
-          
-        </div>
-      </div>
-    </div>
-    
-    <img src="/img/default3.jpg" alt="Jdk8-05-Predicate">
+    <img src="/img/default6.jpg" alt="Jdk8-04-Optional">
     
   </div>
 </article>

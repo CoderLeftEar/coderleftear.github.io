@@ -6,13 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>
-SpringAnnotation笔记04-SpringMVC
+Git Stash删除后找回
 </title>
 
   
   
   <meta name="author" content="CoderLeftEar" />
-  <meta name="description" content=" SpringAnnotation笔记04-SpringMVC " />
+  <meta name="description" content=" Git Stash删除后找回 查询所有记录 git log --graph --oneline --decorate $(git fsck --no-reflog | awk &#39;/dangling commit/ {print $3}&#39;)  添加到工作区 git stash apply 9fa8ujaf  " />
 
 
 
@@ -21,7 +21,7 @@ SpringAnnotation笔记04-SpringMVC
 <meta name="generator" content="Hugo 0.55.6" />
 
 
-<link rel="canonical" href="https://coderleftear.github.io/post/springannotation%E7%AC%94%E8%AE%B004-springmvc/" />
+<link rel="canonical" href="https://coderleftear.github.io/post/git-stash%E5%88%A0%E9%99%A4%E5%90%8E%E6%89%BE%E5%9B%9E/" />
 <link rel="alternative" href="/index.xml" title="CoderLeftEar&#39;s Blog" type="application/atom+xml" />
 
 <link href="/css/semantic.min.css" rel="stylesheet" />
@@ -60,25 +60,33 @@ SpringAnnotation笔记04-SpringMVC
       </a>
       <header>
         <h1 class="ui header">
-          SpringAnnotation笔记04-SpringMVC
+          Git Stash删除后找回
           <div class="sub header">
-		  @ CoderLeftEar · 2019-10-13 21:45:20
+		  @ CoderLeftEar · 2020-10-15 16:52:25
 
 		  </div>
         </h1>
       </header>
       <article class="markdown-body" style="margin-top: 2rem; font-size: 1.4rem;">
 
-<h1 id="springannotation笔记04-springmvc">SpringAnnotation笔记04-SpringMVC</h1>
+<h1 id="git-stash删除后找回">Git Stash删除后找回</h1>
 
-<hr />
+<h2 id="查询所有记录">查询所有记录</h2>
+
+<pre><code>git log --graph --oneline --decorate  $(git fsck --no-reflog | awk '/dangling commit/ {print $3}')
+</code></pre>
+
+<h2 id="添加到工作区">添加到工作区</h2>
+
+<pre><code>git stash apply 9fa8ujaf
+</code></pre>
 </article>
     </section>
 
     <footer class="ui attached segment dream-tags">
       
       
-      <a class="ui label" href="/tags/springannotation" title="SpringAnnotation">SpringAnnotation</a>
+      <a class="ui label" href="/tags/git" title="git">git</a>
       
       
     </footer>

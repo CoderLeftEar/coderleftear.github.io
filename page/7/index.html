@@ -250,6 +250,13 @@
       <div class="item" style="padding-left: 24px;">
         <i class="gem outline grey icon"></i>
         <div class="content">
+          <a href="https://coderleftear.github.io/post/git-stash%E5%88%A0%E9%99%A4%E5%90%8E%E6%89%BE%E5%9B%9E/" class="item">Git Stash删除后找回</a>
+        </div>
+      </div>
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="gem outline grey icon"></i>
+        <div class="content">
           <a href="https://coderleftear.github.io/post/git%E7%AC%94%E8%AE%B015-git-rebase%E5%8E%9F%E7%90%86%E6%B7%B1%E5%BA%A6%E5%89%96%E6%9E%90/" class="item">Git笔记15-git rebase原理深度剖析</a>
         </div>
       </div>
@@ -974,6 +981,42 @@
           
           <div class="display-content">
           
+            <a href="https://coderleftear.github.io/post/jdk8-09-method-reference/">
+              
+              <h2 class="ui header" style="color: white;">Jdk8-09-Method Reference</h2>
+              
+            </a>
+            <p style="padding: 5px;">method reference Student类：
+class Student { private String name; private int score; public static int compareStudentByName1(Student s1, Student s2) { return s1.getName().compareTo(s2.getName()); } public static int compareStudentByScore1(Student s1, Student s2) { return s1.getScore() - s2.getScore(); } public static int compareStudentByName2(Student s1, Student s2) { return s1.getName().compareTo(s2.getName()); } public static int compareStudentByScore2(Student s1, Student s2) { return s1.getScore() - s2.getScore(); } }  Student1类：
+class Student1 { public int compareStudentByName(Student s1, Student s2) { return s1.</p>
+            <p>@ CoderLeftEar</p>
+          </div>
+          
+          <div class="ui top right attached black label">2 min read</div>
+          <div class="ui bottom left attached black label">Sep 2, 2019</div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <img src="/img/default4.jpg" alt="Jdk8-09-Method Reference">
+    
+  </div>
+</article>
+
+
+      
+
+        <article class="card" style="box-shadow: none;">
+  <div class="image">
+    
+    <div class="ui dimmer">
+    
+      <div class="content">
+        <div class="center">
+          
+          <div class="display-content">
+          
             <a href="https://coderleftear.github.io/post/jvm%E7%AC%94%E8%AE%B001-%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%99%A801/">
               
               <h2 class="ui header" style="color: white;">JVM笔记01-类加载器01</h2>
@@ -997,7 +1040,7 @@
       </div>
     </div>
     
-    <img src="/img/default2.jpg" alt="JVM笔记01-类加载器01">
+    <img src="/img/default5.jpg" alt="JVM笔记01-类加载器01">
     
   </div>
 </article>
@@ -1031,7 +1074,7 @@
       </div>
     </div>
     
-    <img src="/img/default4.jpg" alt="Git笔记15-git rebase原理深度剖析">
+    <img src="/img/default1.jpg" alt="Git笔记15-git rebase原理深度剖析">
     
   </div>
 </article>
@@ -1111,7 +1154,7 @@ error: failed to push some refs to &#39;git@github.com:Mr-WangG/git_subtree_chil
       </div>
     </div>
     
-    <img src="/img/default1.jpg" alt="Git笔记13-Git Subtree">
+    <img src="/img/default6.jpg" alt="Git笔记13-Git Subtree">
     
   </div>
 </article>
@@ -1160,55 +1203,7 @@ A a1 = supplier.get(); accumulator.accept(a1, t1); accumulator.</p>
       </div>
     </div>
     
-    <img src="/img/default2.jpg" alt="Jdk8-Collector">
-    
-  </div>
-</article>
-
-
-      
-
-        <article class="card" style="box-shadow: none;">
-  <div class="image">
-    
-    <div class="ui dimmer">
-    
-      <div class="content">
-        <div class="center">
-          
-          <div class="display-content">
-          
-            <a href="https://coderleftear.github.io/post/git%E7%AC%94%E8%AE%B012-git%E8%A3%B8%E5%BA%93%E4%B8%8Esubmodule/">
-              
-              <h2 class="ui header" style="color: white;">Git笔记12-Git裸库与submodule</h2>
-              
-            </a>
-            <p style="padding: 5px;">Git笔记12-Git裸库与submodule git裸库 没有工作区的工作仓库
-mkdir git-bare &amp;&amp; cd git_bare git init -bare
-submodule 将依赖的项目添加到本项目中：
-&gt; git submodule add git@github.com:Mr-WangG/git_child.git mymodule
-进入mymodule目录中使用git pull更新来过来的单个项目
-将所有依赖的项目更新：git submodule foreach git pull
-clone - 克隆父项目不会将依赖的项目clone，mymodule目录中是空的，需要手动clone git clone git@github.com:Mr-WangG/git_parent.git git_par git submodule init
-git submodule update –recursive
-
- 克隆父项目时，会将依赖的项目一起克隆下来 git clone git@github.com:Mr-WangG/git_parent.git git_par –recursive  delete 将mymodule从暂存区删除：
-git rm –cached mymodule
-将mymodule从工作区删除：
-rm -rf mymodule
-git add . git commit -m “remove submodule”
-git push</p>
-            <p>@ CoderLeftEar</p>
-          </div>
-          
-          <div class="ui top right attached black label">1 min read</div>
-          <div class="ui bottom left attached black label">Aug 15, 2019</div>
-          
-        </div>
-      </div>
-    </div>
-    
-    <img src="/img/default1.jpg" alt="Git笔记12-Git裸库与submodule">
+    <img src="/img/default4.jpg" alt="Jdk8-Collector">
     
   </div>
 </article>

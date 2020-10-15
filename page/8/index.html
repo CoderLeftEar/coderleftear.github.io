@@ -250,6 +250,13 @@
       <div class="item" style="padding-left: 24px;">
         <i class="gem outline grey icon"></i>
         <div class="content">
+          <a href="https://coderleftear.github.io/post/git-stash%E5%88%A0%E9%99%A4%E5%90%8E%E6%89%BE%E5%9B%9E/" class="item">Git Stash删除后找回</a>
+        </div>
+      </div>
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="gem outline grey icon"></i>
+        <div class="content">
           <a href="https://coderleftear.github.io/post/git%E7%AC%94%E8%AE%B015-git-rebase%E5%8E%9F%E7%90%86%E6%B7%B1%E5%BA%A6%E5%89%96%E6%9E%90/" class="item">Git笔记15-git rebase原理深度剖析</a>
         </div>
       </div>
@@ -974,6 +981,54 @@
           
           <div class="display-content">
           
+            <a href="https://coderleftear.github.io/post/git%E7%AC%94%E8%AE%B012-git%E8%A3%B8%E5%BA%93%E4%B8%8Esubmodule/">
+              
+              <h2 class="ui header" style="color: white;">Git笔记12-Git裸库与submodule</h2>
+              
+            </a>
+            <p style="padding: 5px;">Git笔记12-Git裸库与submodule git裸库 没有工作区的工作仓库
+mkdir git-bare &amp;&amp; cd git_bare git init -bare
+submodule 将依赖的项目添加到本项目中：
+&gt; git submodule add git@github.com:Mr-WangG/git_child.git mymodule
+进入mymodule目录中使用git pull更新来过来的单个项目
+将所有依赖的项目更新：git submodule foreach git pull
+clone - 克隆父项目不会将依赖的项目clone，mymodule目录中是空的，需要手动clone git clone git@github.com:Mr-WangG/git_parent.git git_par git submodule init
+git submodule update –recursive
+
+ 克隆父项目时，会将依赖的项目一起克隆下来 git clone git@github.com:Mr-WangG/git_parent.git git_par –recursive  delete 将mymodule从暂存区删除：
+git rm –cached mymodule
+将mymodule从工作区删除：
+rm -rf mymodule
+git add . git commit -m “remove submodule”
+git push</p>
+            <p>@ CoderLeftEar</p>
+          </div>
+          
+          <div class="ui top right attached black label">1 min read</div>
+          <div class="ui bottom left attached black label">Aug 15, 2019</div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <img src="/img/default4.jpg" alt="Git笔记12-Git裸库与submodule">
+    
+  </div>
+</article>
+
+
+      
+
+        <article class="card" style="box-shadow: none;">
+  <div class="image">
+    
+    <div class="ui dimmer">
+    
+      <div class="content">
+        <div class="center">
+          
+          <div class="display-content">
+          
             <a href="https://coderleftear.github.io/post/git%E7%AC%94%E8%AE%B011-git-refspec%E8%BF%9C%E7%A8%8B%E6%A0%87%E7%AD%BE%E4%B8%8Egit-gc/">
               
               <h2 class="ui header" style="color: white;">Git笔记11-git refspec、远程标签与git gc</h2>
@@ -1003,7 +1058,7 @@ git push origin :refs/tags/v1.</p>
       </div>
     </div>
     
-    <img src="/img/default3.jpg" alt="Git笔记11-git refspec、远程标签与git gc">
+    <img src="/img/default1.jpg" alt="Git笔记11-git refspec、远程标签与git gc">
     
   </div>
 </article>
@@ -1043,7 +1098,7 @@ $ git push --set-upstream origin develop Total 0 (delta 0), reused 0 (delta 0) r
       </div>
     </div>
     
-    <img src="/img/default2.jpg" alt="Git笔记10-Git远程分支、别名、gitk与git gui">
+    <img src="/img/default3.jpg" alt="Git笔记10-Git远程分支、别名、gitk与git gui">
     
   </div>
 </article>
@@ -1084,7 +1139,7 @@ $ git push To github.com:Mr-WangG/gitTest.git ! [rejected] master -&gt; master (
       </div>
     </div>
     
-    <img src="/img/default3.jpg" alt="Git笔记09-Git分支最佳实践">
+    <img src="/img/default4.jpg" alt="Git笔记09-Git分支最佳实践">
     
   </div>
 </article>
@@ -1124,7 +1179,7 @@ $ git pull remote: Enumerating objects: 5, done. remote: Counting objects: 100% 
       </div>
     </div>
     
-    <img src="/img/default2.jpg" alt="Git笔记08-Git协作和Git远程协作模型">
+    <img src="/img/default4.jpg" alt="Git笔记08-Git协作和Git远程协作模型">
     
   </div>
 </article>
@@ -1167,59 +1222,6 @@ $ git remote show origin * remote origin Fetch URL: https://github.com/Mr-WangG/
     </div>
     
     <img src="/img/default1.jpg" alt="Git笔记07-git远程、GitHub和公私钥">
-    
-  </div>
-</article>
-
-
-      
-
-        <article class="card" style="box-shadow: none;">
-  <div class="image">
-    
-    <div class="ui dimmer">
-    
-      <div class="content">
-        <div class="center">
-          
-          <div class="display-content">
-          
-            <a href="https://coderleftear.github.io/post/git%E7%AC%94%E8%AE%B006-%E6%A0%87%E7%AD%BE%E4%B8%8Ediff/">
-              
-              <h2 class="ui header" style="color: white;">Git笔记06-标签与diff</h2>
-              
-            </a>
-            <p style="padding: 5px;">Git笔记06-标签与diff 标签：不区别分支
-git tag v1.0
-git tag -a v2.0 -m “2.0 released”
-查看：
-git tag
-git show v1.0 精确查找：
-git tag -l “v2.0”
-模糊查找：
-git tag -l “*2”
-删除：
-git tag -d v1.0
-文件上一次修改人的信息：
-git blame
-Linux中的diff：
-diff a b
-diff -u a b
-git中的diff：
- 暂存区与工作区的区别(原始文件：暂存区 目标文件：工作区)：
-git diff
-$ git diff warning: LF will be replaced by CRLF in test.txt. The file will have its original line endings in your working directory diff --git a/test.</p>
-            <p>@ CoderLeftEar</p>
-          </div>
-          
-          <div class="ui top right attached black label">1 min read</div>
-          <div class="ui bottom left attached black label">Aug 11, 2019</div>
-          
-        </div>
-      </div>
-    </div>
-    
-    <img src="/img/default5.jpg" alt="Git笔记06-标签与diff">
     
   </div>
 </article>
