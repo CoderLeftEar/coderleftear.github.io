@@ -521,6 +521,13 @@
       <div class="item" style="padding-left: 24px;">
         <i class="gem outline grey icon"></i>
         <div class="content">
+          <a href="https://coderleftear.github.io/post/js-%E7%9F%AD%E8%B7%AF%E8%BF%90%E7%AE%97%E7%AC%A6/" class="item">Js短路运算符</a>
+        </div>
+      </div>
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="gem outline grey icon"></i>
+        <div class="content">
           <a href="https://coderleftear.github.io/post/js%E8%B7%A8%E5%9F%9F/" class="item">JS跨域</a>
         </div>
       </div>
@@ -981,6 +988,43 @@
           
           <div class="display-content">
           
+            <a href="https://coderleftear.github.io/post/jdk8-10-stream%E7%AC%94%E8%AE%B002/">
+              
+              <h2 class="ui header" style="color: white;">Jdk8-10-Stream笔记02</h2>
+              
+            </a>
+            <p style="padding: 5px;">Stream笔记02 1. 添加数据到List集合中：
+Student s1 = new Student(&#34;zhangsan&#34;, 80); Student s2 = new Student(&#34;lisi&#34;, 90); Student s3 = new Student(&#34;wangwu&#34;, 100); Student s4 = new Student(&#34;zhaoliu&#34;, 90); Student s5 = new Student(&#34;zhaoliu&#34;, 50); List&lt;Student&gt; students = Arrays.asList(s1, s2, s3, s4, s5);  分数最小值的学生：
+students.stream(). // min(Comparator.comparingInt(student -&gt; student.getScore())).ifPresent(System.out::println); collect(Collectors.minBy( Comparator.comparingInt(student -&gt; student.getScore()) )).ifPresent(System.out::println); 结果： Student(name=zhaoliu, score=50)  获得分数最大值的学生：
+students.stream(). collect(Collectors.maxBy( Comparator.comparingInt(student -&gt; student.getScore()) )).ifPresent(System.out::println); 结果： Student(name=wangwu, score=100)  平均分：</p>
+            <p>@ CoderLeftEar</p>
+          </div>
+          
+          <div class="ui top right attached black label">1 min read</div>
+          <div class="ui bottom left attached black label">Sep 3, 2019</div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <img src="/img/default3.jpg" alt="Jdk8-10-Stream笔记02">
+    
+  </div>
+</article>
+
+
+      
+
+        <article class="card" style="box-shadow: none;">
+  <div class="image">
+    
+    <div class="ui dimmer">
+    
+      <div class="content">
+        <div class="center">
+          
+          <div class="display-content">
+          
             <a href="https://coderleftear.github.io/post/jdk8-09-method-reference/">
               
               <h2 class="ui header" style="color: white;">Jdk8-09-Method Reference</h2>
@@ -999,7 +1043,7 @@ class Student1 { public int compareStudentByName(Student s1, Student s2) { retur
       </div>
     </div>
     
-    <img src="/img/default4.jpg" alt="Jdk8-09-Method Reference">
+    <img src="/img/default2.jpg" alt="Jdk8-09-Method Reference">
     
   </div>
 </article>
@@ -1040,7 +1084,7 @@ class Student1 { public int compareStudentByName(Student s1, Student s2) { retur
       </div>
     </div>
     
-    <img src="/img/default5.jpg" alt="JVM笔记01-类加载器01">
+    <img src="/img/default1.jpg" alt="JVM笔记01-类加载器01">
     
   </div>
 </article>
@@ -1074,7 +1118,7 @@ class Student1 { public int compareStudentByName(Student s1, Student s2) { retur
       </div>
     </div>
     
-    <img src="/img/default1.jpg" alt="Git笔记15-git rebase原理深度剖析">
+    <img src="/img/default6.jpg" alt="Git笔记15-git rebase原理深度剖析">
     
   </div>
 </article>
@@ -1109,7 +1153,7 @@ master: commit 04f05f3a7076f38ccacb5cd544727d108599ff39 (HEAD -&gt; master) Auth
       </div>
     </div>
     
-    <img src="/img/default4.jpg" alt="Git笔记14-git cherry-pick">
+    <img src="/img/default5.jpg" alt="Git笔记14-git cherry-pick">
     
   </div>
 </article>
@@ -1154,56 +1198,7 @@ error: failed to push some refs to &#39;git@github.com:Mr-WangG/git_subtree_chil
       </div>
     </div>
     
-    <img src="/img/default6.jpg" alt="Git笔记13-Git Subtree">
-    
-  </div>
-</article>
-
-
-      
-
-        <article class="card" style="box-shadow: none;">
-  <div class="image">
-    
-    <div class="ui dimmer">
-    
-      <div class="content">
-        <div class="center">
-          
-          <div class="display-content">
-          
-            <a href="https://coderleftear.github.io/post/jdk8-collector/">
-              
-              <h2 class="ui header" style="color: white;">Jdk8-Collector</h2>
-              
-            </a>
-            <p style="padding: 5px;">Jdk8-Collector collect: 收集器
-Collector作为collect方法的参数
-Collector是一个接口，是一个可变的汇聚操作，该操作将输入元素累积到一个可变的结果容器中（例：ArrayList可变，其中的元素是可以增加的），可选的将累计的结果转换为一个最终的表示形式，在所有元素处理完毕之后。支持串行合并行两种方式执行。
-汇聚操作：将元素累积到Collection中，使用StringBuilder，计算关于sum、min、max或average等元素的汇总信息，计算“数据透视表”摘要（如“卖方最大成交金额”等）。Collectors提供了许多常见的可变汇聚的实现。Collectors本身实际上是一个工厂。
-Collector有四个函数指定，将条目累积到一个可变的结果容器中，并且可选的对结果进行最终的转换：
-Collector&lt;T, A, R&gt; T: 流中每一个元素的类型。
-A: 中间生成的结果容器的类型，例：ArrayList类型。
-R: 汇聚操作单结果类型。
-Supplier&lt;A&gt; supplier()：创建并返回一个新的结果容器。 BiConsumer&lt;A, T&gt; accumulator()：将一个新的数据元素（流中的每个元素）折叠到可变结果容器当中。 BinaryOperator&lt;A&gt; combiner()： 1.将两个结果容器合并为一个。 2.接受两个部分结果并将其合并的函数。组合器函数可以将状态从一个参数折叠到另一个参数并返回该参数（集合A，B，将B全部放到A中），或者返回一个新的结果容器（集合A，B，将A、B放到新的集合C中）。 BinaryOperator&lt;A&gt; combiner()：从中间积累类型执行最后的转换到最终结果类型 Function&lt;A, R&gt; finisher()：操作A（结果容器），返回R。  为了确保串行与并行操作结果的等价性，Collector函数需要满足的两个条件：identity（同一性）与associativity（结合性）。
-同一性
-{@code a} must be equivalent to {@code combiner.apply(a, supplier.get())}.   a == combiner.applu(a, supplier.get());
- 相当于：
- combiner == (List list1, List list2) -&gt; {list1.addAll(list2), return list1;}
- 结合性
-串行：调用BiConsumer的双参，无返回指的accept()方法，将输入元素t1，t2放到a1中，最后强转给r1。
-A a1 = supplier.get(); accumulator.accept(a1, t1); accumulator.</p>
-            <p>@ CoderLeftEar</p>
-          </div>
-          
-          <div class="ui top right attached black label">1 min read</div>
-          <div class="ui bottom left attached black label">Aug 16, 2019</div>
-          
-        </div>
-      </div>
-    </div>
-    
-    <img src="/img/default4.jpg" alt="Jdk8-Collector">
+    <img src="/img/default3.jpg" alt="Git笔记13-Git Subtree">
     
   </div>
 </article>

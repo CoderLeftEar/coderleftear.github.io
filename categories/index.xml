@@ -6,10 +6,19 @@
     <description>Recent content in Categories on CoderLeftEar&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 15 Oct 2020 16:52:25 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2020 09:44:32 +0800</lastBuildDate>
     
 	<atom:link href="https://coderleftear.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>js</title>
+      <link>https://coderleftear.github.io/categories/js/</link>
+      <pubDate>Thu, 12 Nov 2020 09:44:32 +0800</pubDate>
+      
+      <guid>https://coderleftear.github.io/categories/js/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>git</title>
@@ -35,15 +44,6 @@
       <pubDate>Sat, 05 Sep 2020 09:38:13 +0800</pubDate>
       
       <guid>https://coderleftear.github.io/categories/jvm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>js</title>
-      <link>https://coderleftear.github.io/categories/js/</link>
-      <pubDate>Thu, 09 Jul 2020 12:38:34 +0800</pubDate>
-      
-      <guid>https://coderleftear.github.io/categories/js/</guid>
       <description></description>
     </item>
     

@@ -519,6 +519,13 @@
       <div class="item" style="padding-left: 24px;">
         <i class="gem outline grey icon"></i>
         <div class="content">
+          <a href="https://coderleftear.github.io/post/js-%E7%9F%AD%E8%B7%AF%E8%BF%90%E7%AE%97%E7%AC%A6/" class="item">Js短路运算符</a>
+        </div>
+      </div>
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="gem outline grey icon"></i>
+        <div class="content">
           <a href="https://coderleftear.github.io/post/js%E8%B7%A8%E5%9F%9F/" class="item">JS跨域</a>
         </div>
       </div>
@@ -967,6 +974,49 @@
 
     <div class="ui two stackable cards">
       
+      
+
+        <article class="card" style="box-shadow: none;">
+  <div class="image">
+    
+    <div class="ui dimmer">
+    
+      <div class="content">
+        <div class="center">
+          
+          <div class="display-content">
+          
+            <a href="https://coderleftear.github.io/post/spring%E4%BA%8B%E5%8A%A1%E4%BC%A0%E6%92%AD%E8%A1%8C%E4%B8%BA/">
+              
+              <h2 class="ui header" style="color: white;">Spring事务、传播行为</h2>
+              
+            </a>
+            <p style="padding: 5px;"> Spring事务、传播行为 Spring事务的几种实现方式  编程式事务管理对基于 POJO 的应用来说是唯一选择。我们需要在代码中调用beginTransaction()、commit()、rollback()等事务管理相关的方法，这就是编程式事务管理。 基于 TransactionProxyFactoryBean的声明式事务管理 基于 @Transactional 的声明式事务管理 基于Aspectj AOP配置事务  https://blog.csdn.net/mufeng633/article/details/88552245
+Spring Boot的事务管理注解 https://blog.csdn.net/u010963948/article/details/79208328
+在主程序类上标注：
+开启事务管理器：
+ @EnableTransactionManagement
+  xml配置方式：
+   开启后在需要使用事务的类或方法上标注@Transactional即可。
+存在多个事务管理器 ：
+ 使用value具体指定使用哪个事务管理器：@Transactional(value=“xxxxx”)  注解@Transaction 用法 也可标注在类上，该类中的所有公共方法都配置相同的事务属性。
+   属性名 说明     value 当在配置文件中有多个 TransactionManager , 可以用该属性指定选择哪个事务管理器。   propagation 事务的传播行为，默认值为 REQUIRED。   isolation 事务的隔离级别，默认值采用 DEFAULT。   timeout 事务的超时时间，默认值为-1。强制回滚前最多可以等待的时间。   read-only 指定事务是否为只读事务，默认值为 false；为了忽略那些不需要事   rollback-for 用于指定能够触发事务回滚的异常类型，如果有多个异常类型需要指定，各类型之间可以通过逗号分隔。   no-rollback- for 抛出 no-rollback-for 指定的异常类型，不回滚事务。    propagation — 七种事务传播行为：    事务传播行为类型 说明     REQUIRED 默认。使用调用者的事务。   REQUIRES_NEW 不使用调用者的事务，挂起当前事务，新建事务，在内部使用事务。   MANDATORY 使用当前的事务，如果当前没有事务，就抛出异常。   SUPPORTS 支持当前事务，如果当前没有事务，就以非事务方式执行。   NOT_SUPPORTED 以非事务方式执行操作，如果当前存在事务，就把当前事务挂起。   NEVER 以非事务方式执行，如果当前存在事务，则抛出异常。   NESTED 如果当前存在事务，则在嵌套事务内执行。如果当前没有事务，新建事务并运行。    </p>
+            <p>@ CoderLeftEar</p>
+          </div>
+          
+          <div class="ui top right attached black label">1 min read</div>
+          <div class="ui bottom left attached black label">Jul 2, 2019</div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <img src="/img/default2.jpg" alt="Spring事务、传播行为">
+    
+  </div>
+</article>
+
+
       
 
         <article class="card" style="box-shadow: none;">

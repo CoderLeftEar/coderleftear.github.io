@@ -6,13 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>
-001-大话设计模式-单例模式
+Js短路运算符
 </title>
 
   
   
   <meta name="author" content="CoderLeftEar" />
-  <meta name="description" content="单例模式 1.饿汉式—静态常量方式（线程安全） public class Singleton { private static Singleton instance = new Singleton(); private Singleton (){} public static Singleton getInstance() { return instance; } }  2.饿汉式—静态代码块方式（线程安全） public class Singleton { private static Singleton instance; static { instance = new Singleton(); } private Singleton() {} public static Singleton getInstance() { return instance; } }  3.懒汉式（线程不安全） public class Singleton { private static Singleton singleton; private Singleton() {} public static Singleton getInstance() { if (singleton == null) { singleton = new Singleton(); } return singleton; } }  4." />
+  <meta name="description" content="Js短路运算符 || 从前往后算，false || false || 1 =&amp;gt; 1 ;
+&amp;amp;&amp;amp; false &amp;amp;&amp;amp; clg(&amp;ldquo;It is false&amp;rdquo;); =&amp;gt; &amp;ldquo;It is false&amp;rdquo;;
+true &amp;amp;&amp;amp; clg(&amp;ldquo;It is true&amp;rdquo;) =&amp;gt; true;" />
 
 
 
@@ -21,7 +23,7 @@
 <meta name="generator" content="Hugo 0.55.6" />
 
 
-<link rel="canonical" href="https://coderleftear.github.io/post/002-%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/" />
+<link rel="canonical" href="https://coderleftear.github.io/post/js-%E7%9F%AD%E8%B7%AF%E8%BF%90%E7%AE%97%E7%AC%A6/" />
 <link rel="alternative" href="/index.xml" title="CoderLeftEar&#39;s Blog" type="application/atom+xml" />
 
 <link href="/css/semantic.min.css" rel="stylesheet" />
@@ -60,121 +62,33 @@
       </a>
       <header>
         <h1 class="ui header">
-          001-大话设计模式-单例模式
+          Js短路运算符
           <div class="sub header">
-		  @ CoderLeftEar · 2019-07-02 18:11:32
+		  @ CoderLeftEar · 2020-11-12 09:44:32
 
 		  </div>
         </h1>
       </header>
       <article class="markdown-body" style="margin-top: 2rem; font-size: 1.4rem;">
 
-<h1 id="单例模式">单例模式</h1>
+<h1 id="js短路运算符">Js短路运算符</h1>
 
-<h2 id="1-饿汉式-静态常量方式-线程安全">1.饿汉式—静态常量方式（线程安全）</h2>
+<h2 id="toc_1">||</h2>
 
-<pre><code class="language-java">public class Singleton {  
-    private static Singleton instance = new Singleton(); 
-    
-    private Singleton (){}  
-    
-    public static Singleton getInstance() {  
-    	return instance;  
-    }  
-}
+<p>从前往后算，false || false || 1 =&gt; 1 ;</p>
 
-</code></pre>
+<h2 id="toc_2">&amp;&amp;</h2>
 
-<h2 id="2-饿汉式-静态代码块方式-线程安全">2.饿汉式—静态代码块方式（线程安全）</h2>
+<p>false &amp;&amp; clg(&ldquo;It is false&rdquo;); =&gt; &ldquo;It is false&rdquo;;</p>
 
-<pre><code class="language-java">public class Singleton {
-    private static Singleton instance;
-    
-    static {
-        instance = new Singleton();
-    }
-    
-    private Singleton() {}
-    
-    public static Singleton getInstance() {
-        return instance;
-    }
-}
-</code></pre>
-
-<h2 id="3-懒汉式-线程不安全">3.懒汉式（线程不安全）</h2>
-
-<pre><code class="language-java">public class Singleton {
-    private static Singleton singleton;
-    
-    private Singleton() {}
-    
-    public static Singleton getInstance() {
-        if (singleton == null) {
-            singleton = new Singleton();
-        }
-        return singleton;
-    }
-}
-</code></pre>
-
-<h2 id="4-懒汉式-线程安全-方法上加同步锁">4.懒汉式（线程安全，方法上加同步锁）</h2>
-
-<pre><code class="language-java">public class Singleton {
-    private static Singleton singleton;
-    
-    private Singleton() {}
-    
-    public static synchronized Singleton getInstance() {
-        if (singleton == null) {
-            singleton = new Singleton();
-        }
-        return singleton;
-    }
-}
-</code></pre>
-
-<h2 id="5-双重校验锁-线程安全-效率高">5.双重校验锁（线程安全，效率高）</h2>
-
-<pre><code class="language-java">public class Singleton {
-	private volatile static Singleton singleton;
-    
-	private Singleton() {}
-    
-	public static Singleton getSingleton() {
-		if (singleton == null) {
-			synchronized (Singleton.class) {
-				if (singleton == null) {
-						singleton = new Singleton();
-				}
-			}
-		}
-		return singleton;
-	}
-}
-</code></pre>
-
-<h4 id="6-静态内部类实现单例-线程安全-效率高">6.静态内部类实现单例（线程安全、效率高）</h4>
-
-<pre><code class="language-java">public class Singleton {
-    private static class SingletonHolder {
-    	private static final Singleton INSTANCE = new Singleton();  
-    }
-    
-    private Singleton (){}
-    
-    public static final Singleton getInstance() {
-    	return SingletonHolder.INSTANCE;
-    }
-}
-</code></pre>
+<p>true &amp;&amp; clg(&ldquo;It is true&rdquo;) =&gt; true;</p>
 </article>
     </section>
 
     <footer class="ui attached segment dream-tags">
       
       
-      <a class="ui label" href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F" title="设计模式">设计模式</a>
+      <a class="ui label" href="/tags/js" title="js">js</a>
       
       
     </footer>

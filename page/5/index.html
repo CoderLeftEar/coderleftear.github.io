@@ -521,6 +521,13 @@
       <div class="item" style="padding-left: 24px;">
         <i class="gem outline grey icon"></i>
         <div class="content">
+          <a href="https://coderleftear.github.io/post/js-%E7%9F%AD%E8%B7%AF%E8%BF%90%E7%AE%97%E7%AC%A6/" class="item">Js短路运算符</a>
+        </div>
+      </div>
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="gem outline grey icon"></i>
+        <div class="content">
           <a href="https://coderleftear.github.io/post/js%E8%B7%A8%E5%9F%9F/" class="item">JS跨域</a>
         </div>
       </div>
@@ -981,6 +988,52 @@
           
           <div class="display-content">
           
+            <a href="https://coderleftear.github.io/post/springannotation%E7%AC%94%E8%AE%B002-aop/">
+              
+              <h2 class="ui header" style="color: white;">SpringAnnotation笔记02-AOP</h2>
+              
+            </a>
+            <p style="padding: 5px;">SpringAnnotation笔记02-AOP 环绕通知相关  导入aop所需jar包
+ 定义一个业务逻辑类，定义除法运算方法
+ 定义一个切面类：
+ 前置通知(@Before)：logStart：在目标方法(div)运行之前运行
+ 后置通知(@After)：在目标方法(div)运行结束之后运行（无论方法正常结束还是异常结束）
+ 返回通知(@AfterReturning)：在目标方法(div)正常返回之后运行
+ 异常通知(@AfterThrowing)：在目标方法(div)出现异常以后运行
+ 环绕通知(@Around)：动态代理，手动推进目标方法运行
+  将业务逻辑类和切面类都添加到配置类中
+ 给切面类标注@Aspect注解
+ 在配置类上标注【开启基于注解的aop模式】@EnableAspectJAutoProxy（使用@Aspect注释标记的组件，类似于Spring中xml配置文件中的）
+  切面类：通过JoinPoint joinPoint，Exception exception，Object result等参数获取方法名称、异常、返回值等。
+//告诉容器这个类是一个切面类 @Aspect public class AspectSurrounding { //抽取公共切入点 @Pointcut(&#34;execution(public int com.wang.springannotation.aop.Calculator.*(..))&#34;) public void pointCut() {} //在目标方法之前切入 @Before(&#34;execution(public int com.wang.springannotation.aop.Calculator.*(..))&#34;) // @Before(&#34;pointCut()&#34;) public void brforeLog(JoinPoint joinPoint) { Object[] args = joinPoint.getArgs(); System.out.println(&#34;前置通知...&#34; &#43; joinPoint.getSignature().getName() &#43; &#34;...@Before参数表：&#34; &#43; &#34;{&#34;&#43;args&#43;&#34;}&#34;); } //在目标方法运行结束之后切入（无论正常结束还是异常结束） @After(&#34;com.</p>
+            <p>@ CoderLeftEar</p>
+          </div>
+          
+          <div class="ui top right attached black label">2 min read</div>
+          <div class="ui bottom left attached black label">Oct 10, 2019</div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <img src="/img/default1.jpg" alt="SpringAnnotation笔记02-AOP">
+    
+  </div>
+</article>
+
+
+      
+
+        <article class="card" style="box-shadow: none;">
+  <div class="image">
+    
+    <div class="ui dimmer">
+    
+      <div class="content">
+        <div class="center">
+          
+          <div class="display-content">
+          
             <a href="https://coderleftear.github.io/post/jvm%E7%AC%94%E8%AE%B007-book01/">
               
               <h2 class="ui header" style="color: white;">JVM笔记07-Book01</h2>
@@ -997,7 +1050,7 @@
       </div>
     </div>
     
-    <img src="/img/default5.jpg" alt="JVM笔记07-Book01">
+    <img src="/img/default1.jpg" alt="JVM笔记07-Book01">
     
   </div>
 </article>
@@ -1033,7 +1086,7 @@
       </div>
     </div>
     
-    <img src="/img/default6.jpg" alt="SpringAnnotation笔记01-IOC">
+    <img src="/img/default5.jpg" alt="SpringAnnotation笔记01-IOC">
     
   </div>
 </article>
@@ -1073,7 +1126,7 @@
       </div>
     </div>
     
-    <img src="/img/default2.jpg" alt="JVM笔记06-Java内存01">
+    <img src="/img/default5.jpg" alt="JVM笔记06-Java内存01">
     
   </div>
 </article>
@@ -1114,7 +1167,7 @@ Animal a = new Dog(); a.</p>
       </div>
     </div>
     
-    <img src="/img/default5.jpg" alt="JVM笔记05-Java字节码02">
+    <img src="/img/default6.jpg" alt="JVM笔记05-Java字节码02">
     
   </div>
 </article>
@@ -1154,41 +1207,7 @@ Animal a = new Dog(); a.</p>
       </div>
     </div>
     
-    <img src="/img/default2.jpg" alt="JVM笔记04-Java字节码01">
-    
-  </div>
-</article>
-
-
-      
-
-        <article class="card" style="box-shadow: none;">
-  <div class="image">
-    
-    <div class="ui dimmer">
-    
-      <div class="content">
-        <div class="center">
-          
-          <div class="display-content">
-          
-            <a href="https://coderleftear.github.io/post/js%E7%AC%94%E8%AE%B001/">
-              
-              <h2 class="ui header" style="color: white;">js笔记01</h2>
-              
-            </a>
-            <p style="padding: 5px;"> js笔记01 </p>
-            <p>@ CoderLeftEar</p>
-          </div>
-          
-          <div class="ui top right attached black label">1 min read</div>
-          <div class="ui bottom left attached black label">Sep 15, 2019</div>
-          
-        </div>
-      </div>
-    </div>
-    
-    <img src="/img/default2.jpg" alt="js笔记01">
+    <img src="/img/default3.jpg" alt="JVM笔记04-Java字节码01">
     
   </div>
 </article>

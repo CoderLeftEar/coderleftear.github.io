@@ -521,6 +521,13 @@
       <div class="item" style="padding-left: 24px;">
         <i class="gem outline grey icon"></i>
         <div class="content">
+          <a href="https://coderleftear.github.io/post/js-%E7%9F%AD%E8%B7%AF%E8%BF%90%E7%AE%97%E7%AC%A6/" class="item">Js短路运算符</a>
+        </div>
+      </div>
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="gem outline grey icon"></i>
+        <div class="content">
           <a href="https://coderleftear.github.io/post/js%E8%B7%A8%E5%9F%9F/" class="item">JS跨域</a>
         </div>
       </div>
@@ -981,6 +988,43 @@
           
           <div class="display-content">
           
+            <a href="https://coderleftear.github.io/post/mysql%E9%97%AE%E9%A2%98/">
+              
+              <h2 class="ui header" style="color: white;">Mysql问题</h2>
+              
+            </a>
+            <p style="padding: 5px;">MySQL问题 Tomcat -&gt; shutdown.sh java.net.ConnectException: Connection refused at java.net.PlainSocketImpl.socketConnect(Native Method) at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333) at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195) at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182) at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366) at java.net.Socket.connect(Socket.java:529) at java.net.Socket.connect(Socket.java:478) at java.net.Socket.&lt;init&gt;(Socket.java:375) at java.net.Socket.&lt;init&gt;(Socket.java:189) at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:498) at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39) at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25) at java.lang.reflect.Method.invoke(Method.java:597) at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:370) at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:457)  原因是tomcat内存太小了，需要给tomcat增加虚拟内存。
+在linux系统里修改tomcat内存的方法 修改/opt/tomcat/bin/catalina.sh这个文件；
+# OS specific support. $var _must_ be set to either true or false. cygwin=false  这两行之行插入一行，最终修改为以下这样：
+# OS specific support. $var _must_ be set to either true or false.</p>
+            <p>@ CoderLeftEar</p>
+          </div>
+          
+          <div class="ui top right attached black label">2 min read</div>
+          <div class="ui bottom left attached black label">May 30, 2020</div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <img src="/img/default3.jpg" alt="Mysql问题">
+    
+  </div>
+</article>
+
+
+      
+
+        <article class="card" style="box-shadow: none;">
+  <div class="image">
+    
+    <div class="ui dimmer">
+    
+      <div class="content">
+        <div class="center">
+          
+          <div class="display-content">
+          
             <a href="https://coderleftear.github.io/post/vue%E7%AC%94%E8%AE%B0-%E6%89%B9%E9%87%8F%E5%88%A0%E9%99%A4list%E4%B8%AD%E6%95%B0%E6%8D%AE/">
               
               <h2 class="ui header" style="color: white;">Vue笔记-批量删除list中数据</h2>
@@ -997,7 +1041,7 @@
       </div>
     </div>
     
-    <img src="/img/default1.jpg" alt="Vue笔记-批量删除list中数据">
+    <img src="/img/default5.jpg" alt="Vue笔记-批量删除list中数据">
     
   </div>
 </article>
@@ -1031,7 +1075,7 @@
       </div>
     </div>
     
-    <img src="/img/default4.jpg" alt="Docker笔记">
+    <img src="/img/default3.jpg" alt="Docker笔记">
     
   </div>
 </article>
@@ -1070,7 +1114,7 @@
       </div>
     </div>
     
-    <img src="/img/default1.jpg" alt="Vue笔记">
+    <img src="/img/default2.jpg" alt="Vue笔记">
     
   </div>
 </article>
@@ -1109,7 +1153,7 @@
       </div>
     </div>
     
-    <img src="/img/default1.jpg" alt="SpringBoot笔记01">
+    <img src="/img/default2.jpg" alt="SpringBoot笔记01">
     
   </div>
 </article>
@@ -1143,49 +1187,7 @@
       </div>
     </div>
     
-    <img src="/img/default5.jpg" alt="SpringBoot笔记02">
-    
-  </div>
-</article>
-
-
-      
-
-        <article class="card" style="box-shadow: none;">
-  <div class="image">
-    
-    <div class="ui dimmer">
-    
-      <div class="content">
-        <div class="center">
-          
-          <div class="display-content">
-          
-            <a href="https://coderleftear.github.io/post/linux/">
-              
-              <h2 class="ui header" style="color: white;">Linux</h2>
-              
-            </a>
-            <p style="padding: 5px;">Linux 一、文件系统的管理 tips:输入命令的时候要常用tab键来补全
-ls 查看目录信息 （ ls / ）
-ls -l 等价于 ll  路径的表示方法有“相对”和“绝对” 比如如果当前所处目录为 /home/renwoxing，要查看/home目录下的信息，可以有两种方法： ls ../ ls /home
-pwd 查看当前所处目录的绝对路径
-cd 切换目录 (cd /) ,如果不带参数则切换到用户主目录 ~
-mkdir 创建文件夹 mkdir -p a/b/c 如果要创建的文件夹的父目录不存在，则自动创建
-rmdir 删除空文件夹 (只能删除空文件夹) rm -r /a/b (删除非空文件夹) 删除文件 rm filename (rm -r 删除文件夹 rm -rf 强制删除文件或文件夹)
-创建文件 touch a.avi 创建一个空文件 vi blabla.txt 用文本编辑器编辑一个文件并且保存 echo “angelababy,zhen de hen xihuan ni” &gt; qingshu.txt 把左边的输出放到右边的文件里去
-移动文件 修改文件名 mv a/wenjian1.</p>
-            <p>@ CoderLeftEar</p>
-          </div>
-          
-          <div class="ui top right attached black label">3 min read</div>
-          <div class="ui bottom left attached black label">Oct 22, 2019</div>
-          
-        </div>
-      </div>
-    </div>
-    
-    <img src="/img/default5.jpg" alt="Linux">
+    <img src="/img/default4.jpg" alt="SpringBoot笔记02">
     
   </div>
 </article>

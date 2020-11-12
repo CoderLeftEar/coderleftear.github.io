@@ -6,10 +6,21 @@
     <description>Recent content in js on CoderLeftEar&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 09 Jul 2020 12:38:34 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2020 09:44:32 +0800</lastBuildDate>
     
 	<atom:link href="https://coderleftear.github.io/tags/js/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Js短路运算符</title>
+      <link>https://coderleftear.github.io/post/js-%E7%9F%AD%E8%B7%AF%E8%BF%90%E7%AE%97%E7%AC%A6/</link>
+      <pubDate>Thu, 12 Nov 2020 09:44:32 +0800</pubDate>
+      
+      <guid>https://coderleftear.github.io/post/js-%E7%9F%AD%E8%B7%AF%E8%BF%90%E7%AE%97%E7%AC%A6/</guid>
+      <description>Js短路运算符 || 从前往后算，false || false || 1 =&amp;gt; 1 ;
+&amp;amp;&amp;amp; false &amp;amp;&amp;amp; clg(&amp;ldquo;It is false&amp;rdquo;); =&amp;gt; &amp;ldquo;It is false&amp;rdquo;;
+true &amp;amp;&amp;amp; clg(&amp;ldquo;It is true&amp;rdquo;) =&amp;gt; true;</description>
+    </item>
     
     <item>
       <title>JS跨域</title>

@@ -521,6 +521,13 @@
       <div class="item" style="padding-left: 24px;">
         <i class="gem outline grey icon"></i>
         <div class="content">
+          <a href="https://coderleftear.github.io/post/js-%E7%9F%AD%E8%B7%AF%E8%BF%90%E7%AE%97%E7%AC%A6/" class="item">Js短路运算符</a>
+        </div>
+      </div>
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="gem outline grey icon"></i>
+        <div class="content">
           <a href="https://coderleftear.github.io/post/js%E8%B7%A8%E5%9F%9F/" class="item">JS跨域</a>
         </div>
       </div>
@@ -981,6 +988,40 @@
           
           <div class="display-content">
           
+            <a href="https://coderleftear.github.io/post/001-%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/">
+              
+              <h2 class="ui header" style="color: white;">001 单例模式</h2>
+              
+            </a>
+            <p style="padding: 5px;">单例模式 枚举单例： package dp2.singleton; import java.util.concurrent.TimeUnit; /** * 懒汉式：双重检测锁模式 * * @Class Singleton01 * @Description TODO * @Author LeftEar * @Date 20/4/28 22:49 * @Version 1.0 */ public class Singleton02 { private Singleton02 () {} /** * 内部枚举 */ enum SingletonEnum { /** * 枚举对象，天生为单例 */ INSTANCE; private Singleton02 singleton02; SingletonEnum () { singleton02 = new Singleton02(); } public Singleton02 getInstance () { return singleton02; } } // 对外暴露的方法 public static Singleton02 getInstance() { return SingletonEnum.</p>
+            <p>@ CoderLeftEar</p>
+          </div>
+          
+          <div class="ui top right attached black label">1 min read</div>
+          <div class="ui bottom left attached black label">Jun 27, 2020</div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <img src="/img/default4.jpg" alt="001 单例模式">
+    
+  </div>
+</article>
+
+
+      
+
+        <article class="card" style="box-shadow: none;">
+  <div class="image">
+    
+    <div class="ui dimmer">
+    
+      <div class="content">
+        <div class="center">
+          
+          <div class="display-content">
+          
             <a href="https://coderleftear.github.io/post/echarts%E7%AC%94%E8%AE%B0/">
               
               <h2 class="ui header" style="color: white;">Echarts笔记</h2>
@@ -999,7 +1040,7 @@ eg1: &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;meta charset=&#34;utf-8
       </div>
     </div>
     
-    <img src="/img/default3.jpg" alt="Echarts笔记">
+    <img src="/img/default6.jpg" alt="Echarts笔记">
     
   </div>
 </article>
@@ -1033,7 +1074,7 @@ eg1: &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;meta charset=&#34;utf-8
       </div>
     </div>
     
-    <img src="/img/default1.jpg" alt="正则表达式">
+    <img src="/img/default5.jpg" alt="正则表达式">
     
   </div>
 </article>
@@ -1101,7 +1142,7 @@ eg1: &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;meta charset=&#34;utf-8
       </div>
     </div>
     
-    <img src="/img/default4.jpg" alt="JS小问题记录">
+    <img src="/img/default1.jpg" alt="JS小问题记录">
     
   </div>
 </article>
@@ -1135,44 +1176,7 @@ eg1: &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;meta charset=&#34;utf-8
       </div>
     </div>
     
-    <img src="/img/default2.jpg" alt="Shiro笔记">
-    
-  </div>
-</article>
-
-
-      
-
-        <article class="card" style="box-shadow: none;">
-  <div class="image">
-    
-    <div class="ui dimmer">
-    
-      <div class="content">
-        <div class="center">
-          
-          <div class="display-content">
-          
-            <a href="https://coderleftear.github.io/post/mysql%E9%97%AE%E9%A2%98/">
-              
-              <h2 class="ui header" style="color: white;">Mysql问题</h2>
-              
-            </a>
-            <p style="padding: 5px;">MySQL问题 Tomcat -&gt; shutdown.sh java.net.ConnectException: Connection refused at java.net.PlainSocketImpl.socketConnect(Native Method) at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333) at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195) at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182) at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366) at java.net.Socket.connect(Socket.java:529) at java.net.Socket.connect(Socket.java:478) at java.net.Socket.&lt;init&gt;(Socket.java:375) at java.net.Socket.&lt;init&gt;(Socket.java:189) at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:498) at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39) at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25) at java.lang.reflect.Method.invoke(Method.java:597) at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:370) at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:457)  原因是tomcat内存太小了，需要给tomcat增加虚拟内存。
-在linux系统里修改tomcat内存的方法 修改/opt/tomcat/bin/catalina.sh这个文件；
-# OS specific support. $var _must_ be set to either true or false. cygwin=false  这两行之行插入一行，最终修改为以下这样：
-# OS specific support. $var _must_ be set to either true or false.</p>
-            <p>@ CoderLeftEar</p>
-          </div>
-          
-          <div class="ui top right attached black label">2 min read</div>
-          <div class="ui bottom left attached black label">May 30, 2020</div>
-          
-        </div>
-      </div>
-    </div>
-    
-    <img src="/img/default4.jpg" alt="Mysql问题">
+    <img src="/img/default1.jpg" alt="Shiro笔记">
     
   </div>
 </article>
