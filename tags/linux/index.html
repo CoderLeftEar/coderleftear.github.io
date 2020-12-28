@@ -645,6 +645,13 @@ tag | Linux
       <div class="item" style="padding-left: 24px;">
         <i class="gem outline grey icon"></i>
         <div class="content">
+          <a href="https://coderleftear.github.io/post/linux-jar%E5%8C%85%E9%83%A8%E7%BD%B2/" class="item">jar部署</a>
+        </div>
+      </div>
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="gem outline grey icon"></i>
+        <div class="content">
           <a href="https://coderleftear.github.io/post/linux%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AF%E8%AE%BE%E7%BD%AE/" class="item">Linux开机自启设置</a>
         </div>
       </div>
@@ -991,6 +998,49 @@ tag | Linux
           
           <div class="display-content">
           
+            <a href="https://coderleftear.github.io/post/linux-jar%E5%8C%85%E9%83%A8%E7%BD%B2/">
+              
+              <h2 class="ui header" style="color: white;">jar部署</h2>
+              
+            </a>
+            <p style="padding: 5px;">jar部署 Linux中修改jar包中的配置文件 打包以及修改jar包
+cd genesys_data_etl mvn clean package -Poffline -Dmaven.test.skip=true 日志如下： [INFO] --- maven-jar-plugin:2.6:jar (default-jar) @ genesys_data_etl --- [INFO] Building jar: /Users/xx/IdeaProjects/genesys_data_etl/target/genesys_data_etl-0.0.1-0SNAPSHOT.jar 生成jar包 此时可以通过命令 java -jar genesys_data_etl-0.0.1-SNAPSHOT.jar 运行jar包。  但是要修改jar包中的配置文件怎么办呢？
+方式一 通过vim命令直接修改保存jar。超方便。 1.通过vim命令直接编辑jar vim xxx.jar 该命令首先会列出全部文件，可以通过输入/abc来搜索，定位到对应的abc文件后回车进入配置文件内进行编辑，:wq保存。
+方式二 通过jar命令替换jar包中的文件(也可新增) 1.列出jar包中的文件清单 jar tf genesys_data_etl-0.0.1-SNAPSHOT.jar
+2.提取出内部jar包的指定文件 jar xf genesys_data_etl-0.0.1-SNAPSHOT.jar BOOT-INF/classes/realtime/t_ivr_data_bj.json
+3.然后可以修改文件 vim BOOT-INF/classes/realtime/t_ivr_data_bj.json
+4.更新配置文件到内部jar包.(存在覆盖，不存在就新增) jar uf genesys_data_etl-0.0.1-SNAPSHOT.jar BOOT-INF/classes/realtime/t_ivr_data_bj.json
+4.1更新内部jar包到jar文件 jar uf genesys_data_etl-0.0.1-SNAPSHOT.jar 内部jar包.jar
+5.可以查看验证是否已经更改 vim genesys_data_etl-0.0.1-SNAPSHOT.jar
+方式三 解压jar包，修改后重新打包jar 1.解压 unzip genesys_data_etl-0.0.1-SNAPSHOT.jar 2.移除jar包,最好备份 rm genesys_data_etl-0.</p>
+            <p>@ CoderLeftEar</p>
+          </div>
+          
+          <div class="ui top right attached black label">1 min read</div>
+          <div class="ui bottom left attached black label">Dec 28, 2020</div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <img src="/img/default6.jpg" alt="jar部署">
+    
+  </div>
+</article>
+
+
+      
+
+        <article class="card" style="box-shadow: none;">
+  <div class="image">
+    
+    <div class="ui dimmer">
+    
+      <div class="content">
+        <div class="center">
+          
+          <div class="display-content">
+          
             <a href="https://coderleftear.github.io/post/linux%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AF%E8%AE%BE%E7%BD%AE/">
               
               <h2 class="ui header" style="color: white;">Linux开机自启设置</h2>
@@ -1015,7 +1065,7 @@ cd /etc/rc.d/init.d chkconfig --add autostart.sh chkconfig autostart.sh on  </p>
       </div>
     </div>
     
-    <img src="/img/default1.jpg" alt="Linux开机自启设置">
+    <img src="/img/default3.jpg" alt="Linux开机自启设置">
     
   </div>
 </article>
@@ -1099,7 +1149,7 @@ rmdir 删除空文件夹 (只能删除空文件夹) rm -r /a/b (删除非空文�
       </div>
     </div>
     
-    <img src="/img/default5.jpg" alt="Linux">
+    <img src="/img/default4.jpg" alt="Linux">
     
   </div>
 </article>

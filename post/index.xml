@@ -6,10 +6,28 @@
     <description>Recent content in Posts on CoderLeftEar&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Nov 2020 09:44:32 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 28 Dec 2020 11:14:48 +0800</lastBuildDate>
     
 	<atom:link href="https://coderleftear.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>jar部署</title>
+      <link>https://coderleftear.github.io/post/linux-jar%E5%8C%85%E9%83%A8%E7%BD%B2/</link>
+      <pubDate>Mon, 28 Dec 2020 11:14:48 +0800</pubDate>
+      
+      <guid>https://coderleftear.github.io/post/linux-jar%E5%8C%85%E9%83%A8%E7%BD%B2/</guid>
+      <description>jar部署 Linux中修改jar包中的配置文件 打包以及修改jar包
+cd genesys_data_etl mvn clean package -Poffline -Dmaven.test.skip=true 日志如下： [INFO] --- maven-jar-plugin:2.6:jar (default-jar) @ genesys_data_etl --- [INFO] Building jar: /Users/xx/IdeaProjects/genesys_data_etl/target/genesys_data_etl-0.0.1-0SNAPSHOT.jar 生成jar包 此时可以通过命令 java -jar genesys_data_etl-0.0.1-SNAPSHOT.jar 运行jar包。  但是要修改jar包中的配置文件怎么办呢？
+方式一 通过vim命令直接修改保存jar。超方便。 1.通过vim命令直接编辑jar vim xxx.jar 该命令首先会列出全部文件，可以通过输入/abc来搜索，定位到对应的abc文件后回车进入配置文件内进行编辑，:wq保存。
+方式二 通过jar命令替换jar包中的文件(也可新增) 1.列出jar包中的文件清单 jar tf genesys_data_etl-0.0.1-SNAPSHOT.jar
+2.提取出内部jar包的指定文件 jar xf genesys_data_etl-0.0.1-SNAPSHOT.jar BOOT-INF/classes/realtime/t_ivr_data_bj.json
+3.然后可以修改文件 vim BOOT-INF/classes/realtime/t_ivr_data_bj.json
+4.更新配置文件到内部jar包.(存在覆盖，不存在就新增) jar uf genesys_data_etl-0.0.1-SNAPSHOT.jar BOOT-INF/classes/realtime/t_ivr_data_bj.json
+4.1更新内部jar包到jar文件 jar uf genesys_data_etl-0.0.1-SNAPSHOT.jar 内部jar包.jar
+5.可以查看验证是否已经更改 vim genesys_data_etl-0.0.1-SNAPSHOT.jar
+方式三 解压jar包，修改后重新打包jar 1.解压 unzip genesys_data_etl-0.0.1-SNAPSHOT.jar 2.移除jar包,最好备份 rm genesys_data_etl-0.</description>
+    </item>
     
     <item>
       <title>Js短路运算符</title>

@@ -642,6 +642,13 @@
       <div class="item" style="padding-left: 24px;">
         <i class="gem outline grey icon"></i>
         <div class="content">
+          <a href="https://coderleftear.github.io/post/linux-jar%E5%8C%85%E9%83%A8%E7%BD%B2/" class="item">jar部署</a>
+        </div>
+      </div>
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="gem outline grey icon"></i>
+        <div class="content">
           <a href="https://coderleftear.github.io/post/linux%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AF%E8%AE%BE%E7%BD%AE/" class="item">Linux开机自启设置</a>
         </div>
       </div>
@@ -988,6 +995,51 @@
           
           <div class="display-content">
           
+            <a href="https://coderleftear.github.io/post/git%E7%AC%94%E8%AE%B013-git-subtree/">
+              
+              <h2 class="ui header" style="color: white;">Git笔记13-Git Subtree</h2>
+              
+            </a>
+            <p style="padding: 5px;">Git笔记13-Git Subtree git subtree:
+添加远程项目设置别名subtree-origin：
+&gt; git reomte add subtree-origin git@github.com:Mr-WangG/git_subtree_child.git
+从subtree-origin的master中克隆项目，
+-squash：将所需要依赖的所有分支的所有提交合并为一个提交，这个提交再与当前subtree-origin分支合并又发生一次提交(–prefix=subtree / –prefix subtree / -P subtree)
+&gt; git subtree add –prefix=subtree subtree-origin master (-squash)
+从subtree-origin拉取到subtree中：
+&gt; git subtree pull –prefix=subtree subtree-origin master
+在git_subtree_parent中，使用***可将依赖的项目进行修改并push到git_subtree_parent和git_subtree_child中，直接进行修改：
+&gt; git subtree push –prefix=subtree subtree-origin master
+出现一下错误：可以采用以下方法，能解决部分
+error: failed to push some refs to &#39;git@github.com:Mr-WangG/git_subtree_child.git&#39; hint: hint: ***  git pull origin master git pull --rebase origin master git push --set-upstream origin master  原因是远程与本地不一致导致的 使用git pull –rebase origin master: 意思是将远程更新到合并到本地中，–rebase作用是取消本地中刚刚的commit，并临时保存到.</p>
+            <p>@ CoderLeftEar</p>
+          </div>
+          
+          <div class="ui top right attached black label">1 min read</div>
+          <div class="ui bottom left attached black label">Aug 17, 2019</div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <img src="/img/default2.jpg" alt="Git笔记13-Git Subtree">
+    
+  </div>
+</article>
+
+
+      
+
+        <article class="card" style="box-shadow: none;">
+  <div class="image">
+    
+    <div class="ui dimmer">
+    
+      <div class="content">
+        <div class="center">
+          
+          <div class="display-content">
+          
             <a href="https://coderleftear.github.io/post/jdk8-collector/">
               
               <h2 class="ui header" style="color: white;">Jdk8-Collector</h2>
@@ -1019,7 +1071,7 @@ A a1 = supplier.get(); accumulator.accept(a1, t1); accumulator.</p>
       </div>
     </div>
     
-    <img src="/img/default3.jpg" alt="Jdk8-Collector">
+    <img src="/img/default4.jpg" alt="Jdk8-Collector">
     
   </div>
 </article>
@@ -1067,7 +1119,7 @@ git push</p>
       </div>
     </div>
     
-    <img src="/img/default5.jpg" alt="Git笔记12-Git裸库与submodule">
+    <img src="/img/default3.jpg" alt="Git笔记12-Git裸库与submodule">
     
   </div>
 </article>
@@ -1114,7 +1166,7 @@ git push origin :refs/tags/v1.</p>
       </div>
     </div>
     
-    <img src="/img/default2.jpg" alt="Git笔记11-git refspec、远程标签与git gc">
+    <img src="/img/default3.jpg" alt="Git笔记11-git refspec、远程标签与git gc">
     
   </div>
 </article>
@@ -1195,47 +1247,7 @@ $ git push To github.com:Mr-WangG/gitTest.git ! [rejected] master -&gt; master (
       </div>
     </div>
     
-    <img src="/img/default5.jpg" alt="Git笔记09-Git分支最佳实践">
-    
-  </div>
-</article>
-
-
-      
-
-        <article class="card" style="box-shadow: none;">
-  <div class="image">
-    
-    <div class="ui dimmer">
-    
-      <div class="content">
-        <div class="center">
-          
-          <div class="display-content">
-          
-            <a href="https://coderleftear.github.io/post/git%E7%AC%94%E8%AE%B008-git%E5%8D%8F%E4%BD%9C%E5%92%8Cgit%E8%BF%9C%E7%A8%8B%E5%8D%8F%E4%BD%9C%E6%A8%A1%E5%9E%8B/">
-              
-              <h2 class="ui header" style="color: white;">Git笔记08-Git协作和Git远程协作模型</h2>
-              
-            </a>
-            <p style="padding: 5px;">Git笔记08-Git协作和Git远程协作模型 第一部分 查看所有分支：
-$ git branch -a * master remotes/origin/master  查看所有远程分支：
-$ git branch -r origin/master  查看所有分支最后一次提交：
-$ git branch -av * master 01c84c4 commit remotes/origin/master 01c84c4 commit  再进行一次提交后，执行git branch -av，master比origin/master多一次提交：
-$ git branch -av * master 9794ba4 [ahead 1] commit remotes/origin/master 01c84c4 commit  执行git push，执行了两件事，将master推送到远程，origin/master的当前提交指向master的提交。
-第二部分 执行git pull将本地从远程Updating 9794ba4..906f1df（快进）：
-$ git pull remote: Enumerating objects: 5, done. remote: Counting objects: 100% (5/5), done. remote: Compressing objects: 100% (2/2), done.</p>
-            <p>@ CoderLeftEar</p>
-          </div>
-          
-          <div class="ui top right attached black label">1 min read</div>
-          <div class="ui bottom left attached black label">Aug 13, 2019</div>
-          
-        </div>
-      </div>
-    </div>
-    
-    <img src="/img/default4.jpg" alt="Git笔记08-Git协作和Git远程协作模型">
+    <img src="/img/default6.jpg" alt="Git笔记09-Git分支最佳实践">
     
   </div>
 </article>

@@ -642,6 +642,13 @@
       <div class="item" style="padding-left: 24px;">
         <i class="gem outline grey icon"></i>
         <div class="content">
+          <a href="https://coderleftear.github.io/post/linux-jar%E5%8C%85%E9%83%A8%E7%BD%B2/" class="item">jar部署</a>
+        </div>
+      </div>
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="gem outline grey icon"></i>
+        <div class="content">
           <a href="https://coderleftear.github.io/post/linux%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AF%E8%AE%BE%E7%BD%AE/" class="item">Linux开机自启设置</a>
         </div>
       </div>
@@ -988,6 +995,46 @@
           
           <div class="display-content">
           
+            <a href="https://coderleftear.github.io/post/git%E7%AC%94%E8%AE%B008-git%E5%8D%8F%E4%BD%9C%E5%92%8Cgit%E8%BF%9C%E7%A8%8B%E5%8D%8F%E4%BD%9C%E6%A8%A1%E5%9E%8B/">
+              
+              <h2 class="ui header" style="color: white;">Git笔记08-Git协作和Git远程协作模型</h2>
+              
+            </a>
+            <p style="padding: 5px;">Git笔记08-Git协作和Git远程协作模型 第一部分 查看所有分支：
+$ git branch -a * master remotes/origin/master  查看所有远程分支：
+$ git branch -r origin/master  查看所有分支最后一次提交：
+$ git branch -av * master 01c84c4 commit remotes/origin/master 01c84c4 commit  再进行一次提交后，执行git branch -av，master比origin/master多一次提交：
+$ git branch -av * master 9794ba4 [ahead 1] commit remotes/origin/master 01c84c4 commit  执行git push，执行了两件事，将master推送到远程，origin/master的当前提交指向master的提交。
+第二部分 执行git pull将本地从远程Updating 9794ba4..906f1df（快进）：
+$ git pull remote: Enumerating objects: 5, done. remote: Counting objects: 100% (5/5), done. remote: Compressing objects: 100% (2/2), done.</p>
+            <p>@ CoderLeftEar</p>
+          </div>
+          
+          <div class="ui top right attached black label">1 min read</div>
+          <div class="ui bottom left attached black label">Aug 13, 2019</div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <img src="/img/default1.jpg" alt="Git笔记08-Git协作和Git远程协作模型">
+    
+  </div>
+</article>
+
+
+      
+
+        <article class="card" style="box-shadow: none;">
+  <div class="image">
+    
+    <div class="ui dimmer">
+    
+      <div class="content">
+        <div class="center">
+          
+          <div class="display-content">
+          
             <a href="https://coderleftear.github.io/post/git%E7%AC%94%E8%AE%B007-git%E8%BF%9C%E7%A8%8Bgithub%E5%92%8C%E5%85%AC%E7%A7%81%E9%92%A5/">
               
               <h2 class="ui header" style="color: white;">Git笔记07-git远程、GitHub和公私钥</h2>
@@ -1012,7 +1059,7 @@ $ git remote show origin * remote origin Fetch URL: https://github.com/Mr-WangG/
       </div>
     </div>
     
-    <img src="/img/default5.jpg" alt="Git笔记07-git远程、GitHub和公私钥">
+    <img src="/img/default1.jpg" alt="Git笔记07-git远程、GitHub和公私钥">
     
   </div>
 </article>
@@ -1065,7 +1112,7 @@ $ git diff warning: LF will be replaced by CRLF in test.txt. The file will have 
       </div>
     </div>
     
-    <img src="/img/default1.jpg" alt="Git笔记06-标签与diff">
+    <img src="/img/default4.jpg" alt="Git笔记06-标签与diff">
     
   </div>
 </article>
@@ -1117,7 +1164,7 @@ stash 临时存储： &gt; git stash
       </div>
     </div>
     
-    <img src="/img/default5.jpg" alt="Git笔记05-checkout进阶与stash">
+    <img src="/img/default3.jpg" alt="Git笔记05-checkout进阶与stash">
     
   </div>
 </article>
@@ -1153,7 +1200,7 @@ stash 临时存储： &gt; git stash
       </div>
     </div>
     
-    <img src="/img/default4.jpg" alt="Jdk8-08-Stream笔记01">
+    <img src="/img/default6.jpg" alt="Jdk8-08-Stream笔记01">
     
   </div>
 </article>
@@ -1192,42 +1239,7 @@ System.out.println(binaryOperatorTest.operatorFunMin(&#34;abbbbbb&#34;, &#34;bbb
       </div>
     </div>
     
-    <img src="/img/default5.jpg" alt="Jdk8-07-BinaryOperator">
-    
-  </div>
-</article>
-
-
-      
-
-        <article class="card" style="box-shadow: none;">
-  <div class="image">
-    
-    <div class="ui dimmer">
-    
-      <div class="content">
-        <div class="center">
-          
-          <div class="display-content">
-          
-            <a href="https://coderleftear.github.io/post/jdk8-02-consumer/">
-              
-              <h2 class="ui header" style="color: white;">Jdk8-02-Consumer</h2>
-              
-            </a>
-            <p style="padding: 5px;"> Consumer Consumer：接收一个参数，无返回值。
-List&lt;String&gt; list = Arrays.asList(&#34;a&#34;, &#34;b&#34;, &#34;c&#34;, &#34;d&#34;, &#34;e&#34;); Consumer&lt;String&gt; consumer = item -&gt; System.out.println(item); list.forEach(consumer);  </p>
-            <p>@ CoderLeftEar</p>
-          </div>
-          
-          <div class="ui top right attached black label">1 min read</div>
-          <div class="ui bottom left attached black label">Aug 9, 2019</div>
-          
-        </div>
-      </div>
-    </div>
-    
-    <img src="/img/default2.jpg" alt="Jdk8-02-Consumer">
+    <img src="/img/default2.jpg" alt="Jdk8-07-BinaryOperator">
     
   </div>
 </article>
