@@ -4,37 +4,42 @@
   
   <url>
     <loc>https://coderleftear.github.io/categories/</loc>
-    <lastmod>2020-12-28T11:14:48+08:00</lastmod>
+    <lastmod>2021-01-23T19:45:48+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://coderleftear.github.io/</loc>
-    <lastmod>2020-12-28T11:14:48+08:00</lastmod>
+    <lastmod>2021-01-23T19:45:48+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://coderleftear.github.io/categories/linux/</loc>
-    <lastmod>2020-12-28T11:14:48+08:00</lastmod>
+    <lastmod>2021-01-23T19:45:48+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://coderleftear.github.io/tags/linux/</loc>
-    <lastmod>2020-12-28T11:14:48+08:00</lastmod>
+    <lastmod>2021-01-23T19:45:48+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>https://coderleftear.github.io/post/linux%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2/</loc>
+    <lastmod>2021-01-23T19:45:48+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://coderleftear.github.io/post/</loc>
-    <lastmod>2020-12-28T11:14:48+08:00</lastmod>
+    <lastmod>2021-01-23T19:45:48+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://coderleftear.github.io/tags/</loc>
-    <lastmod>2020-12-28T11:14:48+08:00</lastmod>
+    <lastmod>2021-01-23T19:45:48+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -690,12 +695,41 @@
   </url>
   
   <url>
+    <loc>https://coderleftear.github.io/post/plan/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://coderleftear.github.io/post/%E6%B3%A8%E8%A7%A3/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://coderleftear.github.io/about/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coderleftear.github.io/post/html%E5%9B%BE%E7%89%87%E5%B1%85%E4%B8%AD/</loc>
+  </url>
+  
+  <url>
+    <loc>https://coderleftear.github.io/categories/css/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coderleftear.github.io/tags/css/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coderleftear.github.io/categories/html/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coderleftear.github.io/tags/html/</loc>
     <priority>0</priority>
   </url>
   

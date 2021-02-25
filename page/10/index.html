@@ -106,6 +106,8 @@
 <section class="ui attached center aligned inverted segment dream-header-tags dream-tags">
 
   
+  <a class="ui label" href="/tags/css" title="css">css</a>
+  
   <a class="ui label" href="/tags/datastructure" title="datastructure">datastructure</a>
   
   <a class="ui label" href="/tags/docker" title="docker">docker</a>
@@ -117,6 +119,8 @@
   <a class="ui label" href="/tags/git" title="git">git</a>
   
   <a class="ui label" href="/tags/gulp" title="gulp">gulp</a>
+  
+  <a class="ui label" href="/tags/html" title="html">html</a>
   
   <a class="ui label" href="/tags/java" title="java">java</a>
   
@@ -164,6 +168,23 @@
   
   <div class="ui inverted accordion">
   
+    
+    <div class="title">
+      <i class="dropdown icon"></i>
+      <a href="/categories/css" class="item">css</a>
+    </div>
+    <div class="content">
+      <div class="ui link list">
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="gem outline grey icon"></i>
+        <div class="content">
+          <a href="https://coderleftear.github.io/post/html%E5%9B%BE%E7%89%87%E5%B1%85%E4%B8%AD/" class="item">Html图片居中</a>
+        </div>
+      </div>
+      
+      </div>
+    </div>
     
     <div class="title">
       <i class="dropdown icon"></i>
@@ -373,6 +394,23 @@
         <i class="gem outline grey icon"></i>
         <div class="content">
           <a href="https://coderleftear.github.io/post/gulpfile/" class="item">Gulpfile</a>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+    
+    <div class="title">
+      <i class="dropdown icon"></i>
+      <a href="/categories/html" class="item">html</a>
+    </div>
+    <div class="content">
+      <div class="ui link list">
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="gem outline grey icon"></i>
+        <div class="content">
+          <a href="https://coderleftear.github.io/post/html%E5%9B%BE%E7%89%87%E5%B1%85%E4%B8%AD/" class="item">Html图片居中</a>
         </div>
       </div>
       
@@ -638,6 +676,13 @@
     </div>
     <div class="content">
       <div class="ui link list">
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="gem outline grey icon"></i>
+        <div class="content">
+          <a href="https://coderleftear.github.io/post/linux%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2/" class="item">Linux开机自启设置</a>
+        </div>
+      </div>
       
       <div class="item" style="padding-left: 24px;">
         <i class="gem outline grey icon"></i>
@@ -973,7 +1018,7 @@
 	<br/>
 
     
-    <p>© 2020 CoderLeftEar&#39;s Blog</p>
+    <p>© 2021 CoderLeftEar&#39;s Blog</p>
     
     <p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with theme <a href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</p>
 </section>
@@ -983,6 +1028,45 @@
 
     <div class="ui two stackable cards">
       
+      
+
+        <article class="card" style="box-shadow: none;">
+  <div class="image">
+    
+    <div class="ui dimmer">
+    
+      <div class="content">
+        <div class="center">
+          
+          <div class="display-content">
+          
+            <a href="https://coderleftear.github.io/post/jdk8-07-binaryoperator/">
+              
+              <h2 class="ui header" style="color: white;">Jdk8-07-BinaryOperator</h2>
+              
+            </a>
+            <p style="padding: 5px;">BinaryOperator BinaryOperator：是一个继承了BiFunction的接口，本身有两个比较大小的方法。minBy(); 和 maxBy();
+ BinaryOperatorTest binaryOperatorTest = new BinaryOperatorTest();
+&lt;T&gt; BinaryOperator minBy(Comparator&lt;? super T&gt; comparator)
+ 四则运算
+BinaryOperator&lt;Integer&gt; binaryOperator = (value1, value2) -&gt; value1 * value2; //封装在方法中，传参 System.out.println(binaryOperatorTest.operatorFun(3, 4, binaryOperator)); //直接调用apply方法调用 System.out.println(binaryOperator.apply(3, 4)); //四则运算 public Integer operatorFun(int a, int b, BinaryOperator&lt;Integer&gt; binaryOperator){ return binaryOperator.apply(a, b); } 答案：12，12  大小比较：第三个参数传一个lambda，比较长度还是大小，写对应的lambda
+System.out.println(binaryOperatorTest.operatorFunMin(&#34;abbbbbb&#34;, &#34;bbb&#34;, (value1, value2) -&gt; value1.compareTo(value2))); System.out.println(binaryOperatorTest.operatorFunMin(&#34;abbbbbb&#34;, &#34;bbb&#34;, (value1, value2) -&gt; value1.length() - value2.length())); public String operatorFunMin(String a, String b, Comparator&lt;String&gt; comparator){ return BinaryOperator.</p>
+            <p>@ CoderLeftEar</p>
+          </div>
+          
+          <div class="ui top right attached black label">1 min read</div>
+          <div class="ui bottom left attached black label">Aug 10, 2019</div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <img src="/img/default6.jpg" alt="Jdk8-07-BinaryOperator">
+    
+  </div>
+</article>
+
+
       
 
         <article class="card" style="box-shadow: none;">
@@ -1012,7 +1096,7 @@ List&lt;String&gt; list = Arrays.asList(&#34;a&#34;, &#34;b&#34;, &#34;c&#34;, &
       </div>
     </div>
     
-    <img src="/img/default4.jpg" alt="Jdk8-02-Consumer">
+    <img src="/img/default5.jpg" alt="Jdk8-02-Consumer">
     
   </div>
 </article>
@@ -1055,7 +1139,7 @@ Employee emp1 = new Employee(&#34;zhangsan&#34;); Employee emp2 = new Employee(&
       </div>
     </div>
     
-    <img src="/img/default3.jpg" alt="Jdk8-04-Optional">
+    <img src="/img/default5.jpg" alt="Jdk8-04-Optional">
     
   </div>
 </article>
@@ -1134,7 +1218,7 @@ supplier = Student::new; System.out.println(supplier.get().getName());  </p>
       </div>
     </div>
     
-    <img src="/img/default3.jpg" alt="Jdk8-06-Supplier">
+    <img src="/img/default5.jpg" alt="Jdk8-06-Supplier">
     
   </div>
 </article>
@@ -1176,47 +1260,7 @@ System.out.println(functionDemo.convert2(5, value -&gt; (int)value &#43; 1, valu
       </div>
     </div>
     
-    <img src="/img/default4.jpg" alt="Jdk8-03-Function">
-    
-  </div>
-</article>
-
-
-      
-
-        <article class="card" style="box-shadow: none;">
-  <div class="image">
-    
-    <div class="ui dimmer">
-    
-      <div class="content">
-        <div class="center">
-          
-          <div class="display-content">
-          
-            <a href="https://coderleftear.github.io/post/jdk8-01-lambda/">
-              
-              <h2 class="ui header" style="color: white;">Jdk8-01-Lambda</h2>
-              
-            </a>
-            <p style="padding: 5px;">Lambda 关于函数式接口： - 如果一个接口只有一个抽象方法，那么该接口就是一个函数式接口
-- 如果我们在某个接口上声明了FunctionalInterface注解，那么编译器就会按照函数式接口的定义来要求该接口
-- 如果某个接口只有一个抽象方法，但我们并没有给改接口声明FunctionalInterface注解，那么编译器依旧会将该接口看作是函数式接口
-
- 如果函数式接口中存在Object类中的的方法时，不会算入总方法数，会看作基础Object类
- 案例：
-List&lt;Integer&gt; list = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9);  System.out.println(&#34;--------foreach遍历--------&#34;); //foreach遍历 for (Integer num : list) { System.out.println(num); }  System.out.println(&#34;--------for循环--------&#34;); //for循环 for(int i = 0; i &lt; list.size(); i &#43;&#43;){ System.out.println(list.get(i)); }  System.out.println(&#34;--------内部类--------&#34;); list.forEach(new Consumer&lt;Integer&gt;() { @Override public void accept(Integer integer) { System.out.println(integer); } });  System.out.println(&#34;--------Lambda--------&#34;); //Lambda list.forEach(i -&gt; System.</p>
-            <p>@ CoderLeftEar</p>
-          </div>
-          
-          <div class="ui top right attached black label">1 min read</div>
-          <div class="ui bottom left attached black label">Aug 9, 2019</div>
-          
-        </div>
-      </div>
-    </div>
-    
-    <img src="/img/default4.jpg" alt="Jdk8-01-Lambda">
+    <img src="/img/default5.jpg" alt="Jdk8-03-Function">
     
   </div>
 </article>

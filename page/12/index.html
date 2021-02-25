@@ -106,6 +106,8 @@
 <section class="ui attached center aligned inverted segment dream-header-tags dream-tags">
 
   
+  <a class="ui label" href="/tags/css" title="css">css</a>
+  
   <a class="ui label" href="/tags/datastructure" title="datastructure">datastructure</a>
   
   <a class="ui label" href="/tags/docker" title="docker">docker</a>
@@ -117,6 +119,8 @@
   <a class="ui label" href="/tags/git" title="git">git</a>
   
   <a class="ui label" href="/tags/gulp" title="gulp">gulp</a>
+  
+  <a class="ui label" href="/tags/html" title="html">html</a>
   
   <a class="ui label" href="/tags/java" title="java">java</a>
   
@@ -164,6 +168,23 @@
   
   <div class="ui inverted accordion">
   
+    
+    <div class="title">
+      <i class="dropdown icon"></i>
+      <a href="/categories/css" class="item">css</a>
+    </div>
+    <div class="content">
+      <div class="ui link list">
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="gem outline grey icon"></i>
+        <div class="content">
+          <a href="https://coderleftear.github.io/post/html%E5%9B%BE%E7%89%87%E5%B1%85%E4%B8%AD/" class="item">Html图片居中</a>
+        </div>
+      </div>
+      
+      </div>
+    </div>
     
     <div class="title">
       <i class="dropdown icon"></i>
@@ -373,6 +394,23 @@
         <i class="gem outline grey icon"></i>
         <div class="content">
           <a href="https://coderleftear.github.io/post/gulpfile/" class="item">Gulpfile</a>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+    
+    <div class="title">
+      <i class="dropdown icon"></i>
+      <a href="/categories/html" class="item">html</a>
+    </div>
+    <div class="content">
+      <div class="ui link list">
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="gem outline grey icon"></i>
+        <div class="content">
+          <a href="https://coderleftear.github.io/post/html%E5%9B%BE%E7%89%87%E5%B1%85%E4%B8%AD/" class="item">Html图片居中</a>
         </div>
       </div>
       
@@ -638,6 +676,13 @@
     </div>
     <div class="content">
       <div class="ui link list">
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="gem outline grey icon"></i>
+        <div class="content">
+          <a href="https://coderleftear.github.io/post/linux%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2/" class="item">Linux开机自启设置</a>
+        </div>
+      </div>
       
       <div class="item" style="padding-left: 24px;">
         <i class="gem outline grey icon"></i>
@@ -973,7 +1018,7 @@
 	<br/>
 
     
-    <p>© 2020 CoderLeftEar&#39;s Blog</p>
+    <p>© 2021 CoderLeftEar&#39;s Blog</p>
     
     <p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with theme <a href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</p>
 </section>
@@ -983,6 +1028,42 @@
 
     <div class="ui two stackable cards">
       
+      
+
+        <article class="card" style="box-shadow: none;">
+  <div class="image">
+    
+    <div class="ui dimmer">
+    
+      <div class="content">
+        <div class="center">
+          
+          <div class="display-content">
+          
+            <a href="https://coderleftear.github.io/post/hashmap%E5%AE%9E%E7%8E%B0/">
+              
+              <h2 class="ui header" style="color: white;">HashMap实现</h2>
+              
+            </a>
+            <p style="padding: 5px;">HashMap实现  未添加泛型的Node类
+ public class Node { int hash; Object key; Object value; Node next; }   1、put、myHash、tostring
+ /** * put、myHash、tostring * * @author Mr.Wang * */ public class HashMap01 { Node[] table;	//桶位数组 bucket array int size; public HashMap01() { table = new Node[16]; } public void put(Object key, Object value) { Node newNode = new Node(); newNode.hash = myHash(key.hashCode(), table.length); newNode.key = key; newNode.value = value; newNode.</p>
+            <p>@ CoderLeftEar</p>
+          </div>
+          
+          <div class="ui top right attached black label">4 min read</div>
+          <div class="ui bottom left attached black label">Aug 4, 2019</div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <img src="/img/default3.jpg" alt="HashMap实现">
+    
+  </div>
+</article>
+
+
       
 
         <article class="card" style="box-shadow: none;">
@@ -1046,7 +1127,7 @@
       </div>
     </div>
     
-    <img src="/img/default1.jpg" alt="Java各个编码所占字节数">
+    <img src="/img/default2.jpg" alt="Java各个编码所占字节数">
     
   </div>
 </article>
@@ -1082,7 +1163,7 @@ public class Node { Node previous; Node next; Object element; public Node(Node p
       </div>
     </div>
     
-    <img src="/img/default5.jpg" alt="LinkedList源码">
+    <img src="/img/default1.jpg" alt="LinkedList源码">
     
   </div>
 </article>
@@ -1152,40 +1233,6 @@ public class Node { Node previous; Node next; Object element; public Node(Node p
     </div>
     
     <img src="/img/default2.jpg" alt="Java内存分析">
-    
-  </div>
-</article>
-
-
-      
-
-        <article class="card" style="box-shadow: none;">
-  <div class="image">
-    
-    <div class="ui dimmer">
-    
-      <div class="content">
-        <div class="center">
-          
-          <div class="display-content">
-          
-            <a href="https://coderleftear.github.io/post/002-%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/">
-              
-              <h2 class="ui header" style="color: white;">001-大话设计模式-单例模式</h2>
-              
-            </a>
-            <p style="padding: 5px;">单例模式 1.饿汉式—静态常量方式（线程安全） public class Singleton { private static Singleton instance = new Singleton(); private Singleton (){} public static Singleton getInstance() { return instance; } }  2.饿汉式—静态代码块方式（线程安全） public class Singleton { private static Singleton instance; static { instance = new Singleton(); } private Singleton() {} public static Singleton getInstance() { return instance; } }  3.懒汉式（线程不安全） public class Singleton { private static Singleton singleton; private Singleton() {} public static Singleton getInstance() { if (singleton == null) { singleton = new Singleton(); } return singleton; } }  4.</p>
-            <p>@ CoderLeftEar</p>
-          </div>
-          
-          <div class="ui top right attached black label">1 min read</div>
-          <div class="ui bottom left attached black label">Jul 2, 2019</div>
-          
-        </div>
-      </div>
-    </div>
-    
-    <img src="/img/default6.jpg" alt="001-大话设计模式-单例模式">
     
   </div>
 </article>

@@ -106,6 +106,8 @@
 <section class="ui attached center aligned inverted segment dream-header-tags dream-tags">
 
   
+  <a class="ui label" href="/tags/css" title="css">css</a>
+  
   <a class="ui label" href="/tags/datastructure" title="datastructure">datastructure</a>
   
   <a class="ui label" href="/tags/docker" title="docker">docker</a>
@@ -117,6 +119,8 @@
   <a class="ui label" href="/tags/git" title="git">git</a>
   
   <a class="ui label" href="/tags/gulp" title="gulp">gulp</a>
+  
+  <a class="ui label" href="/tags/html" title="html">html</a>
   
   <a class="ui label" href="/tags/java" title="java">java</a>
   
@@ -164,6 +168,23 @@
   
   <div class="ui inverted accordion">
   
+    
+    <div class="title">
+      <i class="dropdown icon"></i>
+      <a href="/categories/css" class="item">css</a>
+    </div>
+    <div class="content">
+      <div class="ui link list">
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="gem outline grey icon"></i>
+        <div class="content">
+          <a href="https://coderleftear.github.io/post/html%E5%9B%BE%E7%89%87%E5%B1%85%E4%B8%AD/" class="item">Html图片居中</a>
+        </div>
+      </div>
+      
+      </div>
+    </div>
     
     <div class="title">
       <i class="dropdown icon"></i>
@@ -373,6 +394,23 @@
         <i class="gem outline grey icon"></i>
         <div class="content">
           <a href="https://coderleftear.github.io/post/gulpfile/" class="item">Gulpfile</a>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+    
+    <div class="title">
+      <i class="dropdown icon"></i>
+      <a href="/categories/html" class="item">html</a>
+    </div>
+    <div class="content">
+      <div class="ui link list">
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="gem outline grey icon"></i>
+        <div class="content">
+          <a href="https://coderleftear.github.io/post/html%E5%9B%BE%E7%89%87%E5%B1%85%E4%B8%AD/" class="item">Html图片居中</a>
         </div>
       </div>
       
@@ -638,6 +676,13 @@
     </div>
     <div class="content">
       <div class="ui link list">
+      
+      <div class="item" style="padding-left: 24px;">
+        <i class="gem outline grey icon"></i>
+        <div class="content">
+          <a href="https://coderleftear.github.io/post/linux%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2/" class="item">Linux开机自启设置</a>
+        </div>
+      </div>
       
       <div class="item" style="padding-left: 24px;">
         <i class="gem outline grey icon"></i>
@@ -973,7 +1018,7 @@
 	<br/>
 
     
-    <p>© 2020 CoderLeftEar&#39;s Blog</p>
+    <p>© 2021 CoderLeftEar&#39;s Blog</p>
     
     <p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with theme <a href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</p>
 </section>
@@ -983,6 +1028,41 @@
 
     <div class="ui two stackable cards">
       
+      
+
+        <article class="card" style="box-shadow: none;">
+  <div class="image">
+    
+    <div class="ui dimmer">
+    
+      <div class="content">
+        <div class="center">
+          
+          <div class="display-content">
+          
+            <a href="https://coderleftear.github.io/post/datastructure01-sparsearray/">
+              
+              <h2 class="ui header" style="color: white;">DataStructure01-SparseArray</h2>
+              
+            </a>
+            <p style="padding: 5px;">DataStructure01-SparseArray 原始数组: 创建的放置棋子的数组棋盘
+//定义棋盘数组 int[][] arr = new int[11][11]; //定义总棋子个数 int sum = 0; //赋值 //0表示无子，1表示黑子，2表示白子 arr[1][0] = 1; arr[2][1] = 2; arr[3][2] = 2; //循环遍历 for (int i = 0; i &lt; arr.length; i &#43;&#43;) { for (int j = 0; j &lt; arr[0].length; j &#43;&#43;) { System.out.print(arr[i][j] &#43; &#34;\t&#34;); //System.out.printf(&#34;%d\t&#34;, arr[i][j]); //判断是否是棋子，是就将sum&#43;&#43; if (arr[i][j] != 0) { sum &#43;&#43;; } } System.out.println(); } System.out.println(&#34;总数：&#34; &#43; sum);  稀疏数组: 将普通二维数组转化为稀疏数组</p>
+            <p>@ CoderLeftEar</p>
+          </div>
+          
+          <div class="ui top right attached black label">3 min read</div>
+          <div class="ui bottom left attached black label">Sep 3, 2019</div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <img src="/img/default1.jpg" alt="DataStructure01-SparseArray">
+    
+  </div>
+</article>
+
+
       
 
         <article class="card" style="box-shadow: none;">
@@ -1012,7 +1092,7 @@
       </div>
     </div>
     
-    <img src="/img/default5.jpg" alt="JVM笔记02 类加载器02">
+    <img src="/img/default1.jpg" alt="JVM笔记02 类加载器02">
     
   </div>
 </article>
@@ -1049,7 +1129,7 @@ students.stream(). collect(Collectors.maxBy( Comparator.comparingInt(student -&g
       </div>
     </div>
     
-    <img src="/img/default5.jpg" alt="Jdk8-10-Stream笔记02">
+    <img src="/img/default3.jpg" alt="Jdk8-10-Stream笔记02">
     
   </div>
 </article>
@@ -1085,7 +1165,7 @@ class Student1 { public int compareStudentByName(Student s1, Student s2) { retur
       </div>
     </div>
     
-    <img src="/img/default1.jpg" alt="Jdk8-09-Method Reference">
+    <img src="/img/default3.jpg" alt="Jdk8-09-Method Reference">
     
   </div>
 </article>
@@ -1126,7 +1206,7 @@ class Student1 { public int compareStudentByName(Student s1, Student s2) { retur
       </div>
     </div>
     
-    <img src="/img/default6.jpg" alt="JVM笔记01-类加载器01">
+    <img src="/img/default5.jpg" alt="JVM笔记01-类加载器01">
     
   </div>
 </article>
@@ -1160,42 +1240,7 @@ class Student1 { public int compareStudentByName(Student s1, Student s2) { retur
       </div>
     </div>
     
-    <img src="/img/default5.jpg" alt="Git笔记15-git rebase原理深度剖析">
-    
-  </div>
-</article>
-
-
-      
-
-        <article class="card" style="box-shadow: none;">
-  <div class="image">
-    
-    <div class="ui dimmer">
-    
-      <div class="content">
-        <div class="center">
-          
-          <div class="display-content">
-          
-            <a href="https://coderleftear.github.io/post/git%E7%AC%94%E8%AE%B014-git-cherry-pick/">
-              
-              <h2 class="ui header" style="color: white;">Git笔记14-git cherry-pick</h2>
-              
-            </a>
-            <p style="padding: 5px;">Git笔记14-git cherry-pick git cherry-pick git cherry-pick：错误的在dev分支比master分支比多两个提交
-master: commit 04f05f3a7076f38ccacb5cd544727d108599ff39 (HEAD -&gt; master) Author: zhangsan &lt;zhangsan@git.com&gt; Date: Sun Aug 18 22:41:08 2019 &#43;0800 initial commit ============================================== dev: commit a84738c41b782e33e00fd6491e0e7e523bd18c97 (HEAD -&gt; dev) Author: zhangsan &lt;zhangsan@git.com&gt; Date: Sun Aug 18 22:42:35 2019 &#43;0800 add hello3 commit c5ea82c4dde3277efa9b4640131681f0ce7f1f04 Author: zhangsan &lt;zhangsan@git.com&gt; Date: Sun Aug 18 22:42:03 2019 &#43;0800 add hello2 commit 04f05f3a7076f38ccacb5cd544727d108599ff39 (master) Author: zhangsan &lt;zhangsan@git.com&gt; Date: Sun Aug 18 22:41:08 2019 &#43;0800 initial commit  在master上使用git cherry-pick c5ea82可将在dev分支上提交到的所有信息在当前master上再次执行，但不能跳过执行，不能直接执行git cherry-pick a84738，会报冲突错误，需手动排除冲突</p>
-            <p>@ CoderLeftEar</p>
-          </div>
-          
-          <div class="ui top right attached black label">1 min read</div>
-          <div class="ui bottom left attached black label">Aug 17, 2019</div>
-          
-        </div>
-      </div>
-    </div>
-    
-    <img src="/img/default2.jpg" alt="Git笔记14-git cherry-pick">
+    <img src="/img/default3.jpg" alt="Git笔记15-git rebase原理深度剖析">
     
   </div>
 </article>
