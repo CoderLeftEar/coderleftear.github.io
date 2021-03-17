@@ -6,15 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>
-
-tag | Vue
-
+SettTimeout代替setInterval
 </title>
 
   
   
   <meta name="author" content="" />
-  <meta name="description" content="" />
+  <meta name="description" content="function Timer() { this.timeID = null this.func = null } Timer.prototype.repeat = function(func, ms) { if (this.func === null) { this.func = func } // 确保一个 Timer 实例只能重复一个 func if (this.func !== func) { return } this.timeID = setTimeout(() =&amp;gt; { func() this.repeat(func, ms) }, ms) } Timer.prototype.clear = function() { clearTimeout(this.timeID) } const a = () =&amp;gt; console.log(&#39;a&#39;) const b = () =&amp;gt; console.log(&#39;b&#39;) const timer = new Timer() timer." />
 
 
 
@@ -23,7 +21,7 @@ tag | Vue
 <meta name="generator" content="Hugo 0.55.6" />
 
 
-<link rel="canonical" href="https://coderleftear.github.io/tags/vue/" />
+<link rel="canonical" href="https://coderleftear.github.io/post/setttimeout%E4%BB%A3%E6%9B%BFsetinterval/" />
 <link rel="alternative" href="/index.xml" title="CoderLeftEar&#39;s Blog" type="application/atom+xml" />
 
 <link href="/css/semantic.min.css" rel="stylesheet" />
@@ -42,27 +40,81 @@ tag | Vue
     <div class="flipper">
       <section class="front">
         
-
-<nav class="ui top secondary menu" style="overflow-x: auto">
+<nav class="ui top secondary menu">
   <div class="item">
     <i class="inverted big link bullseye icon dream-flip-toggle" title="Flip it!"></i>
   </div>
   <div class="item">
-    <a href="/"><i class="inverted big link home icon" title="Home"></i></a>
-  </div>
-  <div class="item">
-    
-    <i class="disabled inverted big arrow alternate circle outline left icon" title="Previous page"></i>
-    
-  </div>
-  <div class="item">
-    
-    <i class="disabled inverted big arrow alternate circle outline right icon" title="Next page"></i>
-    
+    <a href="/">
+      <i class="inverted big link home icon" title="Home"></i>
+    </a>
   </div>
 </nav>
  
 <div class="ui centered grid">
+  <div class="fifteen wide mobile fifteen wide tablet eleven wide computer column post-list post-single-main">
+
+    <section class="ui top attached segment">
+      <a class="ui black right corner label" href="javascript:void(0)" onclick="savePostAsImg()">
+        <i class="save icon"></i>
+      </a>
+      <header>
+        <h1 class="ui header">
+          SettTimeout代替setInterval
+          <div class="sub header">
+		  @  · 2021-03-17 13:56:02
+
+		  </div>
+        </h1>
+      </header>
+      <article class="markdown-body" style="margin-top: 2rem; font-size: 1.4rem;"><pre><code class="language-js">function Timer() {
+  this.timeID = null
+  this.func = null
+}
+
+Timer.prototype.repeat = function(func, ms) {
+  if (this.func === null) {
+    this.func = func
+  }
+
+  // 确保一个 Timer 实例只能重复一个 func
+  if (this.func !== func) {
+    return
+  }
+
+  this.timeID = setTimeout(() =&gt; {
+    func()
+    this.repeat(func, ms)
+  }, ms)
+}
+
+Timer.prototype.clear = function() {
+  clearTimeout(this.timeID)
+}
+
+const a = () =&gt; console.log('a')
+
+const b = () =&gt; console.log('b')
+
+const timer = new Timer()
+
+timer.repeat(a, 1000)
+timer.repeat(b, 1000) // 不会定时执行 b
+</code></pre>
+</article>
+    </section>
+
+    <footer class="ui attached segment dream-tags">
+      
+      <span>No Tags</span>
+      
+    </footer>
+
+    
+
+    
+
+  </div>
   <div class="fifteen wide mobile fifteen wide tablet four wide computer column">
 
     
@@ -1027,87 +1079,6 @@ tag | Vue
 </section>
 
   </div>
-  <div class="fifteen wide mobile fifteen wide tablet eleven wide computer column post-list">
-
-    <div class="ui two stackable cards">
-      
-      
-
-        <article class="card" style="box-shadow: none;">
-  <div class="image">
-    
-    <div class="ui dimmer">
-    
-      <div class="content">
-        <div class="center">
-          
-          <div class="display-content">
-          
-            <a href="https://coderleftear.github.io/post/vue%E7%AC%94%E8%AE%B0-%E6%89%B9%E9%87%8F%E5%88%A0%E9%99%A4list%E4%B8%AD%E6%95%B0%E6%8D%AE/">
-              
-              <h2 class="ui header" style="color: white;">Vue笔记-批量删除list中数据</h2>
-              
-            </a>
-            <p style="padding: 5px;">Vue笔记 使用some方法查找需要删除的数据 this.list.some((item, i) =&gt; { if (item.id == id) { this.list.splice(i, 1) return true; } })  使用findIndex方法 var index = this.list.findIndex(item =&gt; { if (item.id == id){ return true; } }) this.list.splice(index, 1)  vue中增加一个搜索同步按钮功能 在vue中使用过滤器处理对应的数据；主要采用管道符’|’</p>
-            <p>@ CoderLeftEar</p>
-          </div>
-          
-          <div class="ui top right attached black label">1 min read</div>
-          <div class="ui bottom left attached black label">May 19, 2020</div>
-          
-        </div>
-      </div>
-    </div>
-    
-    <img src="/img/default3.jpg" alt="Vue笔记-批量删除list中数据">
-    
-  </div>
-</article>
-
-
-      
-
-        <article class="card" style="box-shadow: none;">
-  <div class="image">
-    
-    <div class="ui dimmer">
-    
-      <div class="content">
-        <div class="center">
-          
-          <div class="display-content">
-          
-            <a href="https://coderleftear.github.io/post/vue/">
-              
-              <h2 class="ui header" style="color: white;">Vue笔记</h2>
-              
-            </a>
-            <p style="padding: 5px;">Vue npm: npm参数：
--S，-D参数：
- -S，–save安装包信息将加入到dependencies（生产阶段的依赖）
- -D，–save–dev安装包信息将加入到devDependencies（开发阶段的依赖），所以开发阶段一般使用它
- i是install的缩写（注意：前面没有“-”）
-  npm root -g：全局安装位置。</p>
-            <p>@ CoderLeftEar</p>
-          </div>
-          
-          <div class="ui top right attached black label">1 min read</div>
-          <div class="ui bottom left attached black label">Feb 5, 2020</div>
-          
-        </div>
-      </div>
-    </div>
-    
-    <img src="/img/default6.jpg" alt="Vue笔记">
-    
-  </div>
-</article>
-
-
-      
-    </div>
-
-  </div>
 </div>
 
       </section>
@@ -1156,7 +1127,6 @@ tag | Vue
       
 
       
-        
       
     </section>
 

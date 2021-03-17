@@ -1040,6 +1040,48 @@
           
           <div class="display-content">
           
+            <a href="https://coderleftear.github.io/post/jdk8-03-function/">
+              
+              <h2 class="ui header" style="color: white;">Jdk8-03-Function</h2>
+              
+            </a>
+            <p style="padding: 5px;">Function Function：接收一个参数返回一个结果。
+BiFunction：接收两个参数返回一个结果。
+创建对象：
+&gt; FunctionDemo functionDemo = new FunctionDemo();
+
+在内部使用：
+System.out.println(functionDemo.convert(2, value -&gt; { return value;})); System.out.println(functionDemo.convert(3, value -&gt; { return ((int)value * (int)value);})); public Object convert1(Object obj, Function&lt;Object, Object&gt; function){ return function.apply(obj); }  将lambda抽取出来,加法：
+Function&lt;Object, Object&gt; function = value -&gt; ((int)value &#43; (int)value); Object obj = functionDemo.convert1(5, function); System.out.println(obj); public Object convert1(Object obj, Function&lt;Object, Object&gt; function){ return function.apply(obj); }  compose的使用：
+System.out.println(functionDemo.convert2(5, value -&gt; (int)value &#43; 1, value -&gt; (int)value * (int)value)); public Object convert2(Object obj, Function&lt;Object, Object&gt; function1, Function&lt;Object, Object&gt; function2){ //compose原理 //return function2.</p>
+            <p>@ CoderLeftEar</p>
+          </div>
+          
+          <div class="ui top right attached black label">1 min read</div>
+          <div class="ui bottom left attached black label">Aug 9, 2019</div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <img src="/img/default4.jpg" alt="Jdk8-03-Function">
+    
+  </div>
+</article>
+
+
+      
+
+        <article class="card" style="box-shadow: none;">
+  <div class="image">
+    
+    <div class="ui dimmer">
+    
+      <div class="content">
+        <div class="center">
+          
+          <div class="display-content">
+          
             <a href="https://coderleftear.github.io/post/jdk8-01-lambda/">
               
               <h2 class="ui header" style="color: white;">Jdk8-01-Lambda</h2>
@@ -1062,7 +1104,7 @@ List&lt;Integer&gt; list = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9);  System.out
       </div>
     </div>
     
-    <img src="/img/default4.jpg" alt="Jdk8-01-Lambda">
+    <img src="/img/default2.jpg" alt="Jdk8-01-Lambda">
     
   </div>
 </article>
@@ -1103,7 +1145,7 @@ merge快进和不使用快进 dev:
       </div>
     </div>
     
-    <img src="/img/default5.jpg" alt="Git笔记04-分支进阶与版本回退">
+    <img src="/img/default3.jpg" alt="Git笔记04-分支进阶与版本回退">
     
   </div>
 </article>
@@ -1165,7 +1207,7 @@ merge快进和不使用快进 dev:
       </div>
     </div>
     
-    <img src="/img/default5.jpg" alt="Git笔记03-.gitignore与分支">
+    <img src="/img/default1.jpg" alt="Git笔记03-.gitignore与分支">
     
   </div>
 </article>
@@ -1207,7 +1249,7 @@ $ git status On branch master Changes not staged for commit: (use &#34;git add/r
       </div>
     </div>
     
-    <img src="/img/default2.jpg" alt="Git笔记02-添加、删除、修改、日志">
+    <img src="/img/default5.jpg" alt="Git笔记02-添加、删除、修改、日志">
     
   </div>
 </article>
@@ -1244,41 +1286,7 @@ $ git status On branch master No commits yet Changes to be committed: (use &#34;
       </div>
     </div>
     
-    <img src="/img/default1.jpg" alt="Git笔记01-基本命令操作">
-    
-  </div>
-</article>
-
-
-      
-
-        <article class="card" style="box-shadow: none;">
-  <div class="image">
-    
-    <div class="ui dimmer">
-    
-      <div class="content">
-        <div class="center">
-          
-          <div class="display-content">
-          
-            <a href="https://coderleftear.github.io/post/example/">
-              
-              <h2 class="ui header" style="color: white;">Example</h2>
-              
-            </a>
-            <p style="padding: 5px;">title: &#34;Example&#34; date: 2019-08-05T13:49:00&#43;08:00 author: CoderLeftEar tags: [&#34;example&#34;] categories: [&#34;example&#34;] cover: ../default1.jpg draft: true  11111111111111111111111111111111 </p>
-            <p>@ CoderLeftEar</p>
-          </div>
-          
-          <div class="ui top right attached black label">1 min read</div>
-          <div class="ui bottom left attached black label">Aug 5, 2019</div>
-          
-        </div>
-      </div>
-    </div>
-    
-    <img src="/img/default2.jpg" alt="Example">
+    <img src="/img/default6.jpg" alt="Git笔记01-基本命令操作">
     
   </div>
 </article>

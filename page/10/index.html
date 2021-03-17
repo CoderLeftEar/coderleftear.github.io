@@ -1040,6 +1040,42 @@
           
           <div class="display-content">
           
+            <a href="https://coderleftear.github.io/post/jdk8-08-stream%E7%AC%94%E8%AE%B001/">
+              
+              <h2 class="ui header" style="color: white;">Jdk8-08-Stream笔记01</h2>
+              
+            </a>
+            <p style="padding: 5px;">Stream笔记01  Stream笔记01  例1：过滤name、age (直接采用Stream -&gt; 通过BiFunction调用apply方法 -&gt; 直接传递行为) 例2：将List集合中的字符串转换为大写 例3：Optional reduce(BinaryOperator accumulator)的使用和数组、List与Stream之间的转换 例4：range、rangeClose的使用 例5：T reduce(T identity, BinaryOperator accumulator)的使用 例6：Stream类中toArray、collect（函数式接口）、toSet无序输出、TreeSet自然排序和joining字符串拼接 例7：map和flatMap的使用 例8：generate、iterate-limit、使用具体方法mapToInt、summaryStatistics和顺逆序排列 例9：串行流和并行流 例10：打印第一个长度为5的字符串的长度 例11：flatMap 例12：互相打招呼（flatMap和map的结合使用） 例13：分组(groupingBy)和分区(partitioningBy)   例1：过滤name、age (直接采用Stream -&gt; 通过BiFunction调用apply方法 -&gt; 直接传递行为) 定义Person类，并进行赋值：
+ Person person1 = new Person(&#34;张三&#34;, 20); Person person2 = new Person(&#34;李四&#34;, 30); Person person3 = new Person(&#34;王五&#34;, 40); List&lt;Person&gt; persons = new ArrayList&lt;&gt;(); persons.add(person1); persons.add(person2); persons.add(person3);  创建PersonTest对象：
+ PersonTest personTest = new PersonTest();</p>
+            <p>@ CoderLeftEar</p>
+          </div>
+          
+          <div class="ui top right attached black label">5 min read</div>
+          <div class="ui bottom left attached black label">Aug 10, 2019</div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <img src="/img/default1.jpg" alt="Jdk8-08-Stream笔记01">
+    
+  </div>
+</article>
+
+
+      
+
+        <article class="card" style="box-shadow: none;">
+  <div class="image">
+    
+    <div class="ui dimmer">
+    
+      <div class="content">
+        <div class="center">
+          
+          <div class="display-content">
+          
             <a href="https://coderleftear.github.io/post/jdk8-07-binaryoperator/">
               
               <h2 class="ui header" style="color: white;">Jdk8-07-BinaryOperator</h2>
@@ -1061,7 +1097,7 @@ System.out.println(binaryOperatorTest.operatorFunMin(&#34;abbbbbb&#34;, &#34;bbb
       </div>
     </div>
     
-    <img src="/img/default6.jpg" alt="Jdk8-07-BinaryOperator">
+    <img src="/img/default1.jpg" alt="Jdk8-07-BinaryOperator">
     
   </div>
 </article>
@@ -1096,7 +1132,7 @@ List&lt;String&gt; list = Arrays.asList(&#34;a&#34;, &#34;b&#34;, &#34;c&#34;, &
       </div>
     </div>
     
-    <img src="/img/default5.jpg" alt="Jdk8-02-Consumer">
+    <img src="/img/default3.jpg" alt="Jdk8-02-Consumer">
     
   </div>
 </article>
@@ -1139,7 +1175,7 @@ Employee emp1 = new Employee(&#34;zhangsan&#34;); Employee emp2 = new Employee(&
       </div>
     </div>
     
-    <img src="/img/default5.jpg" alt="Jdk8-04-Optional">
+    <img src="/img/default3.jpg" alt="Jdk8-04-Optional">
     
   </div>
 </article>
@@ -1218,49 +1254,7 @@ supplier = Student::new; System.out.println(supplier.get().getName());  </p>
       </div>
     </div>
     
-    <img src="/img/default5.jpg" alt="Jdk8-06-Supplier">
-    
-  </div>
-</article>
-
-
-      
-
-        <article class="card" style="box-shadow: none;">
-  <div class="image">
-    
-    <div class="ui dimmer">
-    
-      <div class="content">
-        <div class="center">
-          
-          <div class="display-content">
-          
-            <a href="https://coderleftear.github.io/post/jdk8-03-function/">
-              
-              <h2 class="ui header" style="color: white;">Jdk8-03-Function</h2>
-              
-            </a>
-            <p style="padding: 5px;">Function Function：接收一个参数返回一个结果。
-BiFunction：接收两个参数返回一个结果。
-创建对象：
-&gt; FunctionDemo functionDemo = new FunctionDemo();
-
-在内部使用：
-System.out.println(functionDemo.convert(2, value -&gt; { return value;})); System.out.println(functionDemo.convert(3, value -&gt; { return ((int)value * (int)value);})); public Object convert1(Object obj, Function&lt;Object, Object&gt; function){ return function.apply(obj); }  将lambda抽取出来,加法：
-Function&lt;Object, Object&gt; function = value -&gt; ((int)value &#43; (int)value); Object obj = functionDemo.convert1(5, function); System.out.println(obj); public Object convert1(Object obj, Function&lt;Object, Object&gt; function){ return function.apply(obj); }  compose的使用：
-System.out.println(functionDemo.convert2(5, value -&gt; (int)value &#43; 1, value -&gt; (int)value * (int)value)); public Object convert2(Object obj, Function&lt;Object, Object&gt; function1, Function&lt;Object, Object&gt; function2){ //compose原理 //return function2.</p>
-            <p>@ CoderLeftEar</p>
-          </div>
-          
-          <div class="ui top right attached black label">1 min read</div>
-          <div class="ui bottom left attached black label">Aug 9, 2019</div>
-          
-        </div>
-      </div>
-    </div>
-    
-    <img src="/img/default5.jpg" alt="Jdk8-03-Function">
+    <img src="/img/default1.jpg" alt="Jdk8-06-Supplier">
     
   </div>
 </article>

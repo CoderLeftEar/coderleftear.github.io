@@ -6,10 +6,19 @@
     <description>Recent content in Posts on CoderLeftEar&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 23 Jan 2021 19:45:48 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 17 Mar 2021 13:56:02 +0800</lastBuildDate>
     
 	<atom:link href="https://coderleftear.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>SettTimeout代替setInterval</title>
+      <link>https://coderleftear.github.io/post/setttimeout%E4%BB%A3%E6%9B%BFsetinterval/</link>
+      <pubDate>Wed, 17 Mar 2021 13:56:02 +0800</pubDate>
+      
+      <guid>https://coderleftear.github.io/post/setttimeout%E4%BB%A3%E6%9B%BFsetinterval/</guid>
+      <description>function Timer() { this.timeID = null this.func = null } Timer.prototype.repeat = function(func, ms) { if (this.func === null) { this.func = func } // 确保一个 Timer 实例只能重复一个 func if (this.func !== func) { return } this.timeID = setTimeout(() =&amp;gt; { func() this.repeat(func, ms) }, ms) } Timer.prototype.clear = function() { clearTimeout(this.timeID) } const a = () =&amp;gt; console.log(&#39;a&#39;) const b = () =&amp;gt; console.log(&#39;b&#39;) const timer = new Timer() timer.</description>
+    </item>
     
     <item>
       <title>Linux开机自启设置</title>
