@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linux on CoderLeftEar&#39;s Blog</title>
-    <link>https://coderleftear.github.io/categories/linux/</link>
+    <link>https://inkbambo0.github.io/categories/linux/</link>
     <description>Recent content in Linux on CoderLeftEar&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 23 Jan 2021 19:45:48 +0800</lastBuildDate>
     
-	<atom:link href="https://coderleftear.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://inkbambo0.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Linux开机自启设置</title>
-      <link>https://coderleftear.github.io/post/linux%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2/</link>
+      <link>https://inkbambo0.github.io/post/linux%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2/</link>
       <pubDate>Sat, 23 Jan 2021 19:45:48 +0800</pubDate>
       
-      <guid>https://coderleftear.github.io/post/linux%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2/</guid>
+      <guid>https://inkbambo0.github.io/post/linux%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>jar部署</title>
-      <link>https://coderleftear.github.io/post/linux-jar%E5%8C%85%E9%83%A8%E7%BD%B2/</link>
+      <link>https://inkbambo0.github.io/post/linux-jar%E5%8C%85%E9%83%A8%E7%BD%B2/</link>
       <pubDate>Mon, 28 Dec 2020 11:14:48 +0800</pubDate>
       
-      <guid>https://coderleftear.github.io/post/linux-jar%E5%8C%85%E9%83%A8%E7%BD%B2/</guid>
+      <guid>https://inkbambo0.github.io/post/linux-jar%E5%8C%85%E9%83%A8%E7%BD%B2/</guid>
       <description>jar部署 Linux中修改jar包中的配置文件 打包以及修改jar包
 cd genesys_data_etl mvn clean package -Poffline -Dmaven.test.skip=true 日志如下： [INFO] --- maven-jar-plugin:2.6:jar (default-jar) @ genesys_data_etl --- [INFO] Building jar: /Users/xx/IdeaProjects/genesys_data_etl/target/genesys_data_etl-0.0.1-0SNAPSHOT.jar 生成jar包 此时可以通过命令 java -jar genesys_data_etl-0.0.1-SNAPSHOT.jar 运行jar包。  但是要修改jar包中的配置文件怎么办呢？
 方式一 通过vim命令直接修改保存jar。超方便。 1.通过vim命令直接编辑jar vim xxx.jar 该命令首先会列出全部文件，可以通过输入/abc来搜索，定位到对应的abc文件后回车进入配置文件内进行编辑，:wq保存。
@@ -40,10 +40,10 @@ cd genesys_data_etl mvn clean package -Poffline -Dmaven.test.skip=true 日志如
     
     <item>
       <title>Linux开机自启设置</title>
-      <link>https://coderleftear.github.io/post/linux%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AF%E8%AE%BE%E7%BD%AE/</link>
+      <link>https://inkbambo0.github.io/post/linux%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AF%E8%AE%BE%E7%BD%AE/</link>
       <pubDate>Mon, 21 Sep 2020 19:45:48 +0800</pubDate>
       
-      <guid>https://coderleftear.github.io/post/linux%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AF%E8%AE%BE%E7%BD%AE/</guid>
+      <guid>https://inkbambo0.github.io/post/linux%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AF%E8%AE%BE%E7%BD%AE/</guid>
       <description> Linux开机自启设置 一、添加开机自启服务 在CentOS 7中添加开机自启服务非常方便，只需要两条命令(以Jenkins为例)：
 systemctl enable jenkins.service #设置jenkins服务为自启动服务 sysstemctl start jenkins.service #启动jenkins服务  二、添加开机自启脚本 在centos7中增加脚本有两种常用的方法，以脚本autostart.sh为例：
 #!/bin/bash #description:开机自启脚本 /usr/local/tomcat/bin/startup.sh #启动tomcat  方法一 1、赋予脚本可执行权限（/opt/script/autostart.sh是你的脚本路径）
@@ -57,10 +57,10 @@ cd /etc/rc.d/init.d chkconfig --add autostart.sh chkconfig autostart.sh on  </de
     
     <item>
       <title>Linux安装tomcat、mysql</title>
-      <link>https://coderleftear.github.io/post/linux%E5%AE%89%E8%A3%85tomcatmysql/</link>
+      <link>https://inkbambo0.github.io/post/linux%E5%AE%89%E8%A3%85tomcatmysql/</link>
       <pubDate>Sat, 15 Aug 2020 17:14:48 +0800</pubDate>
       
-      <guid>https://coderleftear.github.io/post/linux%E5%AE%89%E8%A3%85tomcatmysql/</guid>
+      <guid>https://inkbambo0.github.io/post/linux%E5%AE%89%E8%A3%85tomcatmysql/</guid>
       <description>Linux安装tomcat、mysql linux上安装mysql5.7 1、下载tar包，这里使用wget从官网下载 wget https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.22-linux-glibc2.12-x86_64.tar.gz
 2、将mysql安装到/usr/local/mysql下  解压   tar -xvf mysql-5.7.22-linux-glibc2.12-x86_64.tar.gz
   移动   mv mysql-5.7.22-linux-glibc2.12-x86_64 /usr/local/
@@ -74,10 +74,10 @@ cd /etc/rc.d/init.d chkconfig --add autostart.sh chkconfig autostart.sh on  </de
     
     <item>
       <title>Linux</title>
-      <link>https://coderleftear.github.io/post/linux/</link>
+      <link>https://inkbambo0.github.io/post/linux/</link>
       <pubDate>Tue, 22 Oct 2019 17:14:48 +0800</pubDate>
       
-      <guid>https://coderleftear.github.io/post/linux/</guid>
+      <guid>https://inkbambo0.github.io/post/linux/</guid>
       <description>Linux 一、文件系统的管理 tips:输入命令的时候要常用tab键来补全
 ls 查看目录信息 （ ls / ）
 ls -l 等价于 ll  路径的表示方法有“相对”和“绝对” 比如如果当前所处目录为 /home/renwoxing，要查看/home目录下的信息，可以有两种方法： ls ../ ls /home

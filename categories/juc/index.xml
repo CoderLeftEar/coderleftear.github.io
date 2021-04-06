@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>JUC on CoderLeftEar&#39;s Blog</title>
-    <link>https://coderleftear.github.io/categories/juc/</link>
+    <link>https://inkbambo0.github.io/categories/juc/</link>
     <description>Recent content in JUC on CoderLeftEar&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 16 Oct 2019 09:22:04 +0800</lastBuildDate>
     
-	<atom:link href="https://coderleftear.github.io/categories/juc/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://inkbambo0.github.io/categories/juc/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Java-JUC</title>
-      <link>https://coderleftear.github.io/post/java-juc/</link>
+      <link>https://inkbambo0.github.io/post/java-juc/</link>
       <pubDate>Wed, 16 Oct 2019 09:22:04 +0800</pubDate>
       
-      <guid>https://coderleftear.github.io/post/java-juc/</guid>
+      <guid>https://inkbambo0.github.io/post/java-juc/</guid>
       <description>Java-JUC 什么是进程、线程？ 1、进程： 进程是一个具有一定独立功能的程序关于某个数据集合的一次运行活动。它是操作系统动态执行的基本单元，在传统的操作系统中，进程既是基本分配单元，也是基本执行单元。（一个QQ.exe的运行就是一个进程，word程序进程）。
 2、线程： 通常一个进程中可以包含若干个线程，当然一个进程中至少一个线程，不然没有存在意义。线程可以利用进程所拥有的资源，在引入线程的操作系统中，通常都是把进程作为分配资源的基本单位，而把线程作为独立运行和独立调度的基本单位，由于线程比进程更小，基本上不拥有系统资源，故对它的调度所付出的开销就会小得多，能更高效的提高系统多个程序间并发执行的程度。（QQ中和每个人聊天就是每一个线程，word中检查拼写错误的线程）。
 什么是并发、并行？ 1、并发： 多个线程同一个时间点争取同一个资源。

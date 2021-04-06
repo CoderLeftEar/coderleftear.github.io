@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mysql on CoderLeftEar&#39;s Blog</title>
-    <link>https://coderleftear.github.io/tags/mysql/</link>
+    <link>https://inkbambo0.github.io/tags/mysql/</link>
     <description>Recent content in Mysql on CoderLeftEar&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 30 May 2020 17:14:48 +0800</lastBuildDate>
     
-	<atom:link href="https://coderleftear.github.io/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://inkbambo0.github.io/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Mysql问题</title>
-      <link>https://coderleftear.github.io/post/mysql%E9%97%AE%E9%A2%98/</link>
+      <link>https://inkbambo0.github.io/post/mysql%E9%97%AE%E9%A2%98/</link>
       <pubDate>Sat, 30 May 2020 17:14:48 +0800</pubDate>
       
-      <guid>https://coderleftear.github.io/post/mysql%E9%97%AE%E9%A2%98/</guid>
+      <guid>https://inkbambo0.github.io/post/mysql%E9%97%AE%E9%A2%98/</guid>
       <description>MySQL问题 Tomcat -&amp;gt; shutdown.sh java.net.ConnectException: Connection refused at java.net.PlainSocketImpl.socketConnect(Native Method) at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333) at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195) at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182) at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366) at java.net.Socket.connect(Socket.java:529) at java.net.Socket.connect(Socket.java:478) at java.net.Socket.&amp;lt;init&amp;gt;(Socket.java:375) at java.net.Socket.&amp;lt;init&amp;gt;(Socket.java:189) at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:498) at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39) at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25) at java.lang.reflect.Method.invoke(Method.java:597) at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:370) at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:457)  原因是tomcat内存太小了，需要给tomcat增加虚拟内存。
 在linux系统里修改tomcat内存的方法 修改/opt/tomcat/bin/catalina.sh这个文件；
 # OS specific support. $var _must_ be set to either true or false. cygwin=false  这两行之行插入一行，最终修改为以下这样：
@@ -25,10 +25,10 @@
     
     <item>
       <title>Mysql事务隔离</title>
-      <link>https://coderleftear.github.io/post/mysql%E4%BA%8B%E5%8A%A1%E9%9A%94%E7%A6%BB/</link>
+      <link>https://inkbambo0.github.io/post/mysql%E4%BA%8B%E5%8A%A1%E9%9A%94%E7%A6%BB/</link>
       <pubDate>Tue, 22 Oct 2019 17:14:48 +0800</pubDate>
       
-      <guid>https://coderleftear.github.io/post/mysql%E4%BA%8B%E5%8A%A1%E9%9A%94%E7%A6%BB/</guid>
+      <guid>https://inkbambo0.github.io/post/mysql%E4%BA%8B%E5%8A%A1%E9%9A%94%E7%A6%BB/</guid>
       <description>MySQL事务隔离： 事务的并发问题 　1、脏读：事务A读取了事务B更新的数据，然后B回滚操作，那么A读取到的数据是脏数据。
 　2、不可重复读：事务 A 多次读取同一数据，事务 B 在事务A多次读取的过程中，对数据作了更新并提交，导致事务A多次读取同一数据时，结果 不一致。
 　3、幻读：系统管理员A将数据库中所有学生的成绩从具体分数改为ABCDE等级，但是系统管理员B就在这个时候插入了一条具体分数的记录，当系统管理员A改结束后发现还有一条记录没有改过来，就好像发生了幻觉一样，这就叫幻读。
@@ -43,10 +43,10 @@ set global transaction isolation level read committed;</description>
     
     <item>
       <title>Spring事务、传播行为</title>
-      <link>https://coderleftear.github.io/post/spring%E4%BA%8B%E5%8A%A1%E4%BC%A0%E6%92%AD%E8%A1%8C%E4%B8%BA/</link>
+      <link>https://inkbambo0.github.io/post/spring%E4%BA%8B%E5%8A%A1%E4%BC%A0%E6%92%AD%E8%A1%8C%E4%B8%BA/</link>
       <pubDate>Tue, 02 Jul 2019 18:11:32 +0800</pubDate>
       
-      <guid>https://coderleftear.github.io/post/spring%E4%BA%8B%E5%8A%A1%E4%BC%A0%E6%92%AD%E8%A1%8C%E4%B8%BA/</guid>
+      <guid>https://inkbambo0.github.io/post/spring%E4%BA%8B%E5%8A%A1%E4%BC%A0%E6%92%AD%E8%A1%8C%E4%B8%BA/</guid>
       <description> Spring事务、传播行为 Spring事务的几种实现方式  编程式事务管理对基于 POJO 的应用来说是唯一选择。我们需要在代码中调用beginTransaction()、commit()、rollback()等事务管理相关的方法，这就是编程式事务管理。 基于 TransactionProxyFactoryBean的声明式事务管理 基于 @Transactional 的声明式事务管理 基于Aspectj AOP配置事务  https://blog.csdn.net/mufeng633/article/details/88552245
 Spring Boot的事务管理注解 https://blog.csdn.net/u010963948/article/details/79208328
 在主程序类上标注：

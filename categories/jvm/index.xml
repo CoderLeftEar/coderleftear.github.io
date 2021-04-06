@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>JVM on CoderLeftEar&#39;s Blog</title>
-    <link>https://coderleftear.github.io/categories/jvm/</link>
+    <link>https://inkbambo0.github.io/categories/jvm/</link>
     <description>Recent content in JVM on CoderLeftEar&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 05 Sep 2020 09:38:13 +0800</lastBuildDate>
     
-	<atom:link href="https://coderleftear.github.io/categories/jvm/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://inkbambo0.github.io/categories/jvm/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Jvm排错</title>
-      <link>https://coderleftear.github.io/post/jvm%E6%8E%92%E9%94%99/</link>
+      <link>https://inkbambo0.github.io/post/jvm%E6%8E%92%E9%94%99/</link>
       <pubDate>Sat, 05 Sep 2020 09:38:13 +0800</pubDate>
       
-      <guid>https://coderleftear.github.io/post/jvm%E6%8E%92%E9%94%99/</guid>
+      <guid>https://inkbambo0.github.io/post/jvm%E6%8E%92%E9%94%99/</guid>
       <description> Jvm排错 </description>
     </item>
     
     <item>
       <title>JVM笔记07-Book01</title>
-      <link>https://coderleftear.github.io/post/jvm%E7%AC%94%E8%AE%B007-book01/</link>
+      <link>https://inkbambo0.github.io/post/jvm%E7%AC%94%E8%AE%B007-book01/</link>
       <pubDate>Mon, 30 Sep 2019 08:31:53 +0800</pubDate>
       
-      <guid>https://coderleftear.github.io/post/jvm%E7%AC%94%E8%AE%B007-book01/</guid>
+      <guid>https://inkbambo0.github.io/post/jvm%E7%AC%94%E8%AE%B007-book01/</guid>
       <description> JVM笔记07-Book01 </description>
     </item>
     
     <item>
       <title>JVM笔记06-Java内存01</title>
-      <link>https://coderleftear.github.io/post/jvm%E7%AC%94%E8%AE%B006-java%E5%86%85%E5%AD%9801/</link>
+      <link>https://inkbambo0.github.io/post/jvm%E7%AC%94%E8%AE%B006-java%E5%86%85%E5%AD%9801/</link>
       <pubDate>Sun, 29 Sep 2019 19:12:52 +0800</pubDate>
       
-      <guid>https://coderleftear.github.io/post/jvm%E7%AC%94%E8%AE%B006-java%E5%86%85%E5%AD%9801/</guid>
+      <guid>https://inkbambo0.github.io/post/jvm%E7%AC%94%E8%AE%B006-java%E5%86%85%E5%AD%9801/</guid>
       <description>JVM笔记06-Java内存01 栈帧（Stack Frame）：每个方法在执行是都会生成一个与这个方法相关的、独有的栈帧（数据结构），本身存贮操作数栈里的数据、存贮局部变量表、方法的返回地址。
 程序计数器（Program Counter）： 描述线程在执行字节码时，执行完第一行后，下一行的位置。
 本地方法栈：关于native的，Java中有native的方法（不是有Java实现的，而是由C、C++实现的），主要用于处理本地方法。
@@ -46,10 +46,10 @@
     
     <item>
       <title>JVM笔记05-Java字节码02</title>
-      <link>https://coderleftear.github.io/post/jvm%E7%AC%94%E8%AE%B005-java%E5%AD%97%E8%8A%82%E7%A0%8102/</link>
+      <link>https://inkbambo0.github.io/post/jvm%E7%AC%94%E8%AE%B005-java%E5%AD%97%E8%8A%82%E7%A0%8102/</link>
       <pubDate>Fri, 27 Sep 2019 09:13:21 +0800</pubDate>
       
-      <guid>https://coderleftear.github.io/post/jvm%E7%AC%94%E8%AE%B005-java%E5%AD%97%E8%8A%82%E7%A0%8102/</guid>
+      <guid>https://inkbambo0.github.io/post/jvm%E7%AC%94%E8%AE%B005-java%E5%AD%97%E8%8A%82%E7%A0%8102/</guid>
       <description>JVM笔记05-Java字节码02  JVM笔记05-Java字节码02  栈帧（stack frame） 符号引用、直接引用 invokevirtual  方法的静态分派： 方法的动态分派：  虚方法（类加载的连接阶段） 基于栈、寄存器的指令集对比  例：栈指令集案例吧！    栈帧（stack frame） 栈帧是一种用于帮助jvm执行方法调用和方法执行的数据结构。
 栈帧本身是一种数据结构，封装了方法的局部变量表、动态链接信息、方法返回地址以及操作数栈等信息。
 slot(变量槽)：存贮局部变量的最小单位。可复用：10个局部变量不一定有10个slot存贮。
@@ -62,10 +62,10 @@ Animal a = new Dog(); a.</description>
     
     <item>
       <title>JVM笔记04-Java字节码01</title>
-      <link>https://coderleftear.github.io/post/jvm%E7%AC%94%E8%AE%B004-java%E5%AD%97%E8%8A%82%E7%A0%8101/</link>
+      <link>https://inkbambo0.github.io/post/jvm%E7%AC%94%E8%AE%B004-java%E5%AD%97%E8%8A%82%E7%A0%8101/</link>
       <pubDate>Mon, 16 Sep 2019 15:48:32 +0800</pubDate>
       
-      <guid>https://coderleftear.github.io/post/jvm%E7%AC%94%E8%AE%B004-java%E5%AD%97%E8%8A%82%E7%A0%8101/</guid>
+      <guid>https://inkbambo0.github.io/post/jvm%E7%AC%94%E8%AE%B004-java%E5%AD%97%E8%8A%82%E7%A0%8101/</guid>
       <description>JVM笔记04-Java字节码01  JVM笔记04-Java字节码01  Java字节码常量池  Class文件结构常量池中11种数据类型  Java字节码结构 Access_Flag 访问标志 This Clsaa Name Super Class Name Interfaces Fields Method Attributes 助记符（monitorenter、monitorexit）含义 Java字节码默认有一个this对象参数、异常处理方式   CAFEBABE0000003400180A00040014090003001507001607001701000161010001490100063C696E69743E010003282956010004436F646501000F4C696E654E756D6265725461626C650100124C6F63616C5661726961626C655461626C650100047468697301001E4C636F6D2F77616E672F6A766D2F62797465636F64652F44656D6F30313B01000467657441010003282949010004736574410100042849295601000A536F7572636546696C6501000B44656D6F30312E6A6176610C000700080C0005000601001C636F6D2F77616E672F6A766D2F62797465636F64652F44656D6F30310100106A6176612F6C616E672F4F626A65637400210003000400000001000200050006000000030001000700080001000900000038000200010000000A2AB700012A04B50002B100000002000A0000000A00020000000700040008000B0000000C00010000000A000C000D00000001000E000F000100090000002F00010001000000052AB40002AC00000002000A0000000600010000000B000B0000000C000100000005000C000D0000000100100011000100090000003E00020002000000062A1BB50002B100000002000A0000000A00020000000F00050010000B00000016000200000006000C000D00000000000600050006000100010012000000020013  Java字节码常量池  使用javap -verbose命令分析一个字节码文件时，将会分析该字节的魔数、版本号、常量池、类信息、类的构造方法、类中的方法信息、类变量与成员变量等信息。
  魔数：所有.class字节码文件的前4个字节都是魔数，魔数为固定值：0xCAFABABE(CA FE BA BE)。
  魔数之后的4个字节为版本信息，后两个字节表示major version（主版本号），这里的版本号为00 00 00 34，换算成十进制，表示次版本号为0，主版本为52，所以，该文件的版本号为：1.8.0。可以通过java -version命令来验证这一点。
@@ -77,10 +77,10 @@ Animal a = new Dog(); a.</description>
     
     <item>
       <title>JVM笔记03-类加载器03</title>
-      <link>https://coderleftear.github.io/post/jvm%E7%AC%94%E8%AE%B003-%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%99%A803/</link>
+      <link>https://inkbambo0.github.io/post/jvm%E7%AC%94%E8%AE%B003-%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%99%A803/</link>
       <pubDate>Tue, 10 Sep 2019 08:14:16 +0800</pubDate>
       
-      <guid>https://coderleftear.github.io/post/jvm%E7%AC%94%E8%AE%B003-%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%99%A803/</guid>
+      <guid>https://inkbambo0.github.io/post/jvm%E7%AC%94%E8%AE%B003-%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%99%A803/</guid>
       <description>JVM笔记03-类加载器03  JVM笔记03-类加载器03  自定义类加载器在复杂类加载情况下运动分析 类加载器命名空间实战与彻底理解  1. 2.  类加载器实例剖析与疑难点解析  BootstrapClassLoader ExtensionClassLoader  类加载器命名空间深度解析  例1： 例2： 类加载器的双亲委托模型的好处  扩展类加载器和总结  启动类加载器的相关  Launcher源码分析和forName源码分析 线程上下文类加载器的分析与事项（setContextClassLoader();）  例1： 例2：ServiceLoader案例 例3：  jar hell问题   自定义类加载器在复杂类加载情况下运动分析 案例在上一篇
 注释掉clazz.newInstance();就不会实例化MyDog对象，即MyDog的构造方法不会被调用，因此不会实例化MyCat对象，没有对MyCat进行主动使用。但并不代表MyDog没有被加载。
 注释掉clazz.newInstance(): [Loaded com.wang.jvm.custom.MyDog from file:/E:/JavaEE/ClassLoad/out/production/classes/] hashcode: 356573597 没有注释掉clazz.newInstance(): [Loaded com.wang.jvm.custom.MyDog from file:/E:/JavaEE/ClassLoad/out/production/classes/] hashcode: 356573597 invoke dog class constructor!sun.misc.Launcher$AppClassLoader@18b4aac2 [Loaded com.wang.jvm.custom.MyCat from file:/E:/JavaEE/ClassLoad/out/production/classes/] invoke cat class constructor!sun.misc.Launcher$AppClassLoader@18b4aac2  MyClassLoader loader = new MyClassLoader(&amp;quot;loader&amp;quot;); Class&amp;lt;?</description>
@@ -88,20 +88,20 @@ Animal a = new Dog(); a.</description>
     
     <item>
       <title>JVM笔记02 类加载器02</title>
-      <link>https://coderleftear.github.io/post/jvm%E7%AC%94%E8%AE%B002-%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%99%A802/</link>
+      <link>https://inkbambo0.github.io/post/jvm%E7%AC%94%E8%AE%B002-%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%99%A802/</link>
       <pubDate>Tue, 03 Sep 2019 20:56:20 +0800</pubDate>
       
-      <guid>https://coderleftear.github.io/post/jvm%E7%AC%94%E8%AE%B002-%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%99%A802/</guid>
+      <guid>https://inkbambo0.github.io/post/jvm%E7%AC%94%E8%AE%B002-%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%99%A802/</guid>
       <description>类加载  类加载过程 类的加载  有两种类型的类加载器 类加载器并不需要等到某个类被“首次主动使用”是再加载它。  连接  类的连接 类的准备  类的初始化  类的初始化步骤 类初始化的时机  类加载器的加载、加载器种类及类加载器的关系 类加载器的双亲委托机制  案例：  双亲委托机制案例： ClassLoader源码 自定义类加载器 引入命名空间 命名空间 类的卸载  案例：    类加载 类加载过程 类的加载  类的加载的最终产品是位于内存中的Class对象 Class对象封装了类在方法区内的数据结构，并且向Java程序员提供了访问方法区内的数据结构的接口。  有两种类型的类加载器  Java虚拟机自带的加载器  根类加载器（启动类加载器）（BootStrap） 扩展类加载器（Extension） 系统（应用）类加载器（System / App）  用户自定义的类加载器  一定是java.lang.ClassLoader（抽象类）的子类 用户可以定制类的加载方式   类加载器并不需要等到某个类被“首次主动使用”是再加载它。  JVM规范允许类加载器在预料某个类将要被使用时就加载它，如果在预知加载过程中遇到了.class文件缺失或存在错误，类加载器必须在程序首次主动使用该类是才报告错误（LinkageError错误） 如果这个类一直没有被程序主动使用，那么来加载器就不会报告错误。  连接 类的连接  类被加载后，就进入连接阶段。连接就是将已经读入到内存中的二进制数据合并到虚拟机的运行时环境中去。
  类的验证的内容（主要部分）：</description>
     </item>
     
     <item>
       <title>JVM笔记01-类加载器01</title>
-      <link>https://coderleftear.github.io/post/jvm%E7%AC%94%E8%AE%B001-%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%99%A801/</link>
+      <link>https://inkbambo0.github.io/post/jvm%E7%AC%94%E8%AE%B001-%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%99%A801/</link>
       <pubDate>Sun, 25 Aug 2019 11:36:56 +0800</pubDate>
       
-      <guid>https://coderleftear.github.io/post/jvm%E7%AC%94%E8%AE%B001-%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%99%A801/</guid>
+      <guid>https://inkbambo0.github.io/post/jvm%E7%AC%94%E8%AE%B001-%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%99%A801/</guid>
       <description>类加载器、类的加载连接与初始化  类加载器、类的加载连接与初始化  类加载 类加载器 类的加载、连接与初始化 类的使用和卸载 Java虚拟机对类的使用方式 案例： 类的加载 JVM参数 关于public static final String str = &amp;ldquo;hello&amp;rdquo;;  反编译  助记符： 数组实例 父子接口 案例：关于初始化过程的代码   所有的类一定是由类加载器加载的，但数组例外，数组是由jvm加载的
 类加载 定义：在Java代码中，类型的加载、连接与初始化过程都是在程序运行期间完成的。
 类型：可以理解为class；这里指的是定义的class、interface、枚举，不存在对象的概念。表示类本身，并不表示对象。

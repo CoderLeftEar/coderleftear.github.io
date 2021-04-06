@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>jdk8 on CoderLeftEar&#39;s Blog</title>
-    <link>https://coderleftear.github.io/categories/jdk8/</link>
+    <link>https://inkbambo0.github.io/categories/jdk8/</link>
     <description>Recent content in jdk8 on CoderLeftEar&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 03 Sep 2019 09:26:35 +0800</lastBuildDate>
     
-	<atom:link href="https://coderleftear.github.io/categories/jdk8/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://inkbambo0.github.io/categories/jdk8/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Jdk8-10-Stream笔记02</title>
-      <link>https://coderleftear.github.io/post/jdk8-10-stream%E7%AC%94%E8%AE%B002/</link>
+      <link>https://inkbambo0.github.io/post/jdk8-10-stream%E7%AC%94%E8%AE%B002/</link>
       <pubDate>Tue, 03 Sep 2019 09:26:35 +0800</pubDate>
       
-      <guid>https://coderleftear.github.io/post/jdk8-10-stream%E7%AC%94%E8%AE%B002/</guid>
+      <guid>https://inkbambo0.github.io/post/jdk8-10-stream%E7%AC%94%E8%AE%B002/</guid>
       <description>Stream笔记02 1. 添加数据到List集合中：
 Student s1 = new Student(&amp;quot;zhangsan&amp;quot;, 80); Student s2 = new Student(&amp;quot;lisi&amp;quot;, 90); Student s3 = new Student(&amp;quot;wangwu&amp;quot;, 100); Student s4 = new Student(&amp;quot;zhaoliu&amp;quot;, 90); Student s5 = new Student(&amp;quot;zhaoliu&amp;quot;, 50); List&amp;lt;Student&amp;gt; students = Arrays.asList(s1, s2, s3, s4, s5);  分数最小值的学生：
 students.stream(). // min(Comparator.comparingInt(student -&amp;gt; student.getScore())).ifPresent(System.out::println); collect(Collectors.minBy( Comparator.comparingInt(student -&amp;gt; student.getScore()) )).ifPresent(System.out::println); 结果： Student(name=zhaoliu, score=50)  获得分数最大值的学生：
@@ -25,10 +25,10 @@ students.stream(). collect(Collectors.maxBy( Comparator.comparingInt(student -&a
     
     <item>
       <title>Jdk8-09-Method Reference</title>
-      <link>https://coderleftear.github.io/post/jdk8-09-method-reference/</link>
+      <link>https://inkbambo0.github.io/post/jdk8-09-method-reference/</link>
       <pubDate>Mon, 02 Sep 2019 23:31:04 +0800</pubDate>
       
-      <guid>https://coderleftear.github.io/post/jdk8-09-method-reference/</guid>
+      <guid>https://inkbambo0.github.io/post/jdk8-09-method-reference/</guid>
       <description>method reference Student类：
 class Student { private String name; private int score; public static int compareStudentByName1(Student s1, Student s2) { return s1.getName().compareTo(s2.getName()); } public static int compareStudentByScore1(Student s1, Student s2) { return s1.getScore() - s2.getScore(); } public static int compareStudentByName2(Student s1, Student s2) { return s1.getName().compareTo(s2.getName()); } public static int compareStudentByScore2(Student s1, Student s2) { return s1.getScore() - s2.getScore(); } }  Student1类：
 class Student1 { public int compareStudentByName(Student s1, Student s2) { return s1.</description>
@@ -36,10 +36,10 @@ class Student1 { public int compareStudentByName(Student s1, Student s2) { retur
     
     <item>
       <title>Jdk8-Collector</title>
-      <link>https://coderleftear.github.io/post/jdk8-collector/</link>
+      <link>https://inkbambo0.github.io/post/jdk8-collector/</link>
       <pubDate>Fri, 16 Aug 2019 17:35:01 +0800</pubDate>
       
-      <guid>https://coderleftear.github.io/post/jdk8-collector/</guid>
+      <guid>https://inkbambo0.github.io/post/jdk8-collector/</guid>
       <description>Jdk8-Collector collect: 收集器
 Collector作为collect方法的参数
 Collector是一个接口，是一个可变的汇聚操作，该操作将输入元素累积到一个可变的结果容器中（例：ArrayList可变，其中的元素是可以增加的），可选的将累计的结果转换为一个最终的表示形式，在所有元素处理完毕之后。支持串行合并行两种方式执行。
@@ -60,10 +60,10 @@ A a1 = supplier.get(); accumulator.accept(a1, t1); accumulator.</description>
     
     <item>
       <title>Jdk8-08-Stream笔记01</title>
-      <link>https://coderleftear.github.io/post/jdk8-08-stream%E7%AC%94%E8%AE%B001/</link>
+      <link>https://inkbambo0.github.io/post/jdk8-08-stream%E7%AC%94%E8%AE%B001/</link>
       <pubDate>Sat, 10 Aug 2019 10:14:41 +0800</pubDate>
       
-      <guid>https://coderleftear.github.io/post/jdk8-08-stream%E7%AC%94%E8%AE%B001/</guid>
+      <guid>https://inkbambo0.github.io/post/jdk8-08-stream%E7%AC%94%E8%AE%B001/</guid>
       <description>Stream笔记01  Stream笔记01  例1：过滤name、age (直接采用Stream -&amp;gt; 通过BiFunction调用apply方法 -&amp;gt; 直接传递行为) 例2：将List集合中的字符串转换为大写 例3：Optional reduce(BinaryOperator accumulator)的使用和数组、List与Stream之间的转换 例4：range、rangeClose的使用 例5：T reduce(T identity, BinaryOperator accumulator)的使用 例6：Stream类中toArray、collect（函数式接口）、toSet无序输出、TreeSet自然排序和joining字符串拼接 例7：map和flatMap的使用 例8：generate、iterate-limit、使用具体方法mapToInt、summaryStatistics和顺逆序排列 例9：串行流和并行流 例10：打印第一个长度为5的字符串的长度 例11：flatMap 例12：互相打招呼（flatMap和map的结合使用） 例13：分组(groupingBy)和分区(partitioningBy)   例1：过滤name、age (直接采用Stream -&amp;gt; 通过BiFunction调用apply方法 -&amp;gt; 直接传递行为) 定义Person类，并进行赋值：
  Person person1 = new Person(&amp;quot;张三&amp;quot;, 20); Person person2 = new Person(&amp;quot;李四&amp;quot;, 30); Person person3 = new Person(&amp;quot;王五&amp;quot;, 40); List&amp;lt;Person&amp;gt; persons = new ArrayList&amp;lt;&amp;gt;(); persons.add(person1); persons.add(person2); persons.add(person3);  创建PersonTest对象：
  PersonTest personTest = new PersonTest();</description>
@@ -71,10 +71,10 @@ A a1 = supplier.get(); accumulator.accept(a1, t1); accumulator.</description>
     
     <item>
       <title>Jdk8-07-BinaryOperator</title>
-      <link>https://coderleftear.github.io/post/jdk8-07-binaryoperator/</link>
+      <link>https://inkbambo0.github.io/post/jdk8-07-binaryoperator/</link>
       <pubDate>Sat, 10 Aug 2019 09:57:17 +0800</pubDate>
       
-      <guid>https://coderleftear.github.io/post/jdk8-07-binaryoperator/</guid>
+      <guid>https://inkbambo0.github.io/post/jdk8-07-binaryoperator/</guid>
       <description>BinaryOperator BinaryOperator：是一个继承了BiFunction的接口，本身有两个比较大小的方法。minBy(); 和 maxBy();
  BinaryOperatorTest binaryOperatorTest = new BinaryOperatorTest();
 &amp;lt;T&amp;gt; BinaryOperator minBy(Comparator&amp;lt;? super T&amp;gt; comparator)
@@ -85,20 +85,20 @@ System.out.println(binaryOperatorTest.operatorFunMin(&amp;quot;abbbbbb&amp;quot;
     
     <item>
       <title>Jdk8-02-Consumer</title>
-      <link>https://coderleftear.github.io/post/jdk8-02-consumer/</link>
+      <link>https://inkbambo0.github.io/post/jdk8-02-consumer/</link>
       <pubDate>Fri, 09 Aug 2019 11:10:57 +0800</pubDate>
       
-      <guid>https://coderleftear.github.io/post/jdk8-02-consumer/</guid>
+      <guid>https://inkbambo0.github.io/post/jdk8-02-consumer/</guid>
       <description> Consumer Consumer：接收一个参数，无返回值。
 List&amp;lt;String&amp;gt; list = Arrays.asList(&amp;quot;a&amp;quot;, &amp;quot;b&amp;quot;, &amp;quot;c&amp;quot;, &amp;quot;d&amp;quot;, &amp;quot;e&amp;quot;); Consumer&amp;lt;String&amp;gt; consumer = item -&amp;gt; System.out.println(item); list.forEach(consumer);  </description>
     </item>
     
     <item>
       <title>Jdk8-04-Optional</title>
-      <link>https://coderleftear.github.io/post/jdk8-04-optional/</link>
+      <link>https://inkbambo0.github.io/post/jdk8-04-optional/</link>
       <pubDate>Fri, 09 Aug 2019 11:10:02 +0800</pubDate>
       
-      <guid>https://coderleftear.github.io/post/jdk8-04-optional/</guid>
+      <guid>https://inkbambo0.github.io/post/jdk8-04-optional/</guid>
       <description>Optional Optional：主要解决空指针异常。使用of()、ofNullable()创建包含值的optional。
 of()：传入null，会报空指针异常。 ofNullable()：可以穿null，不会报异常。
  Optional optional = Optional.ofNullable(&amp;ldquo;hello&amp;rdquo;);
@@ -113,10 +113,10 @@ Employee emp1 = new Employee(&amp;quot;zhangsan&amp;quot;); Employee emp2 = new 
     
     <item>
       <title>Jdk8-05-Predicate</title>
-      <link>https://coderleftear.github.io/post/jdk8-05-predicate/</link>
+      <link>https://inkbambo0.github.io/post/jdk8-05-predicate/</link>
       <pubDate>Fri, 09 Aug 2019 11:09:49 +0800</pubDate>
       
-      <guid>https://coderleftear.github.io/post/jdk8-05-predicate/</guid>
+      <guid>https://inkbambo0.github.io/post/jdk8-05-predicate/</guid>
       <description>Predicate Predicate：接收一个输入参数，返回一个Boolean值。
 包括一个返回值是Boolean的test方法、三个默认方法和一个静态isEqual()。
 test里是输入参数：
@@ -127,10 +127,10 @@ List&amp;lt;Integer&amp;gt; list = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
     
     <item>
       <title>Jdk8-06-Supplier</title>
-      <link>https://coderleftear.github.io/post/jdk8-06-supplier/</link>
+      <link>https://inkbambo0.github.io/post/jdk8-06-supplier/</link>
       <pubDate>Fri, 09 Aug 2019 11:09:35 +0800</pubDate>
       
-      <guid>https://coderleftear.github.io/post/jdk8-06-supplier/</guid>
+      <guid>https://inkbambo0.github.io/post/jdk8-06-supplier/</guid>
       <description> Supplier Supplier：不接受参数，返回结果，用来创建对象。
 Supplier是个接口，有一个get()方法，创建完对象后，如要调用需要先调用自身的get()。
 Student类：
@@ -142,10 +142,10 @@ supplier = Student::new; System.out.println(supplier.get().getName());  </descri
     
     <item>
       <title>Jdk8-03-Function</title>
-      <link>https://coderleftear.github.io/post/jdk8-03-function/</link>
+      <link>https://inkbambo0.github.io/post/jdk8-03-function/</link>
       <pubDate>Fri, 09 Aug 2019 11:09:07 +0800</pubDate>
       
-      <guid>https://coderleftear.github.io/post/jdk8-03-function/</guid>
+      <guid>https://inkbambo0.github.io/post/jdk8-03-function/</guid>
       <description>Function Function：接收一个参数返回一个结果。
 BiFunction：接收两个参数返回一个结果。
 创建对象：
@@ -159,10 +159,10 @@ System.out.println(functionDemo.convert2(5, value -&amp;gt; (int)value + 1, valu
     
     <item>
       <title>Jdk8-01-Lambda</title>
-      <link>https://coderleftear.github.io/post/jdk8-01-lambda/</link>
+      <link>https://inkbambo0.github.io/post/jdk8-01-lambda/</link>
       <pubDate>Fri, 09 Aug 2019 11:08:54 +0800</pubDate>
       
-      <guid>https://coderleftear.github.io/post/jdk8-01-lambda/</guid>
+      <guid>https://inkbambo0.github.io/post/jdk8-01-lambda/</guid>
       <description>Lambda 关于函数式接口： - 如果一个接口只有一个抽象方法，那么该接口就是一个函数式接口
 - 如果我们在某个接口上声明了FunctionalInterface注解，那么编译器就会按照函数式接口的定义来要求该接口
 - 如果某个接口只有一个抽象方法，但我们并没有给改接口声明FunctionalInterface注解，那么编译器依旧会将该接口看作是函数式接口
